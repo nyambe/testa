@@ -1,0 +1,56 @@
+$lightgray      : #819090;
+$gray           : #708284;
+$mediumgray     : #536870;
+$darkgray       : #475B62;
+$darkblue       : #0A2933;
+$darkerblue     : #042029;
+$paleryellow    : #d2c510;
+$paleyellow     : #EAE3CB;
+$yellow         : #A57706;
+$orange         : #BD3613;
+$red            : #9D231C;
+$pink           : #C61C6F;
+$purple         : #595AB7;
+$blue           : #2176C7;
+$cyan           : #259286;
+$green          : #71b104;
+$white			: white;
+$neongreen		: #bdff05;
+$grey 			: #757676;
+$blue			: #439be9;
+
+$font-primary: Open Sans, sans-serif;
+
+$h1				: 1.5rem;
+$h2				: 1.2rem;
+$h3				: 1.0rem;
+
+$default-border-radius : 50%;
+
+//amounts
+$tinyamount		: 15;
+$smallamount	: 20;
+$amount			: 25;
+
+//Susy setup
+$total-columns	: 12;
+$column-width	: 0;
+$gutter-width	: 0;
+$container-style: fluid;
+$grid-padding	: $gutter-width;
+
+
+$small 			: 30em;
+$medium			: 47em;
+$large			: 75em;
+
+//Susy layout
+
+$smallscreen	: 795px;
+
+// Paginas
+
+$kick-off		: #fd8117; // Naranja
+$multiaventura  : #39b1dc; // Azul claro
+$teamevent		: #a4e719;  // Verde
+$gynkana		: #fc0149;  // Redish

@@ -1,0 +1,3025 @@
+@charset "UTF-8";
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: TinyMCE Editor
+
+This stylesheet is loaded automatically by Wordpress when compiled
+and placed in the root theme directory folder as editor-style.css
+
+For more info, check out the codex:
+http://codex.wordpress.org/Editor_Style
+
+******************************************************************/
+/* Wrap the entire post style inside the TinyMCE selector, as suggested
+here http://codex.wordpress.org/Function_Reference/add_editor_style */
+/* line 17, ../../scss/editor-style.scss */
+body#tinymce.wp-editor {
+  /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+  /* ==========================================================================
+     HTML5 display definitions
+     ========================================================================== */
+  /**
+   * Correct `block` display not defined in IE 8/9.
+   */
+  /**
+   * Correct `inline-block` display not defined in IE 8/9.
+   */
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+  /**
+   * Address `[hidden]` styling not present in IE 8/9.
+   * Hide the `template` element in IE, Safari, and Firefox < 22.
+   */
+  /* ==========================================================================
+     Base
+     ========================================================================== */
+  /**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS text size adjust after orientation change, without disabling
+   *    user zoom.
+   */
+  /**
+   * Remove default margin.
+   */
+  /* ==========================================================================
+     Links
+     ========================================================================== */
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+  /**
+   * Address `outline` inconsistency between Chrome and other browsers.
+   */
+  /**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address styling not present in IE 8/9, Safari 5, and Chrome.
+   */
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address styling not present in Safari 5 and Chrome.
+   */
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+  /*
+   * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
+  */
+  /*
+   * Addresses margins set differently in IE6/7.
+   */
+  /**
+   * Correct font family set oddly in Safari 5 and Chrome.
+   */
+  /**
+   * Improve readability of pre-formatted text in all browsers.
+   */
+  /**
+   * Set consistent quote types.
+   */
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+  /* ==========================================================================
+    Lists
+  ========================================================================== */
+  /*
+   * Addresses margins set differently in IE6/7.
+   */
+  /*
+   * Addresses paddings set differently in IE6/7.
+   */
+  /*
+   * Corrects list images handled incorrectly in IE7.
+   */
+  /* ==========================================================================
+    Embedded content
+  ========================================================================== */
+  /**
+   * Remove border when inside `a` element in IE 8/9.
+   */
+  /**
+   * Correct overflow displayed oddly in IE 9.
+   */
+  /* ==========================================================================
+     Figures
+     ========================================================================== */
+  /**
+   * Address margin not present in IE 8/9 and Safari 5.
+   */
+  /* ==========================================================================
+     Forms
+     ========================================================================== */
+  /**
+   * Define consistent border, margin, and padding.
+   */
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+  /**
+   * 1. Correct font family not being inherited in all browsers.
+   * 2. Correct font size not being inherited in all browsers.
+   * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+   */
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+   * Correct `select` style inheritance in Firefox 4+ and Opera.
+   */
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+  /**
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+   *    (include `-moz` to future-proof).
+   */
+  /**
+   * Remove inner padding and search cancel button in Safari 5 and Chrome
+   * on OS X.
+   */
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+  /**
+   * 1. Remove default vertical scrollbar in IE 8/9.
+   * 2. Improve readability and alignment in all browsers.
+   */
+  /* ==========================================================================
+     Tables
+     ========================================================================== */
+  /**
+   * Remove most spacing between table cells.
+   */
+  /*
+  use the best ampersand
+  http://simplebits.com/notebook/2008/08/14/ampersands-2/
+  */
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Variables
+  
+  Here is where we declare all our variables like colors, fonts,
+  base values, and defaults. We want to make sure this file ONLY
+  contains variables that way our files don't get all messy.
+  No one likes a mess.
+  
+  ******************************************************************/
+  /*********************
+  COLORS
+  Need help w/ choosing your colors? Try this site out:
+  http://0to255.com/
+  *********************/
+  /*
+  Here's a great tutorial on how to
+  use color variables properly:
+  http://sachagreif.com/sass-color-variables/
+  */
+  /* ATM  */
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Typography
+  
+  Need to import a font or set of icons for your site? Drop them in
+  here or just use this to establish your typographical grid. Or not.
+  Do whatever you want to...GOSH!
+  
+  Helpful Articles:
+  http://trentwalton.com/2012/06/19/fluid-type/
+  http://ia.net/blog/responsive-typography-the-basics/
+  http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+  
+  ******************************************************************/
+  /*********************
+  FONT FACE (IN YOUR FACE)
+  *********************/
+  /*  To embed your own fonts, use this syntax
+    and place your fonts inside the
+    library/fonts folder. For more information
+    on embedding fonts, go to:
+    http://www.fontsquirrel.com/
+    Be sure to remove the comment brackets.
+  */
+  /*  @font-face {
+        font-family: 'Font Name';
+        src: url('library/fonts/font-name.eot');
+        src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+               url('library/fonts/font-name.woff') format('woff'),
+               url('library/fonts/font-name.ttf') format('truetype'),
+               url('library/fonts/font-name.svg#font-name') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+  */
+  /*
+  The following is based of Typebase:
+  https://github.com/devinhunt/typebase.css
+  I've edited it a bit, but it's a nice starting point.
+  */
+  /*!
+   *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+   *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+   */
+  /* FONT PATH
+   * -------------------------- */
+  /* makes the font 33% larger relative to the icon container */
+  /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+     readers do not read off random characters that represent icons */
+  /*
+   i imported this one in the functions file so bones would look sweet.
+   don't forget to remove it for your site.
+  */
+  /*
+  some nice typographical defaults
+  more here: http://www.newnet-soft.com/blog/csstypography
+  */
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Sass Functions
+  
+  You can do a lot of really cool things in Sass. Functions help you
+  make repeated actions a lot easier. They are really similar to mixins,
+  but can be used for so much more.
+  
+  Anyway, keep them all in here so it's easier to find when you're
+  looking for one.
+  
+  For more info on functions, go here:
+  http://sass-lang.com/documentation/Sass/Script/Functions.html
+  
+  ******************************************************************/
+  /*********************
+  COLOR FUNCTIONS
+  These are helpful when you're working
+  with shadows and such things. It's essentially
+  a quicker way to write RGBA.
+  
+  Example:
+  box-shadow: 0 0 4px black(0.3);
+  compiles to:
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  *********************/
+  /*********************
+  RESPONSIVE HELPER FUNCTION
+  If you're creating a responsive site, then
+  you've probably already read
+  Responsive Web Design: http://www.abookapart.com/products/responsive-web-design
+  
+  Here's a nice little helper function for calculating
+  target / context
+  as mentioned in that book.
+  
+  Example:
+  width: cp(650px, 1000px);
+  or
+  width: calc-percent(650px, 1000px);
+  both compile to:
+  width: 65%;
+  *********************/
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Mixins Stylesheet
+  
+  This is where you can take advantage of Sass' great features: Mixins.
+  I won't go in-depth on how they work exactly,
+  there are a few articles below that will help do that. What I will
+  tell you is that this will help speed up simple changes like
+  changing a color or adding CSS3 techniques gradients.
+  
+  A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+  remember less is more.
+  
+  Helpful:
+  http://sachagreif.com/useful-sass-mixins/
+  http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+  http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+  
+  ******************************************************************/
+  /*********************
+  TRANSITION
+  *********************/
+  /*
+  I totally rewrote this to be cleaner and easier to use.
+  You'll need to be using Sass 3.2+ for these to work.
+  Thanks to @anthonyshort for the inspiration on these.
+  USAGE: @include transition(all 0.2s ease-in-out);
+  */
+  /*********************
+  CSS3 GRADIENTS
+  Be careful with these since they can
+  really slow down your CSS. Don't overdo it.
+  *********************/
+  /* @include css-gradient(#dfdfdf,#f8f8f8); */
+  /*********************
+  BOX SIZING
+  *********************/
+  /* @include box-sizing(border-box); */
+  /* NOTE: value of "padding-box" is only supported in Gecko. So
+  probably best not to use it. I mean, were you going to anyway? */
+  width: 731px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #5c6b80;
+  -webkit-font-smoothing: antialiased;
+  /*********************
+	LINK STYLES
+	*********************/
+  /******************************************************************
+  H1, H2, H3, H4, H5 STYLES
+  ******************************************************************/
+  padding: 1.5em 1.5em 0;
+  /*********************
+  LARGER MOBILE DEVICES
+  This is for devices like the Galaxy Note or something that's
+  larger than an iPhone but smaller than a tablet. Let's call them
+  tweeners.
+  *********************/
+}
+/* line 12, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor article,
+body#tinymce.wp-editor aside,
+body#tinymce.wp-editor details,
+body#tinymce.wp-editor figcaption,
+body#tinymce.wp-editor figure,
+body#tinymce.wp-editor footer,
+body#tinymce.wp-editor header,
+body#tinymce.wp-editor hgroup,
+body#tinymce.wp-editor main,
+body#tinymce.wp-editor nav,
+body#tinymce.wp-editor section,
+body#tinymce.wp-editor summary {
+  display: block;
+}
+/* line 31, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor audio,
+body#tinymce.wp-editor canvas,
+body#tinymce.wp-editor video {
+  display: inline-block;
+}
+/* line 42, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/* line 52, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor [hidden],
+body#tinymce.wp-editor template {
+  display: none;
+}
+/* line 67, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* line 77, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor body {
+  margin: 0;
+}
+/* line 89, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor a {
+  background: transparent;
+}
+/* line 97, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor a:focus {
+  outline: thin dotted;
+}
+/* line 105, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor a:active,
+body#tinymce.wp-editor a:hover {
+  outline: 0;
+}
+/* line 119, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* line 128, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor abbr[title] {
+  border-bottom: 1px dotted;
+}
+/* line 136, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor b,
+body#tinymce.wp-editor strong,
+body#tinymce.wp-editor .strong {
+  font-weight: bold;
+}
+/* line 146, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor dfn,
+body#tinymce.wp-editor em,
+body#tinymce.wp-editor .em {
+  font-style: italic;
+}
+/* line 156, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/* line 166, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+/* line 177, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor pre {
+  margin: 0;
+}
+/* line 185, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor code,
+body#tinymce.wp-editor kbd,
+body#tinymce.wp-editor pre,
+body#tinymce.wp-editor samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/* line 197, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor pre {
+  white-space: pre-wrap;
+}
+/* line 205, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* line 212, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor q:before,
+body#tinymce.wp-editor q:after {
+  content: '';
+  content: none;
+}
+/* line 218, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor small, body#tinymce.wp-editor .small {
+  font-size: 75%;
+}
+/* line 226, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor sub,
+body#tinymce.wp-editor sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 234, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor sup {
+  top: -0.5em;
+}
+/* line 238, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor sub {
+  bottom: -0.25em;
+}
+/* line 250, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor dl,
+body#tinymce.wp-editor menu,
+body#tinymce.wp-editor ol,
+body#tinymce.wp-editor ul {
+  margin: 1em 0;
+}
+/* line 257, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor dd {
+  margin: 0;
+}
+/* line 265, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor menu {
+  padding: 0 0 0 40px;
+}
+/* line 269, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor ol,
+body#tinymce.wp-editor ul {
+  padding: 0;
+  list-style-type: none;
+}
+/* line 279, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor nav ul,
+body#tinymce.wp-editor nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* line 293, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor img {
+  border: 0;
+}
+/* line 301, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor svg:not(:root) {
+  overflow: hidden;
+}
+/* line 313, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor figure {
+  margin: 0;
+}
+/* line 325, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/* line 336, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/* line 347, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor input,
+body#tinymce.wp-editor select,
+body#tinymce.wp-editor textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/* line 361, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor input {
+  line-height: normal;
+}
+/* line 373, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor select {
+  text-transform: none;
+}
+/* line 386, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor html input[type="button"],
+body#tinymce.wp-editor input[type="reset"],
+body#tinymce.wp-editor input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/* line 398, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button[disabled],
+body#tinymce.wp-editor html input[disabled] {
+  cursor: default;
+}
+/* line 408, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor input[type="checkbox"],
+body#tinymce.wp-editor input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/* line 420, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/* line 432, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor input[type="search"]::-webkit-search-cancel-button,
+body#tinymce.wp-editor input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 441, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor button::-moz-focus-inner,
+body#tinymce.wp-editor input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* line 452, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* line 465, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 472, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 479, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor .image-replacement,
+body#tinymce.wp-editor .ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 487, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor .clearfix, body#tinymce.wp-editor .cf {
+  zoom: 1;
+}
+/* line 489, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor .clearfix:before, body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:before, body#tinymce.wp-editor .cf:after {
+  content: "";
+  display: table;
+}
+/* line 490, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor .clearfix:after, body#tinymce.wp-editor .cf:after {
+  clear: both;
+}
+/* line 497, ../../scss/partials/_normalize.scss */
+body#tinymce.wp-editor span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic;
+}
+@font-face {
+  /* line 17, ../../scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    font-family: 'FontAwesome';
+    src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
+    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+/* line 4, ../../scss/fa/_core.scss */
+body#tinymce.wp-editor .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 5, ../../scss/fa/_larger.scss */
+body#tinymce.wp-editor .fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+/* line 10, ../../scss/fa/_larger.scss */
+body#tinymce.wp-editor .fa-2x {
+  font-size: 2em;
+}
+/* line 11, ../../scss/fa/_larger.scss */
+body#tinymce.wp-editor .fa-3x {
+  font-size: 3em;
+}
+/* line 12, ../../scss/fa/_larger.scss */
+body#tinymce.wp-editor .fa-4x {
+  font-size: 4em;
+}
+/* line 13, ../../scss/fa/_larger.scss */
+body#tinymce.wp-editor .fa-5x {
+  font-size: 5em;
+}
+/* line 3, ../../scss/fa/_fixed-width.scss */
+body#tinymce.wp-editor .fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+/* line 4, ../../scss/fa/_list.scss */
+body#tinymce.wp-editor .fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, ../../scss/fa/_list.scss */
+body#tinymce.wp-editor .fa-ul > li {
+  position: relative;
+}
+/* line 10, ../../scss/fa/_list.scss */
+body#tinymce.wp-editor .fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, ../../scss/fa/_list.scss */
+body#tinymce.wp-editor .fa-li.fa-lg {
+  left: -1.85714em;
+}
+/* line 4, ../../scss/fa/_bordered-pulled.scss */
+body#tinymce.wp-editor .fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+/* line 10, ../../scss/fa/_bordered-pulled.scss */
+body#tinymce.wp-editor .pull-right {
+  float: right;
+}
+/* line 11, ../../scss/fa/_bordered-pulled.scss */
+body#tinymce.wp-editor .pull-left {
+  float: left;
+}
+/* line 14, ../../scss/fa/_bordered-pulled.scss */
+body#tinymce.wp-editor .fa.pull-left {
+  margin-right: .3em;
+}
+/* line 15, ../../scss/fa/_bordered-pulled.scss */
+body#tinymce.wp-editor .fa.pull-right {
+  margin-left: .3em;
+}
+/* line 4, ../../scss/fa/_spinning.scss */
+body#tinymce.wp-editor .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 4, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor .fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 5, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor .fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 6, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor .fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/* line 8, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor .fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+/* line 9, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor .fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/* line 14, ../../scss/fa/_rotated-flipped.scss */
+body#tinymce.wp-editor :root .fa-rotate-90,
+body#tinymce.wp-editor :root .fa-rotate-180,
+body#tinymce.wp-editor :root .fa-rotate-270,
+body#tinymce.wp-editor :root .fa-flip-horizontal,
+body#tinymce.wp-editor :root .fa-flip-vertical {
+  filter: none;
+}
+/* line 4, ../../scss/fa/_stacked.scss */
+body#tinymce.wp-editor .fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+/* line 12, ../../scss/fa/_stacked.scss */
+body#tinymce.wp-editor .fa-stack-1x, body#tinymce.wp-editor .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 18, ../../scss/fa/_stacked.scss */
+body#tinymce.wp-editor .fa-stack-1x {
+  line-height: inherit;
+}
+/* line 19, ../../scss/fa/_stacked.scss */
+body#tinymce.wp-editor .fa-stack-2x {
+  font-size: 2em;
+}
+/* line 20, ../../scss/fa/_stacked.scss */
+body#tinymce.wp-editor .fa-inverse {
+  color: #fff;
+}
+/* line 4, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-glass:before {
+  content: "";
+}
+/* line 5, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-music:before {
+  content: "";
+}
+/* line 6, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-search:before {
+  content: "";
+}
+/* line 7, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-envelope-o:before {
+  content: "";
+}
+/* line 8, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-heart:before {
+  content: "";
+}
+/* line 9, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-star:before {
+  content: "";
+}
+/* line 10, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-star-o:before {
+  content: "";
+}
+/* line 11, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-user:before {
+  content: "";
+}
+/* line 12, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-film:before {
+  content: "";
+}
+/* line 13, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-th-large:before {
+  content: "";
+}
+/* line 14, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-th:before {
+  content: "";
+}
+/* line 15, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-th-list:before {
+  content: "";
+}
+/* line 16, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-check:before {
+  content: "";
+}
+/* line 17, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-remove:before,
+body#tinymce.wp-editor .fa-close:before,
+body#tinymce.wp-editor .fa-times:before {
+  content: "";
+}
+/* line 20, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-search-plus:before {
+  content: "";
+}
+/* line 21, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-search-minus:before {
+  content: "";
+}
+/* line 22, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-power-off:before {
+  content: "";
+}
+/* line 23, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-signal:before {
+  content: "";
+}
+/* line 24, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gear:before,
+body#tinymce.wp-editor .fa-cog:before {
+  content: "";
+}
+/* line 26, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-trash-o:before {
+  content: "";
+}
+/* line 27, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-home:before {
+  content: "";
+}
+/* line 28, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-o:before {
+  content: "";
+}
+/* line 29, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-clock-o:before {
+  content: "";
+}
+/* line 30, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-road:before {
+  content: "";
+}
+/* line 31, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-download:before {
+  content: "";
+}
+/* line 32, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-o-down:before {
+  content: "";
+}
+/* line 33, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-o-up:before {
+  content: "";
+}
+/* line 34, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-inbox:before {
+  content: "";
+}
+/* line 35, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-play-circle-o:before {
+  content: "";
+}
+/* line 36, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rotate-right:before,
+body#tinymce.wp-editor .fa-repeat:before {
+  content: "";
+}
+/* line 38, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-refresh:before {
+  content: "";
+}
+/* line 39, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-list-alt:before {
+  content: "";
+}
+/* line 40, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-lock:before {
+  content: "";
+}
+/* line 41, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flag:before {
+  content: "";
+}
+/* line 42, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-headphones:before {
+  content: "";
+}
+/* line 43, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-volume-off:before {
+  content: "";
+}
+/* line 44, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-volume-down:before {
+  content: "";
+}
+/* line 45, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-volume-up:before {
+  content: "";
+}
+/* line 46, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-qrcode:before {
+  content: "";
+}
+/* line 47, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-barcode:before {
+  content: "";
+}
+/* line 48, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tag:before {
+  content: "";
+}
+/* line 49, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tags:before {
+  content: "";
+}
+/* line 50, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-book:before {
+  content: "";
+}
+/* line 51, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bookmark:before {
+  content: "";
+}
+/* line 52, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-print:before {
+  content: "";
+}
+/* line 53, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-camera:before {
+  content: "";
+}
+/* line 54, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-font:before {
+  content: "";
+}
+/* line 55, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bold:before {
+  content: "";
+}
+/* line 56, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-italic:before {
+  content: "";
+}
+/* line 57, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-text-height:before {
+  content: "";
+}
+/* line 58, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-text-width:before {
+  content: "";
+}
+/* line 59, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-align-left:before {
+  content: "";
+}
+/* line 60, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-align-center:before {
+  content: "";
+}
+/* line 61, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-align-right:before {
+  content: "";
+}
+/* line 62, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-align-justify:before {
+  content: "";
+}
+/* line 63, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-list:before {
+  content: "";
+}
+/* line 64, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dedent:before,
+body#tinymce.wp-editor .fa-outdent:before {
+  content: "";
+}
+/* line 66, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-indent:before {
+  content: "";
+}
+/* line 67, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-video-camera:before {
+  content: "";
+}
+/* line 68, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-photo:before,
+body#tinymce.wp-editor .fa-image:before,
+body#tinymce.wp-editor .fa-picture-o:before {
+  content: "";
+}
+/* line 71, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pencil:before {
+  content: "";
+}
+/* line 72, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-map-marker:before {
+  content: "";
+}
+/* line 73, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-adjust:before {
+  content: "";
+}
+/* line 74, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tint:before {
+  content: "";
+}
+/* line 75, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-edit:before,
+body#tinymce.wp-editor .fa-pencil-square-o:before {
+  content: "";
+}
+/* line 77, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-share-square-o:before {
+  content: "";
+}
+/* line 78, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-check-square-o:before {
+  content: "";
+}
+/* line 79, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrows:before {
+  content: "";
+}
+/* line 80, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-step-backward:before {
+  content: "";
+}
+/* line 81, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fast-backward:before {
+  content: "";
+}
+/* line 82, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-backward:before {
+  content: "";
+}
+/* line 83, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-play:before {
+  content: "";
+}
+/* line 84, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pause:before {
+  content: "";
+}
+/* line 85, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stop:before {
+  content: "";
+}
+/* line 86, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-forward:before {
+  content: "";
+}
+/* line 87, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fast-forward:before {
+  content: "";
+}
+/* line 88, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-step-forward:before {
+  content: "";
+}
+/* line 89, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-eject:before {
+  content: "";
+}
+/* line 90, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-left:before {
+  content: "";
+}
+/* line 91, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-right:before {
+  content: "";
+}
+/* line 92, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plus-circle:before {
+  content: "";
+}
+/* line 93, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-minus-circle:before {
+  content: "";
+}
+/* line 94, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-times-circle:before {
+  content: "";
+}
+/* line 95, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-check-circle:before {
+  content: "";
+}
+/* line 96, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-question-circle:before {
+  content: "";
+}
+/* line 97, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-info-circle:before {
+  content: "";
+}
+/* line 98, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-crosshairs:before {
+  content: "";
+}
+/* line 99, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-times-circle-o:before {
+  content: "";
+}
+/* line 100, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-check-circle-o:before {
+  content: "";
+}
+/* line 101, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ban:before {
+  content: "";
+}
+/* line 102, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-left:before {
+  content: "";
+}
+/* line 103, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-right:before {
+  content: "";
+}
+/* line 104, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-up:before {
+  content: "";
+}
+/* line 105, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-down:before {
+  content: "";
+}
+/* line 106, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-mail-forward:before,
+body#tinymce.wp-editor .fa-share:before {
+  content: "";
+}
+/* line 108, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-expand:before {
+  content: "";
+}
+/* line 109, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-compress:before {
+  content: "";
+}
+/* line 110, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plus:before {
+  content: "";
+}
+/* line 111, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-minus:before {
+  content: "";
+}
+/* line 112, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-asterisk:before {
+  content: "";
+}
+/* line 113, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-exclamation-circle:before {
+  content: "";
+}
+/* line 114, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gift:before {
+  content: "";
+}
+/* line 115, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-leaf:before {
+  content: "";
+}
+/* line 116, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fire:before {
+  content: "";
+}
+/* line 117, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-eye:before {
+  content: "";
+}
+/* line 118, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-eye-slash:before {
+  content: "";
+}
+/* line 119, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-warning:before,
+body#tinymce.wp-editor .fa-exclamation-triangle:before {
+  content: "";
+}
+/* line 121, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plane:before {
+  content: "";
+}
+/* line 122, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-calendar:before {
+  content: "";
+}
+/* line 123, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-random:before {
+  content: "";
+}
+/* line 124, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-comment:before {
+  content: "";
+}
+/* line 125, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-magnet:before {
+  content: "";
+}
+/* line 126, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-up:before {
+  content: "";
+}
+/* line 127, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-down:before {
+  content: "";
+}
+/* line 128, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-retweet:before {
+  content: "";
+}
+/* line 129, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-shopping-cart:before {
+  content: "";
+}
+/* line 130, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-folder:before {
+  content: "";
+}
+/* line 131, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-folder-open:before {
+  content: "";
+}
+/* line 132, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrows-v:before {
+  content: "";
+}
+/* line 133, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrows-h:before {
+  content: "";
+}
+/* line 134, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bar-chart-o:before,
+body#tinymce.wp-editor .fa-bar-chart:before {
+  content: "";
+}
+/* line 136, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-twitter-square:before {
+  content: "";
+}
+/* line 137, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-facebook-square:before {
+  content: "";
+}
+/* line 138, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-camera-retro:before {
+  content: "";
+}
+/* line 139, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-key:before {
+  content: "";
+}
+/* line 140, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gears:before,
+body#tinymce.wp-editor .fa-cogs:before {
+  content: "";
+}
+/* line 142, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-comments:before {
+  content: "";
+}
+/* line 143, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-thumbs-o-up:before {
+  content: "";
+}
+/* line 144, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-thumbs-o-down:before {
+  content: "";
+}
+/* line 145, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-star-half:before {
+  content: "";
+}
+/* line 146, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-heart-o:before {
+  content: "";
+}
+/* line 147, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sign-out:before {
+  content: "";
+}
+/* line 148, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-linkedin-square:before {
+  content: "";
+}
+/* line 149, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-thumb-tack:before {
+  content: "";
+}
+/* line 150, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-external-link:before {
+  content: "";
+}
+/* line 151, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sign-in:before {
+  content: "";
+}
+/* line 152, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-trophy:before {
+  content: "";
+}
+/* line 153, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-github-square:before {
+  content: "";
+}
+/* line 154, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-upload:before {
+  content: "";
+}
+/* line 155, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-lemon-o:before {
+  content: "";
+}
+/* line 156, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-phone:before {
+  content: "";
+}
+/* line 157, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-square-o:before {
+  content: "";
+}
+/* line 158, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bookmark-o:before {
+  content: "";
+}
+/* line 159, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-phone-square:before {
+  content: "";
+}
+/* line 160, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-twitter:before {
+  content: "";
+}
+/* line 161, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-facebook:before {
+  content: "";
+}
+/* line 162, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-github:before {
+  content: "";
+}
+/* line 163, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-unlock:before {
+  content: "";
+}
+/* line 164, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-credit-card:before {
+  content: "";
+}
+/* line 165, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rss:before {
+  content: "";
+}
+/* line 166, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hdd-o:before {
+  content: "";
+}
+/* line 167, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bullhorn:before {
+  content: "";
+}
+/* line 168, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bell:before {
+  content: "";
+}
+/* line 169, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-certificate:before {
+  content: "";
+}
+/* line 170, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hand-o-right:before {
+  content: "";
+}
+/* line 171, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hand-o-left:before {
+  content: "";
+}
+/* line 172, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hand-o-up:before {
+  content: "";
+}
+/* line 173, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hand-o-down:before {
+  content: "";
+}
+/* line 174, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-left:before {
+  content: "";
+}
+/* line 175, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-right:before {
+  content: "";
+}
+/* line 176, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-up:before {
+  content: "";
+}
+/* line 177, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-down:before {
+  content: "";
+}
+/* line 178, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-globe:before {
+  content: "";
+}
+/* line 179, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-wrench:before {
+  content: "";
+}
+/* line 180, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tasks:before {
+  content: "";
+}
+/* line 181, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-filter:before {
+  content: "";
+}
+/* line 182, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-briefcase:before {
+  content: "";
+}
+/* line 183, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrows-alt:before {
+  content: "";
+}
+/* line 184, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-group:before,
+body#tinymce.wp-editor .fa-users:before {
+  content: "";
+}
+/* line 186, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chain:before,
+body#tinymce.wp-editor .fa-link:before {
+  content: "";
+}
+/* line 188, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cloud:before {
+  content: "";
+}
+/* line 189, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flask:before {
+  content: "";
+}
+/* line 190, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cut:before,
+body#tinymce.wp-editor .fa-scissors:before {
+  content: "";
+}
+/* line 192, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-copy:before,
+body#tinymce.wp-editor .fa-files-o:before {
+  content: "";
+}
+/* line 194, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paperclip:before {
+  content: "";
+}
+/* line 195, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-save:before,
+body#tinymce.wp-editor .fa-floppy-o:before {
+  content: "";
+}
+/* line 197, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-square:before {
+  content: "";
+}
+/* line 198, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-navicon:before,
+body#tinymce.wp-editor .fa-reorder:before,
+body#tinymce.wp-editor .fa-bars:before {
+  content: "";
+}
+/* line 201, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-list-ul:before {
+  content: "";
+}
+/* line 202, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-list-ol:before {
+  content: "";
+}
+/* line 203, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-strikethrough:before {
+  content: "";
+}
+/* line 204, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-underline:before {
+  content: "";
+}
+/* line 205, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-table:before {
+  content: "";
+}
+/* line 206, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-magic:before {
+  content: "";
+}
+/* line 207, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-truck:before {
+  content: "";
+}
+/* line 208, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pinterest:before {
+  content: "";
+}
+/* line 209, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pinterest-square:before {
+  content: "";
+}
+/* line 210, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-google-plus-square:before {
+  content: "";
+}
+/* line 211, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-google-plus:before {
+  content: "";
+}
+/* line 212, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-money:before {
+  content: "";
+}
+/* line 213, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-caret-down:before {
+  content: "";
+}
+/* line 214, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-caret-up:before {
+  content: "";
+}
+/* line 215, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-caret-left:before {
+  content: "";
+}
+/* line 216, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-caret-right:before {
+  content: "";
+}
+/* line 217, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-columns:before {
+  content: "";
+}
+/* line 218, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-unsorted:before,
+body#tinymce.wp-editor .fa-sort:before {
+  content: "";
+}
+/* line 220, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-down:before,
+body#tinymce.wp-editor .fa-sort-desc:before {
+  content: "";
+}
+/* line 222, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-up:before,
+body#tinymce.wp-editor .fa-sort-asc:before {
+  content: "";
+}
+/* line 224, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-envelope:before {
+  content: "";
+}
+/* line 225, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-linkedin:before {
+  content: "";
+}
+/* line 226, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rotate-left:before,
+body#tinymce.wp-editor .fa-undo:before {
+  content: "";
+}
+/* line 228, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-legal:before,
+body#tinymce.wp-editor .fa-gavel:before {
+  content: "";
+}
+/* line 230, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dashboard:before,
+body#tinymce.wp-editor .fa-tachometer:before {
+  content: "";
+}
+/* line 232, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-comment-o:before {
+  content: "";
+}
+/* line 233, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-comments-o:before {
+  content: "";
+}
+/* line 234, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flash:before,
+body#tinymce.wp-editor .fa-bolt:before {
+  content: "";
+}
+/* line 236, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sitemap:before {
+  content: "";
+}
+/* line 237, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-umbrella:before {
+  content: "";
+}
+/* line 238, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paste:before,
+body#tinymce.wp-editor .fa-clipboard:before {
+  content: "";
+}
+/* line 240, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-lightbulb-o:before {
+  content: "";
+}
+/* line 241, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-exchange:before {
+  content: "";
+}
+/* line 242, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cloud-download:before {
+  content: "";
+}
+/* line 243, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cloud-upload:before {
+  content: "";
+}
+/* line 244, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-user-md:before {
+  content: "";
+}
+/* line 245, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stethoscope:before {
+  content: "";
+}
+/* line 246, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-suitcase:before {
+  content: "";
+}
+/* line 247, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bell-o:before {
+  content: "";
+}
+/* line 248, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-coffee:before {
+  content: "";
+}
+/* line 249, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cutlery:before {
+  content: "";
+}
+/* line 250, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-text-o:before {
+  content: "";
+}
+/* line 251, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-building-o:before {
+  content: "";
+}
+/* line 252, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hospital-o:before {
+  content: "";
+}
+/* line 253, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ambulance:before {
+  content: "";
+}
+/* line 254, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-medkit:before {
+  content: "";
+}
+/* line 255, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fighter-jet:before {
+  content: "";
+}
+/* line 256, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-beer:before {
+  content: "";
+}
+/* line 257, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-h-square:before {
+  content: "";
+}
+/* line 258, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plus-square:before {
+  content: "";
+}
+/* line 259, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-double-left:before {
+  content: "";
+}
+/* line 260, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-double-right:before {
+  content: "";
+}
+/* line 261, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-double-up:before {
+  content: "";
+}
+/* line 262, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-double-down:before {
+  content: "";
+}
+/* line 263, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-left:before {
+  content: "";
+}
+/* line 264, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-right:before {
+  content: "";
+}
+/* line 265, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-up:before {
+  content: "";
+}
+/* line 266, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angle-down:before {
+  content: "";
+}
+/* line 267, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-desktop:before {
+  content: "";
+}
+/* line 268, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-laptop:before {
+  content: "";
+}
+/* line 269, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tablet:before {
+  content: "";
+}
+/* line 270, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-mobile-phone:before,
+body#tinymce.wp-editor .fa-mobile:before {
+  content: "";
+}
+/* line 272, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-circle-o:before {
+  content: "";
+}
+/* line 273, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-quote-left:before {
+  content: "";
+}
+/* line 274, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-quote-right:before {
+  content: "";
+}
+/* line 275, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-spinner:before {
+  content: "";
+}
+/* line 276, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-circle:before {
+  content: "";
+}
+/* line 277, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-mail-reply:before,
+body#tinymce.wp-editor .fa-reply:before {
+  content: "";
+}
+/* line 279, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-github-alt:before {
+  content: "";
+}
+/* line 280, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-folder-o:before {
+  content: "";
+}
+/* line 281, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-folder-open-o:before {
+  content: "";
+}
+/* line 282, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-smile-o:before {
+  content: "";
+}
+/* line 283, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-frown-o:before {
+  content: "";
+}
+/* line 284, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-meh-o:before {
+  content: "";
+}
+/* line 285, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gamepad:before {
+  content: "";
+}
+/* line 286, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-keyboard-o:before {
+  content: "";
+}
+/* line 287, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flag-o:before {
+  content: "";
+}
+/* line 288, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flag-checkered:before {
+  content: "";
+}
+/* line 289, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-terminal:before {
+  content: "";
+}
+/* line 290, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-code:before {
+  content: "";
+}
+/* line 291, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-mail-reply-all:before,
+body#tinymce.wp-editor .fa-reply-all:before {
+  content: "";
+}
+/* line 293, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-star-half-empty:before,
+body#tinymce.wp-editor .fa-star-half-full:before,
+body#tinymce.wp-editor .fa-star-half-o:before {
+  content: "";
+}
+/* line 296, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-location-arrow:before {
+  content: "";
+}
+/* line 297, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-crop:before {
+  content: "";
+}
+/* line 298, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-code-fork:before {
+  content: "";
+}
+/* line 299, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-unlink:before,
+body#tinymce.wp-editor .fa-chain-broken:before {
+  content: "";
+}
+/* line 301, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-question:before {
+  content: "";
+}
+/* line 302, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-info:before {
+  content: "";
+}
+/* line 303, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-exclamation:before {
+  content: "";
+}
+/* line 304, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-superscript:before {
+  content: "";
+}
+/* line 305, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-subscript:before {
+  content: "";
+}
+/* line 306, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-eraser:before {
+  content: "";
+}
+/* line 307, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-puzzle-piece:before {
+  content: "";
+}
+/* line 308, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-microphone:before {
+  content: "";
+}
+/* line 309, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-microphone-slash:before {
+  content: "";
+}
+/* line 310, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-shield:before {
+  content: "";
+}
+/* line 311, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-calendar-o:before {
+  content: "";
+}
+/* line 312, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fire-extinguisher:before {
+  content: "";
+}
+/* line 313, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rocket:before {
+  content: "";
+}
+/* line 314, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-maxcdn:before {
+  content: "";
+}
+/* line 315, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-circle-left:before {
+  content: "";
+}
+/* line 316, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-circle-right:before {
+  content: "";
+}
+/* line 317, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-circle-up:before {
+  content: "";
+}
+/* line 318, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-chevron-circle-down:before {
+  content: "";
+}
+/* line 319, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-html5:before {
+  content: "";
+}
+/* line 320, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-css3:before {
+  content: "";
+}
+/* line 321, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-anchor:before {
+  content: "";
+}
+/* line 322, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-unlock-alt:before {
+  content: "";
+}
+/* line 323, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bullseye:before {
+  content: "";
+}
+/* line 324, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ellipsis-h:before {
+  content: "";
+}
+/* line 325, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ellipsis-v:before {
+  content: "";
+}
+/* line 326, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rss-square:before {
+  content: "";
+}
+/* line 327, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-play-circle:before {
+  content: "";
+}
+/* line 328, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ticket:before {
+  content: "";
+}
+/* line 329, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-minus-square:before {
+  content: "";
+}
+/* line 330, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-minus-square-o:before {
+  content: "";
+}
+/* line 331, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-level-up:before {
+  content: "";
+}
+/* line 332, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-level-down:before {
+  content: "";
+}
+/* line 333, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-check-square:before {
+  content: "";
+}
+/* line 334, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pencil-square:before {
+  content: "";
+}
+/* line 335, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-external-link-square:before {
+  content: "";
+}
+/* line 336, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-share-square:before {
+  content: "";
+}
+/* line 337, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-compass:before {
+  content: "";
+}
+/* line 338, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-down:before,
+body#tinymce.wp-editor .fa-caret-square-o-down:before {
+  content: "";
+}
+/* line 340, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-up:before,
+body#tinymce.wp-editor .fa-caret-square-o-up:before {
+  content: "";
+}
+/* line 342, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-right:before,
+body#tinymce.wp-editor .fa-caret-square-o-right:before {
+  content: "";
+}
+/* line 344, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-euro:before,
+body#tinymce.wp-editor .fa-eur:before {
+  content: "";
+}
+/* line 346, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gbp:before {
+  content: "";
+}
+/* line 347, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dollar:before,
+body#tinymce.wp-editor .fa-usd:before {
+  content: "";
+}
+/* line 349, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-rupee:before,
+body#tinymce.wp-editor .fa-inr:before {
+  content: "";
+}
+/* line 351, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cny:before,
+body#tinymce.wp-editor .fa-rmb:before,
+body#tinymce.wp-editor .fa-yen:before,
+body#tinymce.wp-editor .fa-jpy:before {
+  content: "";
+}
+/* line 355, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ruble:before,
+body#tinymce.wp-editor .fa-rouble:before,
+body#tinymce.wp-editor .fa-rub:before {
+  content: "";
+}
+/* line 358, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-won:before,
+body#tinymce.wp-editor .fa-krw:before {
+  content: "";
+}
+/* line 360, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bitcoin:before,
+body#tinymce.wp-editor .fa-btc:before {
+  content: "";
+}
+/* line 362, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file:before {
+  content: "";
+}
+/* line 363, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-text:before {
+  content: "";
+}
+/* line 364, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-alpha-asc:before {
+  content: "";
+}
+/* line 365, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-alpha-desc:before {
+  content: "";
+}
+/* line 366, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-amount-asc:before {
+  content: "";
+}
+/* line 367, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-amount-desc:before {
+  content: "";
+}
+/* line 368, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-numeric-asc:before {
+  content: "";
+}
+/* line 369, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sort-numeric-desc:before {
+  content: "";
+}
+/* line 370, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-thumbs-up:before {
+  content: "";
+}
+/* line 371, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-thumbs-down:before {
+  content: "";
+}
+/* line 372, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-youtube-square:before {
+  content: "";
+}
+/* line 373, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-youtube:before {
+  content: "";
+}
+/* line 374, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-xing:before {
+  content: "";
+}
+/* line 375, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-xing-square:before {
+  content: "";
+}
+/* line 376, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-youtube-play:before {
+  content: "";
+}
+/* line 377, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dropbox:before {
+  content: "";
+}
+/* line 378, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stack-overflow:before {
+  content: "";
+}
+/* line 379, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-instagram:before {
+  content: "";
+}
+/* line 380, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-flickr:before {
+  content: "";
+}
+/* line 381, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-adn:before {
+  content: "";
+}
+/* line 382, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bitbucket:before {
+  content: "";
+}
+/* line 383, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bitbucket-square:before {
+  content: "";
+}
+/* line 384, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tumblr:before {
+  content: "";
+}
+/* line 385, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tumblr-square:before {
+  content: "";
+}
+/* line 386, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-long-arrow-down:before {
+  content: "";
+}
+/* line 387, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-long-arrow-up:before {
+  content: "";
+}
+/* line 388, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-long-arrow-left:before {
+  content: "";
+}
+/* line 389, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-long-arrow-right:before {
+  content: "";
+}
+/* line 390, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-apple:before {
+  content: "";
+}
+/* line 391, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-windows:before {
+  content: "";
+}
+/* line 392, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-android:before {
+  content: "";
+}
+/* line 393, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-linux:before {
+  content: "";
+}
+/* line 394, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dribbble:before {
+  content: "";
+}
+/* line 395, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-skype:before {
+  content: "";
+}
+/* line 396, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-foursquare:before {
+  content: "";
+}
+/* line 397, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-trello:before {
+  content: "";
+}
+/* line 398, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-female:before {
+  content: "";
+}
+/* line 399, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-male:before {
+  content: "";
+}
+/* line 400, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-gittip:before {
+  content: "";
+}
+/* line 401, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sun-o:before {
+  content: "";
+}
+/* line 402, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-moon-o:before {
+  content: "";
+}
+/* line 403, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-archive:before {
+  content: "";
+}
+/* line 404, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bug:before {
+  content: "";
+}
+/* line 405, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-vk:before {
+  content: "";
+}
+/* line 406, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-weibo:before {
+  content: "";
+}
+/* line 407, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-renren:before {
+  content: "";
+}
+/* line 408, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pagelines:before {
+  content: "";
+}
+/* line 409, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stack-exchange:before {
+  content: "";
+}
+/* line 410, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-o-right:before {
+  content: "";
+}
+/* line 411, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-arrow-circle-o-left:before {
+  content: "";
+}
+/* line 412, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-left:before,
+body#tinymce.wp-editor .fa-caret-square-o-left:before {
+  content: "";
+}
+/* line 414, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-dot-circle-o:before {
+  content: "";
+}
+/* line 415, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-wheelchair:before {
+  content: "";
+}
+/* line 416, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-vimeo-square:before {
+  content: "";
+}
+/* line 417, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-turkish-lira:before,
+body#tinymce.wp-editor .fa-try:before {
+  content: "";
+}
+/* line 419, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plus-square-o:before {
+  content: "";
+}
+/* line 420, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-space-shuttle:before {
+  content: "";
+}
+/* line 421, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-slack:before {
+  content: "";
+}
+/* line 422, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-envelope-square:before {
+  content: "";
+}
+/* line 423, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-wordpress:before {
+  content: "";
+}
+/* line 424, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-openid:before {
+  content: "";
+}
+/* line 425, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-institution:before,
+body#tinymce.wp-editor .fa-bank:before,
+body#tinymce.wp-editor .fa-university:before {
+  content: "";
+}
+/* line 428, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-mortar-board:before,
+body#tinymce.wp-editor .fa-graduation-cap:before {
+  content: "";
+}
+/* line 430, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-yahoo:before {
+  content: "";
+}
+/* line 431, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-google:before {
+  content: "";
+}
+/* line 432, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-reddit:before {
+  content: "";
+}
+/* line 433, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-reddit-square:before {
+  content: "";
+}
+/* line 434, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stumbleupon-circle:before {
+  content: "";
+}
+/* line 435, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-stumbleupon:before {
+  content: "";
+}
+/* line 436, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-delicious:before {
+  content: "";
+}
+/* line 437, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-digg:before {
+  content: "";
+}
+/* line 438, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pied-piper:before {
+  content: "";
+}
+/* line 439, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pied-piper-alt:before {
+  content: "";
+}
+/* line 440, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-drupal:before {
+  content: "";
+}
+/* line 441, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-joomla:before {
+  content: "";
+}
+/* line 442, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-language:before {
+  content: "";
+}
+/* line 443, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-fax:before {
+  content: "";
+}
+/* line 444, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-building:before {
+  content: "";
+}
+/* line 445, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-child:before {
+  content: "";
+}
+/* line 446, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paw:before {
+  content: "";
+}
+/* line 447, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-spoon:before {
+  content: "";
+}
+/* line 448, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cube:before {
+  content: "";
+}
+/* line 449, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cubes:before {
+  content: "";
+}
+/* line 450, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-behance:before {
+  content: "";
+}
+/* line 451, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-behance-square:before {
+  content: "";
+}
+/* line 452, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-steam:before {
+  content: "";
+}
+/* line 453, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-steam-square:before {
+  content: "";
+}
+/* line 454, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-recycle:before {
+  content: "";
+}
+/* line 455, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-automobile:before,
+body#tinymce.wp-editor .fa-car:before {
+  content: "";
+}
+/* line 457, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cab:before,
+body#tinymce.wp-editor .fa-taxi:before {
+  content: "";
+}
+/* line 459, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tree:before {
+  content: "";
+}
+/* line 460, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-spotify:before {
+  content: "";
+}
+/* line 461, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-deviantart:before {
+  content: "";
+}
+/* line 462, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-soundcloud:before {
+  content: "";
+}
+/* line 463, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-database:before {
+  content: "";
+}
+/* line 464, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-pdf-o:before {
+  content: "";
+}
+/* line 465, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-word-o:before {
+  content: "";
+}
+/* line 466, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-excel-o:before {
+  content: "";
+}
+/* line 467, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-powerpoint-o:before {
+  content: "";
+}
+/* line 468, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-photo-o:before,
+body#tinymce.wp-editor .fa-file-picture-o:before,
+body#tinymce.wp-editor .fa-file-image-o:before {
+  content: "";
+}
+/* line 471, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-zip-o:before,
+body#tinymce.wp-editor .fa-file-archive-o:before {
+  content: "";
+}
+/* line 473, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-sound-o:before,
+body#tinymce.wp-editor .fa-file-audio-o:before {
+  content: "";
+}
+/* line 475, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-movie-o:before,
+body#tinymce.wp-editor .fa-file-video-o:before {
+  content: "";
+}
+/* line 477, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-file-code-o:before {
+  content: "";
+}
+/* line 478, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-vine:before {
+  content: "";
+}
+/* line 479, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-codepen:before {
+  content: "";
+}
+/* line 480, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-jsfiddle:before {
+  content: "";
+}
+/* line 481, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-life-bouy:before,
+body#tinymce.wp-editor .fa-life-buoy:before,
+body#tinymce.wp-editor .fa-life-saver:before,
+body#tinymce.wp-editor .fa-support:before,
+body#tinymce.wp-editor .fa-life-ring:before {
+  content: "";
+}
+/* line 486, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-circle-o-notch:before {
+  content: "";
+}
+/* line 487, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ra:before,
+body#tinymce.wp-editor .fa-rebel:before {
+  content: "";
+}
+/* line 489, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ge:before,
+body#tinymce.wp-editor .fa-empire:before {
+  content: "";
+}
+/* line 491, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-git-square:before {
+  content: "";
+}
+/* line 492, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-git:before {
+  content: "";
+}
+/* line 493, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-hacker-news:before {
+  content: "";
+}
+/* line 494, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tencent-weibo:before {
+  content: "";
+}
+/* line 495, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-qq:before {
+  content: "";
+}
+/* line 496, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-wechat:before,
+body#tinymce.wp-editor .fa-weixin:before {
+  content: "";
+}
+/* line 498, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-send:before,
+body#tinymce.wp-editor .fa-paper-plane:before {
+  content: "";
+}
+/* line 500, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-send-o:before,
+body#tinymce.wp-editor .fa-paper-plane-o:before {
+  content: "";
+}
+/* line 502, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-history:before {
+  content: "";
+}
+/* line 503, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-circle-thin:before {
+  content: "";
+}
+/* line 504, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-header:before {
+  content: "";
+}
+/* line 505, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paragraph:before {
+  content: "";
+}
+/* line 506, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-sliders:before {
+  content: "";
+}
+/* line 507, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-share-alt:before {
+  content: "";
+}
+/* line 508, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-share-alt-square:before {
+  content: "";
+}
+/* line 509, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bomb:before {
+  content: "";
+}
+/* line 510, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-soccer-ball-o:before,
+body#tinymce.wp-editor .fa-futbol-o:before {
+  content: "";
+}
+/* line 512, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-tty:before {
+  content: "";
+}
+/* line 513, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-binoculars:before {
+  content: "";
+}
+/* line 514, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-plug:before {
+  content: "";
+}
+/* line 515, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-slideshare:before {
+  content: "";
+}
+/* line 516, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-twitch:before {
+  content: "";
+}
+/* line 517, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-yelp:before {
+  content: "";
+}
+/* line 518, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-newspaper-o:before {
+  content: "";
+}
+/* line 519, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-wifi:before {
+  content: "";
+}
+/* line 520, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-calculator:before {
+  content: "";
+}
+/* line 521, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paypal:before {
+  content: "";
+}
+/* line 522, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-google-wallet:before {
+  content: "";
+}
+/* line 523, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-visa:before {
+  content: "";
+}
+/* line 524, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-mastercard:before {
+  content: "";
+}
+/* line 525, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-discover:before {
+  content: "";
+}
+/* line 526, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-amex:before {
+  content: "";
+}
+/* line 527, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-paypal:before {
+  content: "";
+}
+/* line 528, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc-stripe:before {
+  content: "";
+}
+/* line 529, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bell-slash:before {
+  content: "";
+}
+/* line 530, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bell-slash-o:before {
+  content: "";
+}
+/* line 531, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-trash:before {
+  content: "";
+}
+/* line 532, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-copyright:before {
+  content: "";
+}
+/* line 533, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-at:before {
+  content: "";
+}
+/* line 534, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-eyedropper:before {
+  content: "";
+}
+/* line 535, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-paint-brush:before {
+  content: "";
+}
+/* line 536, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-birthday-cake:before {
+  content: "";
+}
+/* line 537, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-area-chart:before {
+  content: "";
+}
+/* line 538, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-pie-chart:before {
+  content: "";
+}
+/* line 539, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-line-chart:before {
+  content: "";
+}
+/* line 540, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-lastfm:before {
+  content: "";
+}
+/* line 541, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-lastfm-square:before {
+  content: "";
+}
+/* line 542, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-off:before {
+  content: "";
+}
+/* line 543, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-toggle-on:before {
+  content: "";
+}
+/* line 544, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bicycle:before {
+  content: "";
+}
+/* line 545, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-bus:before {
+  content: "";
+}
+/* line 546, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-ioxhost:before {
+  content: "";
+}
+/* line 547, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-angellist:before {
+  content: "";
+}
+/* line 548, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-cc:before {
+  content: "";
+}
+/* line 549, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-shekel:before,
+body#tinymce.wp-editor .fa-sheqel:before,
+body#tinymce.wp-editor .fa-ils:before {
+  content: "";
+}
+/* line 552, ../../scss/fa/_icons.scss */
+body#tinymce.wp-editor .fa-meanpath:before {
+  content: "";
+}
+/* line 66, ../../scss/partials/_typography.scss */
+body#tinymce.wp-editor p {
+  -ms-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+/* line 45, ../../scss/editor-style.scss */
+body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
+  color: #000000;
+  /* on hover */
+  /* on click */
+}
+/* line 49, ../../scss/editor-style.scss */
+body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
+  color: black;
+}
+/* line 58, ../../scss/editor-style.scss */
+body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+/* line 68, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1, body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2, body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3, body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4, body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+}
+/* line 71, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h1 a, body#tinymce.wp-editor .h1 a, body#tinymce.wp-editor h2 a, body#tinymce.wp-editor .h2 a, body#tinymce.wp-editor h3 a, body#tinymce.wp-editor .h3 a, body#tinymce.wp-editor h4 a, body#tinymce.wp-editor .h4 a, body#tinymce.wp-editor h5 a, body#tinymce.wp-editor .h5 a {
+  text-decoration: none;
+}
+/* line 76, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h1, body#tinymce.wp-editor .h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+}
+/* line 81, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h2, body#tinymce.wp-editor .h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+/* line 87, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h3, body#tinymce.wp-editor .h3 {
+  font-size: 1.125em;
+}
+/* line 91, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h4, body#tinymce.wp-editor .h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+/* line 96, ../../scss/editor-style.scss */
+body#tinymce.wp-editor h5, body#tinymce.wp-editor .h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* line 105, ../../scss/editor-style.scss */
+body#tinymce.wp-editor p {
+  margin: 0 0 1.5em;
+}
+/* line 109, ../../scss/editor-style.scss */
+body#tinymce.wp-editor table {
+  width: 100%;
+  border: 1px solid #eaedf2;
+  margin-bottom: 1.5em;
+}
+/* line 114, ../../scss/editor-style.scss */
+body#tinymce.wp-editor table caption {
+  margin: 0 0 7px;
+  font-size: 0.75em;
+  color: #9fa6b4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 123, ../../scss/editor-style.scss */
+body#tinymce.wp-editor tr {
+  border-bottom: 1px solid #eaedf2;
+}
+/* line 125, ../../scss/editor-style.scss */
+body#tinymce.wp-editor tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+/* line 130, ../../scss/editor-style.scss */
+body#tinymce.wp-editor td {
+  padding: 7px;
+  border-right: 1px solid #eaedf2;
+}
+/* line 134, ../../scss/editor-style.scss */
+body#tinymce.wp-editor td:last-child {
+  border-right: 0;
+}
+/* line 139, ../../scss/editor-style.scss */
+body#tinymce.wp-editor th {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eaedf2;
+  border-right: 1px solid #eaedf2;
+}
+/* line 144, ../../scss/editor-style.scss */
+body#tinymce.wp-editor th:last-child {
+  border-right: 0;
+}
+/* line 149, ../../scss/editor-style.scss */
+body#tinymce.wp-editor blockquote {
+  margin: 0 0 1.5em 0.75em;
+  padding: 0 0 0 0.75em;
+  border-left: 3px solid #2176C7;
+  font-style: italic;
+  color: #9fa6b4;
+}
+/* line 160, ../../scss/editor-style.scss */
+body#tinymce.wp-editor dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+/* line 167, ../../scss/editor-style.scss */
+body#tinymce.wp-editor img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto;
+}
+/* line 173, ../../scss/editor-style.scss */
+body#tinymce.wp-editor .size-auto,
+body#tinymce.wp-editor .size-full,
+body#tinymce.wp-editor .size-large,
+body#tinymce.wp-editor .size-medium,
+body#tinymce.wp-editor .size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+/* line 182, ../../scss/editor-style.scss */
+body#tinymce.wp-editor pre {
+  background: #000000;
+  color: #f8f9fa;
+  font-size: 0.9em;
+  padding: 1.5em;
+  margin: 0 0 1.5em;
+  border-radius: 3px;
+}
+@media only screen and (min-width: 481px) {
+  /* line 17, ../../scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    /* at this larger size, we can start to align images */
+  }
+  /* line 200, ../../scss/editor-style.scss */
+  body#tinymce.wp-editor .alignleft, body#tinymce.wp-editor img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  /* line 205, ../../scss/editor-style.scss */
+  body#tinymce.wp-editor .alignright, body#tinymce.wp-editor img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  /* line 210, ../../scss/editor-style.scss */
+  body#tinymce.wp-editor .aligncenter, body#tinymce.wp-editor img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
+}

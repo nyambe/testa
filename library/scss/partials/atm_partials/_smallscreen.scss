@@ -1,0 +1,219 @@
+body {
+
+@include breakpoint($smallscreen) {
+
+background: {
+	  image: image-url("fondo.jpg");
+	  repeat: no-repeat;
+	  position: top left;
+	};
+
+	@include background-size(cover);
+
+
+.content-a {
+	padding: 20px 0;
+}
+
+.content-b {
+	@include background(rgba(black, .3));
+
+}
+//final content-b
+
+
+
+
+.cabecera.home {
+
+	background: none;
+
+    .navigation {
+		display: none;
+	}
+
+	.logo {
+		@include span(6 of 6);
+		margin: 0 auto;
+
+	}
+
+	img {
+		width: 290px;
+			
+	}
+
+}
+// fin cabecera
+
+.main {
+
+	.principal {
+		margin-top: 0px;
+		color: $white;
+		font-weight: bold;
+
+	} // fin principal
+
+	section {
+
+		background: none;
+
+		ul.portada {
+			@include container;
+			li:hover {
+				.titular {
+					visibility: visible;
+				}
+			}
+
+			> li {
+				width: 33.3%;
+				margin-right: 0;
+				position: relative;
+
+				&:nth-child(odd) {
+						border-right: none;
+				}
+
+				&:nth-child(4) {
+			      width: 20%;
+			      margin-left: 20%;
+			      
+			      a {
+			      	border: none;
+			      }
+			    }
+
+			    &:nth-child(5) {
+			      width: 20%;
+			      a {
+			      	border: none;
+			      }
+
+			    }
+
+			    &:nth-child(6) {
+			      width: 20%;
+			      a {
+			      	border: none;
+			      }
+			    }
+
+				img {
+					margin-bottom: -3px;
+				}
+
+				> a {
+						border-bottom: 17px solid $paleryellow;
+						border-top: 17px solid $paleryellow;
+						z-index: 10;
+
+					&:hover {
+						.titular {
+							left: 0;
+
+						}
+
+						img {
+							visibility: hidden;
+						}
+					}
+				}
+
+				.titular {
+
+					bottom: 5%;
+					padding: 2% 0;
+					z-index: 10;
+					border: 1px solid $white;
+					@include border-image( image-url("borde.png") 2 13 3 9 repeat );
+					visibility: hidden;
+
+				}
+
+				.sub-menu {
+					.titular {
+						border: none;
+					}
+				}
+
+				.last {
+					a, img {
+						border: none;
+					}
+				}
+
+				span.menusmall {
+					display: block;
+					width: 60%;
+					margin: 0 auto;
+				}
+			
+
+			} // fin > li ** Solo los li del primer nivel
+
+		} // fin ul.portada
+
+
+
+		.subnav {
+			@include box-sizing(border-box);
+			position: absolute;
+			@include background(rgba(red, .7));
+			height: 100%;
+			width: 100%;
+			top: 0;
+			padding-top: 30%;
+			padding-left: 50%;
+			text-align: left;
+
+		
+
+			li {
+				float: none;
+				width: auto;
+				
+			}
+
+			.marco {
+				border: 2px solid white;
+				height: 100px;
+				width: 200px;
+				position: absolute;
+				top: 65px;
+				//@include border-image(url(../image/borde.png) 2 13 3 9 repeat);
+				//@include border-image( image-url("borde.png") 2 13 3 9 no-repeat );
+
+			}
+
+			a {
+				border: none;
+				text-transform: none;
+				font-size: .7em;
+
+			}
+
+		} // fin subnav
+
+
+	}  // fin section
+
+
+}
+
+
+footer {
+
+	li {
+		display: inline-block;
+
+	}
+}
+
+}
+//final breakpoint
+}
+//final body
+
+
