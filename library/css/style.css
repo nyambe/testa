@@ -4713,6 +4713,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
+	min-width: 200px;
 	background-image: url('../../images/fondo.jpg?1416693040');
 	background-repeat: no-repeat;
 	background-position: top left;
@@ -4727,7 +4728,7 @@ body:after {
 	clear: both;
 }
 
-/* line 23, ../../scss/partials/atm_partials/_base.scss */
+/* line 25, ../../scss/partials/atm_partials/_base.scss */
 
 h1,
 h2,
@@ -4735,22 +4736,22 @@ h3,
 h4,
 h5,
 h6 {
-	color: #384040;
 	font-weight: normal;
-	text-shadow: #d2c510, 1px, 1px;
+	-webkit-transition: all 1s ease-in;
+	transition: all 1s ease-in;
 }
 
-/* line 30, ../../scss/partials/atm_partials/_base.scss */
+/* line 33, ../../scss/partials/atm_partials/_base.scss */
 
 h1 {
 	font-size: 1.5rem;
-	color: white;
+	color: #ffffff;
 	margin-bottom: .4rem;
 	padding-top: 10px;
 	text-transform: uppercase;
 }
 
-/* line 38, ../../scss/partials/atm_partials/_base.scss */
+/* line 41, ../../scss/partials/atm_partials/_base.scss */
 
 h2 {
 	font-size: 1.2rem;
@@ -4759,7 +4760,7 @@ h2 {
 	color: #d2c510;
 }
 
-/* line 45, ../../scss/partials/atm_partials/_base.scss */
+/* line 48, ../../scss/partials/atm_partials/_base.scss */
 
 h3 {
 	font-size: 1rem;
@@ -4768,41 +4769,59 @@ h3 {
 	color: #a3990c;
 }
 
-/* line 52, ../../scss/partials/atm_partials/_base.scss */
+/* line 55, ../../scss/partials/atm_partials/_base.scss */
 
 a {
 	color: #d2c510;
 	text-decoration: none;
 }
 
-/* line 57, ../../scss/partials/atm_partials/_base.scss */
+/* line 60, ../../scss/partials/atm_partials/_base.scss */
 
 p {
 	margin-bottom: 10px;
+	text-indent: 40px;
+	text-align: justify;
 }
 
-/* line 61, ../../scss/partials/atm_partials/_base.scss */
+/* line 66, ../../scss/partials/atm_partials/_base.scss */
+
+.breadcrumbs {
+	font-size: .5em;
+	width: 100%;
+	text-align: center;
+	color: #475B62;
+}
+
+/* line 67, ../../scss/partials/atm_partials/_base.scss */
+
+.breadcrumbs span a {
+	color: #475B62;
+}
+
+/* line 76, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera {
 	background: rgba(0, 0, 0, 0.3);
 	padding: 0 5px;
 }
 
-/* line 65, ../../scss/partials/atm_partials/_base.scss */
+/* line 80, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera .logo {
 	width: 30%;
 	float: left;
-	margin-bottom: 1%;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-/* line 72, ../../scss/partials/atm_partials/_base.scss */
+/* line 88, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera img {
 	width: 75%;
 }
 
-/* line 80, ../../scss/partials/atm_partials/_base.scss */
+/* line 98, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera .nav {
 	margin: 0;
@@ -4856,7 +4875,7 @@ p {
 	padding-right: 0;
 }
 
-/* line 87, ../../scss/partials/atm_partials/_base.scss */
+/* line 105, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera .nav ul ul,
 .cabecera .nav ul li {
@@ -4868,7 +4887,7 @@ p {
 	list-style: none;
 }
 
-/* line 97, ../../scss/partials/atm_partials/_base.scss */
+/* line 115, ../../scss/partials/atm_partials/_base.scss */
 
 .cabecera .nav ul li,
 .cabecera .nav ul a,
@@ -4879,18 +4898,21 @@ p {
 	padding-left: 14px;
 }
 
-/* line 113, ../../scss/partials/atm_partials/_base.scss */
+/* line 122, ../../scss/partials/atm_partials/_base.scss */
 
-.head_layout {
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
-	margin: 0 auto;
-	max-width: 990px;
-	min-width: 320px;
-	padding: 0 2%;
+.cabecera .nav ul a:hover {
+	color: #d2c510;
 }
 
-/* line 126, ../../scss/partials/atm_partials/_base.scss */
+/* line 135, ../../scss/partials/atm_partials/_base.scss */
+
+.head_layout {
+	margin: 0 auto;
+	max-width: 990px;
+	padding: 0 7%;
+}
+
+/* line 151, ../../scss/partials/atm_partials/_base.scss */
 
 .main section {
 	background: #d2c510;
@@ -4900,7 +4922,7 @@ p {
 	padding-bottom: 1px;
 }
 
-/* line 134, ../../scss/partials/atm_partials/_base.scss */
+/* line 159, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul {
 	width: 100%;
@@ -4908,7 +4930,7 @@ p {
 	margin-right: 0;
 }
 
-/* line 137, ../../scss/partials/atm_partials/_base.scss */
+/* line 162, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li {
 	float: left;
@@ -4917,26 +4939,26 @@ p {
 	position: relative;
 }
 
-/* line 142, ../../scss/partials/atm_partials/_base.scss */
+/* line 167, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li:nth-child(odd) {
 	border-right: 2px solid #d2c510;
 }
 
-/* line 146, ../../scss/partials/atm_partials/_base.scss */
+/* line 171, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li:hover {
 	opacity: .9;
 	background: #9D231C;
 }
 
-/* line 151, ../../scss/partials/atm_partials/_base.scss */
+/* line 176, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li img {
 	width: 100%;
 }
 
-/* line 155, ../../scss/partials/atm_partials/_base.scss */
+/* line 180, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li ul {
 	left: 0;
@@ -4949,7 +4971,7 @@ p {
 	transition: 200ms ease;
 }
 
-/* line 173, ../../scss/partials/atm_partials/_base.scss */
+/* line 198, ../../scss/partials/atm_partials/_base.scss */
 
 .main section ul li:hover ul {
 	visibility: visible;
@@ -4957,10 +4979,10 @@ p {
 	filter: alpha(opacity=100);
 }
 
-/* line 186, ../../scss/partials/atm_partials/_base.scss */
+/* line 211, ../../scss/partials/atm_partials/_base.scss */
 
 .main section a {
-	color: white;
+	color: #ffffff;
 	display: block;
 	width: 100%;
 	position: relative;
@@ -4971,7 +4993,7 @@ p {
 	background-repeat: no-repeat;
 }
 
-/* line 200, ../../scss/partials/atm_partials/_base.scss */
+/* line 225, ../../scss/partials/atm_partials/_base.scss */
 
 .main section a .titular {
 	background: rgba(0, 0, 0, 0.7);
@@ -4983,7 +5005,7 @@ p {
 	bottom: 5px;
 }
 
-/* line 219, ../../scss/partials/atm_partials/_base.scss */
+/* line 244, ../../scss/partials/atm_partials/_base.scss */
 
 .main .principal {
 	font-size: .6em;
@@ -4992,7 +5014,7 @@ p {
 	margin: 5px auto;
 }
 
-/* line 227, ../../scss/partials/atm_partials/_base.scss */
+/* line 252, ../../scss/partials/atm_partials/_base.scss */
 
 .main .redes {
 	margin-top: 5px;
@@ -5012,7 +5034,7 @@ p {
 	clear: both;
 }
 
-/* line 231, ../../scss/partials/atm_partials/_base.scss */
+/* line 256, ../../scss/partials/atm_partials/_base.scss */
 
 .main .redes ul.nav {
 	margin: 0;
@@ -5196,7 +5218,7 @@ p {
 	border: none;
 }
 
-/* line 249, ../../scss/partials/atm_partials/_base.scss */
+/* line 274, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu {
 	position: absolute;
@@ -5209,7 +5231,7 @@ p {
 	background-size: cover;
 }
 
-/* line 265, ../../scss/partials/atm_partials/_base.scss */
+/* line 290, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu li,
 .portada ul.sub-menu a,
@@ -5625,50 +5647,50 @@ p {
 	border: none;
 }
 
-/* line 280, ../../scss/partials/atm_partials/_base.scss */
+/* line 305, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu li {
 	margin-left: 40%;
 	margin-right: 10%;
 }
 
-/* line 290, ../../scss/partials/atm_partials/_base.scss */
+/* line 315, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(2) ul {
 	background-image: url('../../images/background_eventos_empresa.jpg?1417029781');
 }
 
-/* line 297, ../../scss/partials/atm_partials/_base.scss */
+/* line 322, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(3) ul {
 	background-image: url('../../images/background_actividades.jpg?1417029925');
 }
 
-/* line 304, ../../scss/partials/atm_partials/_base.scss */
+/* line 329, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(4) ul {
 	background-image: url('../../images/portada_contacto.jpg?1417030118');
 }
 
-/* line 311, ../../scss/partials/atm_partials/_base.scss */
+/* line 336, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(5) ul {
 	background-image: url('../../images/portada_instalaciones.jpg?1417030088');
 }
 
-/* line 318, ../../scss/partials/atm_partials/_base.scss */
+/* line 343, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(6) ul {
 	background-image: url('../../images/portada_blog.jpg?1417030220');
 }
 
-/* line 327, ../../scss/partials/atm_partials/_base.scss */
+/* line 352, ../../scss/partials/atm_partials/_base.scss */
 
 .portada > li > a {
 	z-index: 10;
 }
 
-/* line 338, ../../scss/partials/atm_partials/_base.scss */
+/* line 363, ../../scss/partials/atm_partials/_base.scss */
 
 footer {
 	text-align: center;
@@ -5676,7 +5698,7 @@ footer {
 	color: white;
 }
 
-/* line 339, ../../scss/partials/atm_partials/_base.scss */
+/* line 364, ../../scss/partials/atm_partials/_base.scss */
 
 footer .layout {
 	background: rgba(0, 0, 0, 0.7);
@@ -5687,7 +5709,7 @@ footer .layout {
 	margin-bottom: 5px;
 }
 
-/* line 354, ../../scss/partials/atm_partials/_base.scss */
+/* line 379, ../../scss/partials/atm_partials/_base.scss */
 
 footer .social {
 	max-width: 100%;
@@ -5705,7 +5727,7 @@ footer .social:after {
 	clear: both;
 }
 
-/* line 359, ../../scss/partials/atm_partials/_base.scss */
+/* line 384, ../../scss/partials/atm_partials/_base.scss */
 
 footer .social li {
 	width: 13.7931%;
@@ -5761,41 +5783,35 @@ footer .social li:nth-child(6n + 6) {
 	clear: none;
 }
 
-/* line 364, ../../scss/partials/atm_partials/_base.scss */
+/* line 401, ../../scss/partials/atm_partials/_base.scss */
 
 footer .footer-nav {
 	display: inline-block;
 }
 
-/* line 367, ../../scss/partials/atm_partials/_base.scss */
-
-footer .footer-nav li::after {
-	content: " - ";
-}
-
-/* line 379, ../../scss/partials/atm_partials/_base.scss */
+/* line 423, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos {
 	background: #71b104;
 }
 
-/* line 383, ../../scss/partials/atm_partials/_base.scss */
+/* line 427, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos ul li {
 	width: 100%;
 	border: none;
 }
 
-/* line 387, ../../scss/partials/atm_partials/_base.scss */
+/* line 431, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos ul li img {
 	height: 100px;
 }
 
-/* line 393, ../../scss/partials/atm_partials/_base.scss */
+/* line 437, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos a {
-	color: white;
+	color: #ffffff;
 	display: block;
 	width: 100%;
 	height: 100px;
@@ -5803,7 +5819,7 @@ footer .footer-nav li::after {
 	text-transform: uppercase;
 }
 
-/* line 403, ../../scss/partials/atm_partials/_base.scss */
+/* line 447, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos a .titular {
 	background: rgba(0, 0, 0, 0.7);
@@ -5815,7 +5831,7 @@ footer .footer-nav li::after {
 	bottom: 5px;
 }
 
-/* line 416, ../../scss/partials/atm_partials/_base.scss */
+/* line 460, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos .titulo {
 	text-transform: uppercase;
@@ -5823,7 +5839,7 @@ footer .footer-nav li::after {
 	font-size: 1rem;
 }
 
-/* line 425, ../../scss/partials/atm_partials/_base.scss */
+/* line 469, ../../scss/partials/atm_partials/_base.scss */
 
 article {
 	font-size: .9rem;
@@ -5846,27 +5862,27 @@ article:after {
 	clear: both;
 }
 
-/* line 433, ../../scss/partials/atm_partials/_base.scss */
+/* line 477, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion {
 	width: 100%;
 	height: 200px;
 	margin: 0 auto;
 	padding: 15px 10px 20px 10px;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
 }
 
-/* line 441, ../../scss/partials/atm_partials/_base.scss */
+/* line 485, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion h3 {
 	font-size: 1.5rem;
-	color: white;
+	color: #ffffff;
 	width: 224px;
 	margin: 0 auto;
 }
 
-/* line 448, ../../scss/partials/atm_partials/_base.scss */
+/* line 492, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion h5 a {
 	text-transform: none;
@@ -5875,16 +5891,16 @@ article:after {
 	border: none;
 }
 
-/* line 455, ../../scss/partials/atm_partials/_base.scss */
+/* line 499, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion button {
 	border: none;
 	background: none;
-	color: white;
+	color: #ffffff;
 	font-size: 2.5rem;
 }
 
-/* line 465, ../../scss/partials/atm_partials/_base.scss */
+/* line 509, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior {
 	max-width: 100%;
@@ -5908,7 +5924,7 @@ article:after {
 	clear: both;
 }
 
-/* line 471, ../../scss/partials/atm_partials/_base.scss */
+/* line 515, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .logo {
 	width: 28.57143%;
@@ -5916,18 +5932,24 @@ article:after {
 	margin-right: 7.14286%;
 }
 
-/* line 476, ../../scss/partials/atm_partials/_base.scss */
+/* line 520, ../../scss/partials/atm_partials/_base.scss */
 
-.nav_superior .page-title {
+.nav_superior .title_box {
 	width: 28.57143%;
 	float: left;
 	margin-right: 7.14286%;
+	padding-top: 10px;
+}
+
+/* line 525, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .page-title {
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-/* line 484, ../../scss/partials/atm_partials/_base.scss */
+/* line 532, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav {
 	width: 28.57143%;
@@ -5935,28 +5957,35 @@ article:after {
 	margin-right: 0;
 }
 
-/* line 488, ../../scss/partials/atm_partials/_base.scss */
+/* line 534, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .nav > ul {
+	margin-top: 0;
+}
+
+/* line 539, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .fa {
 	font-size: 2em;
 	float: right;
 }
 
-/* line 492, ../../scss/partials/atm_partials/_base.scss */
+/* line 544, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .fa-bars {
 	width: 100%;
 	text-align: right;
+	padding-top: 10px;
 }
 
-/* line 510, ../../scss/partials/atm_partials/_base.scss */
+/* line 563, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav {
 	border-bottom: 0;
 	margin: 0; /* end .menu li */ /* highlight current page */ /* end current highlighters */ /* Reveal CSS Nav*/
 }
 
-/* line 514, ../../scss/partials/atm_partials/_base.scss */
+/* line 567, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li { /*
   so you really have to rethink your dropdowns for mobile.
@@ -5967,14 +5996,12 @@ article:after {
   */
 }
 
-/* line 516, ../../scss/partials/atm_partials/_base.scss */
+/* line 569, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li a {
 	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 0.75em;
-	margin-top: -14px; /*
+	color: #ffffff;
+	text-decoration: none; /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
   the style.scss file where it's relevant. We want to
@@ -5982,14 +6009,14 @@ article:after {
   */
 }
 
-/* line 550, ../../scss/partials/atm_partials/_base.scss */
+/* line 603, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li ul.sub-menu li a,
 .nav_superior .nav li ul.children li a {
 	padding-left: 30px;
 }
 
-/* line 583, ../../scss/partials/atm_partials/_base.scss */
+/* line 636, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul ul,
 .nav_superior .nav ul li,
@@ -6003,17 +6030,17 @@ article:after {
 	vertical-align: baseline;
 	list-style: none;
 	position: relative;
-	font-size: .6rem;
+	font-size: .7rem;
 	text-align: left;
 }
 
-/* line 598, ../../scss/partials/atm_partials/_base.scss */
+/* line 651, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul > li {
 	position: relative;
 }
 
-/* line 602, ../../scss/partials/atm_partials/_base.scss */
+/* line 655, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li ul {
 	position: absolute;
@@ -6025,7 +6052,7 @@ article:after {
 	transition: 200ms ease;
 }
 
-/* line 614, ../../scss/partials/atm_partials/_base.scss */
+/* line 667, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul > li:hover ul {
 	visibility: visible;
@@ -6033,7 +6060,7 @@ article:after {
 	filter: alpha(opacity=100);
 }
 
-/* line 620, ../../scss/partials/atm_partials/_base.scss */
+/* line 673, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 {
 	background-color: #000000;
@@ -6041,16 +6068,17 @@ article:after {
 	right: 1px;
 	top: 35px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-/* line 633, ../../scss/partials/atm_partials/_base.scss */
+/* line 687, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li {
 	position: relative;
 	border-right: 1px solid #333333;
 }
 
-/* line 637, ../../scss/partials/atm_partials/_base.scss */
+/* line 691, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li > a {
 	padding: 7px 21px;
@@ -6058,7 +6086,7 @@ article:after {
 	color: #d2c510;
 }
 
-/* line 643, ../../scss/partials/atm_partials/_base.scss */
+/* line 697, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li > a:first-child:nth-last-child(2):before {
 	content: "";
@@ -6069,7 +6097,7 @@ article:after {
 	right: 10px;
 }
 
-/* line 656, ../../scss/partials/atm_partials/_base.scss */
+/* line 710, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li:hover > ul {
 	opacity: 1;
@@ -6077,22 +6105,59 @@ article:after {
 	margin: 0;
 }
 
-/* line 662, ../../scss/partials/atm_partials/_base.scss */
+/* line 717, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li:hover > a {
-	color: #EAE3CB;
+	color: #d2c510;
+}
+
+/* line 724, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .nav .animenu2 > li ul .current-menu-item a {
+	color: #d2c510;
+}
+
+/* line 729, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .nav .animenu2 > li ul a:hover {
+	color: #d2c510;
+}
+
+/* line 737, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .nav .animenu2 li.current-menu-parent > a {
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 743, ../../scss/partials/atm_partials/_base.scss */
+
+.nav_superior .nav .animenu2 > li.current_page_item > a {
+	background: rgba(255, 255, 255, 0.2);
 }
 
 /* end .nav_superiros */
 
-/* line 2, ../../scss/partials/atm_partials/_layout.scss */
+/* line 5, ../../scss/partials/atm_partials/_layout.scss */
+
+.movil {
+	display: block;
+}
+
+/* line 10, ../../scss/partials/atm_partials/_layout.scss */
+
+.nomovil {
+	display: none;
+}
+
+/* line 23, ../../scss/partials/atm_partials/_layout.scss */
 
 .cf {
 	margin: 0;
 	padding: 0;
 }
 
-/* line 8, ../../scss/partials/atm_partials/_layout.scss */
+/* line 29, ../../scss/partials/atm_partials/_layout.scss */
 
 .layout {
 	-webkit-transition: all 1s ease-out;
@@ -6127,25 +6192,25 @@ article:after {
 	clear: both;
 }
 
-/* line 20, ../../scss/partials/atm_partials/_layout.scss */
+/* line 43, ../../scss/partials/atm_partials/_layout.scss */
 
 .home .layout {
 	max-width: 100%;
 }
 
-/* line 27, ../../scss/partials/atm_partials/_layout.scss */
+/* line 50, ../../scss/partials/atm_partials/_layout.scss */
 
 .paginas {
 	position: relative;
 }
 
-/* line 31, ../../scss/partials/atm_partials/_layout.scss */
+/* line 54, ../../scss/partials/atm_partials/_layout.scss */
 
 .paginas .content-a {
 	padding: 0;
 }
 
-/* line 35, ../../scss/partials/atm_partials/_layout.scss */
+/* line 58, ../../scss/partials/atm_partials/_layout.scss */
 
 .paginas .cabecera {
 	width: 100%;
@@ -6153,7 +6218,7 @@ article:after {
 	z-index: 6;
 }
 
-/* line 44, ../../scss/partials/atm_partials/_layout.scss */
+/* line 68, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_verde {
 	height: 100%;
@@ -6163,7 +6228,7 @@ article:after {
 	background-size: cover;
 }
 
-/* line 55, ../../scss/partials/atm_partials/_layout.scss */
+/* line 79, ../../scss/partials/atm_partials/_layout.scss */
 
 .green {
 	background: #71b104;
@@ -6171,7 +6236,7 @@ article:after {
 	padding: 0;
 }
 
-/* line 78, ../../scss/partials/atm_partials/_layout.scss */
+/* line 102, ../../scss/partials/atm_partials/_layout.scss */
 
 .nivo-caption li {
 	margin: 0;
@@ -6182,14 +6247,14 @@ article:after {
 	transition-timing-function: ease-in;
 }
 
-/* line 85, ../../scss/partials/atm_partials/_layout.scss */
+/* line 109, ../../scss/partials/atm_partials/_layout.scss */
 
 .nivo-caption a {
-	color: white;
+	color: #ffffff;
 	width: 30%;
 }
 
-/* line 91, ../../scss/partials/atm_partials/_layout.scss */
+/* line 115, ../../scss/partials/atm_partials/_layout.scss */
 
 .nivo-caption a.active {
 	color: #bdff05;
@@ -6197,79 +6262,30 @@ article:after {
 	width: 50%;
 }
 
-/* line 100, ../../scss/partials/atm_partials/_layout.scss */
+/* line 124, ../../scss/partials/atm_partials/_layout.scss */
 
 .nivo-caption a:hover {
 	font-weight: bold;
 }
 
-/* line 110, ../../scss/partials/atm_partials/_layout.scss */
+/* line 134, ../../scss/partials/atm_partials/_layout.scss */
 
 .nivo-directionNav .fa {
-	color: white;
+	color: #ffffff;
 	font-size: 1.5em;
 }
 
-/* line 116, ../../scss/partials/atm_partials/_layout.scss */
+/* line 140, ../../scss/partials/atm_partials/_layout.scss */
 
 .slider_container {
 	position: relative;
 }
 
-/* line 123, ../../scss/partials/atm_partials/_layout.scss */
+/* line 147, ../../scss/partials/atm_partials/_layout.scss */
 
 .quienes-somos .entry-content {
-	color: white;
+	color: #ffffff;
 	background: #71b104;
-	margin: 0;
-	padding-top: 4%;
-	padding-bottom: 5%;
-	font-size: .8em;
-	line-height: normal;
-}
-
-/* line 133, ../../scss/partials/atm_partials/_layout.scss */
-
-.quienes-somos .layout {
-	margin: 0 14%;
-}
-
-/* line 137, ../../scss/partials/atm_partials/_layout.scss */
-
-.quienes-somos .izq {
-	width: 28.57143%;
-	float: left;
-	margin-right: 7.14286%;
-}
-
-/* line 139, ../../scss/partials/atm_partials/_layout.scss */
-
-.quienes-somos .izq img {
-	width: 80%;
-	margin-top: 40%;
-}
-
-/* line 146, ../../scss/partials/atm_partials/_layout.scss */
-
-.quienes-somos .der {
-	width: 64.28571%;
-	float: right;
-	margin-right: 0;
-	padding-top: 3%;
-}
-
-/* line 151, ../../scss/partials/atm_partials/_layout.scss */
-
-.quienes-somos .footer {
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-/* line 159, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa .entry-content {
-	color: #000000;
-	background: white;
 	margin: 0;
 	padding-top: 4%;
 	padding-bottom: 5%;
@@ -6278,185 +6294,92 @@ article:after {
 	text-align: justify;
 }
 
-/* line 171, ../../scss/partials/atm_partials/_layout.scss */
+/* line 158, ../../scss/partials/atm_partials/_layout.scss */
 
-.eventos-de-empresa .centro .nav li a {
-	display: inline-block;
-	float: left;
-	font-size: 2em;
-	color: #708284;
-	width: 45px;
-}
-
-/* line 180, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa hr {
-	margin-bottom: 15px;
-}
-
-/* line 184, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa img {
-	width: 100%;
-}
-
-/* line 188, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa h2 {
-	text-align: center;
-	margin: 1%;
-	color: #757676;
-	text-transform: uppercase;
-}
-
-/* line 195, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa h3 {
-	font-weight: bold;
-	color: #757676;
-}
-
-/* line 200, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa .layout {
+.quienes-somos .layout {
 	margin: 0 14%;
 }
 
-/* line 204, ../../scss/partials/atm_partials/_layout.scss */
+/* line 162, ../../scss/partials/atm_partials/_layout.scss */
 
-.eventos-de-empresa .izq {
-	width: 37.5%;
+.quienes-somos .izq {
+	width: 28.57143%;
 	float: left;
-	margin-right: 4.16667%;
-	padding-top: 0;
+	margin-right: 7.14286%;
 }
 
-/* line 210, ../../scss/partials/atm_partials/_layout.scss */
+/* line 164, ../../scss/partials/atm_partials/_layout.scss */
 
-.eventos-de-empresa .centro {
-	width: 16.66667%;
-	float: left;
-	margin-right: 4.16667%;
-	padding-top: 10%;
+.quienes-somos .izq img {
+	width: 80%;
+	margin-top: 70px;
 }
 
-/* line 215, ../../scss/partials/atm_partials/_layout.scss */
+/* line 185, ../../scss/partials/atm_partials/_layout.scss */
 
-.eventos-de-empresa .der {
-	width: 37.5%;
-	float: right;
-	margin-right: 0;
-	padding-top: 0;
+.formacion header {
+	position: absolute;
+	background: #d2c510;
 }
 
-/* line 220, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-de-empresa .footer {
-	margin-top: 3%;
-	margin-bottom: 3%;
-}
-
-/* line 227, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav {
-	height: 177px;
-}
-
-/* line 230, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav ul {
-	width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 778px;
-}
-
-/* line 237, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav a {
-	display: inline-block;
-	height: 140px;
-	width: 184px;
-	float: left;
-	text-align: center;
-	cursor: pointer;
-	color: #757676;
-	background-image: url('../../images/eventos_nav.jpg');
-	background-repeat: no-repeat;
-	background-position-y: 26px;
-}
-
-/* line 252, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav a:hover {
-	background-position-y: -118px;
-	color: white;
-}
-
-/* line 256, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav a:hover span {
-	display: block;
-	background: #439be9;
-}
-
-/* line 265, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav li:nth-of-type(1) a {
-	width: 226px;
-}
-
-/* line 273, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav li:nth-of-type(2) a {
-	background-position-x: -255px;
-}
-
-/* line 281, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav li:nth-of-type(3) a {
-	background-position-x: -460px;
-}
-
-/* line 289, ../../scss/partials/atm_partials/_layout.scss */
-
-.eventos-nav li:nth-of-type(4) a {
-	background-position-x: -673px;
-}
-
-/* line 299, ../../scss/partials/atm_partials/_layout.scss */
+/* line 190, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .cabecera {
 	position: relative;
+	background: #d2c510;
 }
 
-/* line 303, ../../scss/partials/atm_partials/_layout.scss */
+/* line 195, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion section {
 	background: #d2c510;
 	text-align: center;
 }
 
-/* line 308, ../../scss/partials/atm_partials/_layout.scss */
+/* line 202, ../../scss/partials/atm_partials/_layout.scss */
 
-.formacion li a {
-	color: #757676;
+.formacion .nav_superior h1 {
+	color: #475B62;
 }
 
-/* line 312, ../../scss/partials/atm_partials/_layout.scss */
+/* line 206, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav_superior .nav .fa {
+	color: #475B62;
+}
+
+/* line 213, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .grey_background {
+	display: block;
+	width: 245px;
+	height: 60px;
+	background-image: url('../../images/fondo_gris_borde.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 10px 0 5px 0;
+	margin-left: 60%;
+	margin-bottom: 25px;
+}
+
+/* line 232, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .box_container {
 	width: 100%;
 	display: table;
 }
 
-/* line 318, ../../scss/partials/atm_partials/_layout.scss */
+/* line 238, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .box_container .inner {
 	display: table-row;
 }
 
-/* line 323, ../../scss/partials/atm_partials/_layout.scss */
+/* line 243, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .box_container .uno {
 	display: table-cell;
@@ -6467,34 +6390,104 @@ article:after {
   	}; */
 }
 
-/* line 337, ../../scss/partials/atm_partials/_layout.scss */
+/* line 257, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .box_container .der {
 	margin: 0;
 }
 
-/* line 343, ../../scss/partials/atm_partials/_layout.scss */
+/* line 264, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion {
-	height: 480px;
+	height: 100%;
 	display: table;
 	width: 100%;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 350, ../../scss/partials/atm_partials/_layout.scss */
+/* line 270, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-actividades {
+	width: 60%;
+	margin-top: 25%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 275, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-actividades h3 {
+	margin: 0 0 0 20%;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: right;
+	padding: 15px 15px 0 0;
+	line-height: .2em;
+}
+
+/* line 286, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-actividades h2 {
+	font-weight: bold;
+	font-size: 2.2em;
+	margin: 0 0 0 20%;
+	color: #ffffff;
+	text-align: right;
+	padding: 5px 15px 5px 0;
+}
+
+/* line 297, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-formacion {
+	width: 65%;
+	padding: 10px 15px 10px 0;
+	background: rgba(57, 177, 220, 0.7);
+}
+
+/* line 302, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-formacion p {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0 0 0 10%;
+	color: #ffffff;
+	text-align: right;
+}
+
+/* line 312, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-texto {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 30px 0;
+}
+
+/* line 315, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion .wrap-texto p {
+	margin: 0 auto;
+	padding: 5px  120px;
+	min-width: 300px;
+	font-size: .6em;
+	line-height: 1.2em;
+	max-width: 660px;
+}
+
+/* line 328, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion .uno {
 	display: table-cell;
 	height: 100%;
+	width: 50%;
 	background: #000000;
 	background-image: url('../../images/formacion_left.jpg');
 	background-repeat: no-repeat;
 	background-position: top left;
+	border-right: 1px solid #d2c510;
 	background-size: cover;
 }
 
-/* line 363, ../../scss/partials/atm_partials/_layout.scss */
+/* line 343, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul {
 	display: table-cell;
@@ -6503,15 +6496,16 @@ article:after {
 	height: 100%;
 }
 
-/* line 371, ../../scss/partials/atm_partials/_layout.scss */
+/* line 351, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li a {
 	display: block;
 	width: 100%;
 	height: 100%;
+	border-bottom: 1px solid #d2c510;
 }
 
-/* line 380, ../../scss/partials/atm_partials/_layout.scss */
+/* line 360, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li {
 	position: relative;
@@ -6528,31 +6522,39 @@ article:after {
 	background-size: cover;
 }
 
-/* line 398, ../../scss/partials/atm_partials/_layout.scss */
+/* line 378, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:hover a {
 	background: rgba(157, 35, 28, 0.6);
 }
 
-/* line 404, ../../scss/partials/atm_partials/_layout.scss */
+/* line 382, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion ul li:hover a span {
+	background-image: url('../../images/boton_ir_30.png');
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+
+/* line 393, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:hover span {
 	visibility: visible;
 }
 
-/* line 412, ../../scss/partials/atm_partials/_layout.scss */
+/* line 401, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:nth-of-type(1) {
 	margin-top: 0;
 }
 
-/* line 417, ../../scss/partials/atm_partials/_layout.scss */
+/* line 406, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:nth-of-type(2) {
 	background-image: url('../../images/training_fondo_2.jpg');
 }
 
-/* line 421, ../../scss/partials/atm_partials/_layout.scss */
+/* line 410, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:nth-of-type(3) {
 	width: 50%;
@@ -6560,7 +6562,13 @@ article:after {
 	background-image: url('../../images/training_fondo_3.jpg');
 }
 
-/* line 427, ../../scss/partials/atm_partials/_layout.scss */
+/* line 415, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .nav-formacion ul li:nth-of-type(3) a {
+	border-right: 1px solid #d2c510;
+}
+
+/* line 420, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul li:nth-of-type(4) {
 	width: 50%;
@@ -6568,81 +6576,176 @@ article:after {
 	background-image: url('../../images/training_fondo_4.jpg');
 }
 
-/* line 433, ../../scss/partials/atm_partials/_layout.scss */
+/* line 426, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .nav-formacion ul span {
 	position: absolute;
-	color: white;
-	text-align: middle;
+	color: #ffffff;
+	text-align: center;
 	font-weight: bold;
 	font-size: 1.7em;
 	visibility: hidden;
 	top: 30%;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
-/* line 445, ../../scss/partials/atm_partials/_layout.scss */
+/* line 441, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion div.layout {
 	margin: 0 14%;
 }
 
-/* line 448, ../../scss/partials/atm_partials/_layout.scss */
+/* line 444, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion div.layout span {
-	color: #757676;
+	color: #475B62;
 	font-size: .9em;
 }
 
-/* line 454, ../../scss/partials/atm_partials/_layout.scss */
+/* line 450, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .second {
+	width: 100%;
+	background: #d2c510;
+	padding: 20px 0;
+	color: #475B62;
+	line-height: 1.1;
+}
+
+/* line 456, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .second span {
+	text-align: center;
+	display: block;
+	font-size: .7em;
+}
+
+/* line 462, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .second p {
+	font-size: .7em;
+	text-align: justify;
+	padding-bottom: 3px;
+	line-height: 1.4em;
+}
+
+/* line 469, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .second figure {
+	font-weight: bold;
+	font-size: .9em;
+	text-align: justify;
+	padding-bottom: 5px;
+}
+
+/* line 478, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .section-wrap {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 20px 0;
+}
+
+/* line 12, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+
+.formacion .section-wrap:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* line 483, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .izq {
-	width: 37.5%;
+	width: 45%;
 	float: left;
-	margin-right: 4.16667%;
 	padding-top: 0;
 }
 
-/* line 460, ../../scss/partials/atm_partials/_layout.scss */
-
-.formacion .centro {
-	margin: 0 auto;
-	padding-top: 10%;
-}
-
-/* line 465, ../../scss/partials/atm_partials/_layout.scss */
+/* line 490, ../../scss/partials/atm_partials/_layout.scss */
 
 .formacion .der {
-	width: 37.5%;
+	width: 45%;
 	float: right;
-	margin-right: 0;
 	padding-top: 0;
 }
 
-/* line 471, ../../scss/partials/atm_partials/_layout.scss */
+/* line 496, ../../scss/partials/atm_partials/_layout.scss */
 
-.formacion .centro .nav li a {
+.formacion .wrap {
+	width: 100%;
+	padding: 5px 0;
+	clear: both;
+}
+
+/* line 501, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .wrap h3 {
+	font-size: .9em;
+	color: #475B62;
+	text-align: center;
+	display: block;
+	padding-bottom: 10px;
+}
+
+/* line 511, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto {
+	width: 160px;
+	height: 68px;
+	margin: 0 auto;
+}
+
+/* line 517, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto a {
 	display: inline-block;
-	float: left;
-	font-size: 1.2em;
-	color: #708284;
-	width: 45px;
+	width: 50px;
+	height: 50px;
+}
+
+/* line 525, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
+}
+
+/* line 530, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
+}
+
+/* line 534, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
+}
+
+/* line 538, ../../scss/partials/atm_partials/_layout.scss */
+
+.formacion .contacto a:hover {
+	background-position-y: -1px;
 }
 
 /* fullscreen setup */
 
-/* line 482, ../../scss/partials/atm_partials/_layout.scss */
+/* line 548, ../../scss/partials/atm_partials/_layout.scss */
 
 html,
 body { /* give this to all tags from html to .fullscreen */
 	height: 100%;
 }
 
-/* line 487, ../../scss/partials/atm_partials/_layout.scss */
+/* line 553, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones { /* background setup */ /* content centering styles */ /* visual styles */ /* personalización */
 }
 
-/* line 491, ../../scss/partials/atm_partials/_layout.scss */
+/* line 557, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .background {
 	background-repeat: no-repeat; /* custom background-position */
@@ -6650,7 +6753,7 @@ body { /* give this to all tags from html to .fullscreen */
 	background-position: 50% 50% \9  !important;
 }
 
-/* line 500, ../../scss/partials/atm_partials/_layout.scss */
+/* line 566, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .fullscreen,
 .instalaciones .content-a {
@@ -6658,7 +6761,7 @@ body { /* give this to all tags from html to .fullscreen */
 	min-height: 100%;
 }
 
-/* line 505, ../../scss/partials/atm_partials/_layout.scss */
+/* line 571, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .not-fullscreen,
 .instalaciones .not-fullscreen .content-a,
@@ -6668,13 +6771,13 @@ body { /* give this to all tags from html to .fullscreen */
 	overflow: hidden;
 }
 
-/* line 514, ../../scss/partials/atm_partials/_layout.scss */
+/* line 580, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .content-a {
 	display: table;
 }
 
-/* line 517, ../../scss/partials/atm_partials/_layout.scss */
+/* line 583, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .content-b {
 	display: table-cell;
@@ -6684,7 +6787,7 @@ body { /* give this to all tags from html to .fullscreen */
 	background: none;
 }
 
-/* line 526, ../../scss/partials/atm_partials/_layout.scss */
+/* line 592, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones body {
 	margin: 0;
@@ -6695,27 +6798,27 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: center;
 }
 
-/* line 535, ../../scss/partials/atm_partials/_layout.scss */
+/* line 601, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones section {
 	background: #71b104;
 }
 
-/* line 538, ../../scss/partials/atm_partials/_layout.scss */
+/* line 604, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .not-fullscreen {
 	height: 50%;
 }
 
-/* line 544, ../../scss/partials/atm_partials/_layout.scss */
+/* line 610, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones p {
 	font-size: .7em;
-	color: white;
+	color: #ffffff;
 	line-height: 1.4em;
 }
 
-/* line 550, ../../scss/partials/atm_partials/_layout.scss */
+/* line 616, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .hola {
 	margin-right: 30%;
@@ -6723,16 +6826,16 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: justify;
 }
 
-/* line 555, ../../scss/partials/atm_partials/_layout.scss */
+/* line 621, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .hola h2 {
 	font-size: 4em;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	line-height: 2em;
 }
 
-/* line 563, ../../scss/partials/atm_partials/_layout.scss */
+/* line 629, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .insta {
 	margin-right: 0;
@@ -6741,11 +6844,11 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: justify;
 }
 
-/* line 569, ../../scss/partials/atm_partials/_layout.scss */
+/* line 635, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .insta h2 {
 	font-size: 1.6em;
-	color: white;
+	color: #ffffff;
 	float: right;
 	line-height: 1.2em;
 	background: rgba(113, 177, 4, 0.9);
@@ -6755,7 +6858,7 @@ body { /* give this to all tags from html to .fullscreen */
 	font-weight: bold;
 }
 
-/* line 581, ../../scss/partials/atm_partials/_layout.scss */
+/* line 647, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .insta section {
 	clear: both;
@@ -6766,7 +6869,7 @@ body { /* give this to all tags from html to .fullscreen */
 	padding-right: 30%;
 }
 
-/* line 592, ../../scss/partials/atm_partials/_layout.scss */
+/* line 658, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .avent {
 	margin-right: 0;
@@ -6774,7 +6877,7 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: justify;
 }
 
-/* line 597, ../../scss/partials/atm_partials/_layout.scss */
+/* line 663, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .avent .logo {
 	width: 320px;
@@ -6782,7 +6885,7 @@ body { /* give this to all tags from html to .fullscreen */
 	padding-bottom: 10px;
 }
 
-/* line 603, ../../scss/partials/atm_partials/_layout.scss */
+/* line 669, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .avent a {
 	color: #71b104;
@@ -6791,7 +6894,7 @@ body { /* give this to all tags from html to .fullscreen */
 	font-size: .8em;
 }
 
-/* line 610, ../../scss/partials/atm_partials/_layout.scss */
+/* line 676, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .avent section {
 	clear: both;
@@ -6802,7 +6905,7 @@ body { /* give this to all tags from html to .fullscreen */
 	padding-right: 33%;
 }
 
-/* line 621, ../../scss/partials/atm_partials/_layout.scss */
+/* line 687, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .como {
 	margin-right: 0;
@@ -6810,17 +6913,17 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: center;
 }
 
-/* line 627, ../../scss/partials/atm_partials/_layout.scss */
+/* line 693, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .como h2 {
 	font-size: 2.1em;
-	color: white;
+	color: #ffffff;
 	line-height: 1.2em;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-/* line 635, ../../scss/partials/atm_partials/_layout.scss */
+/* line 701, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .como a {
 	color: #439be9;
@@ -6830,7 +6933,7 @@ body { /* give this to all tags from html to .fullscreen */
 	letter-spacing: .5em;
 }
 
-/* line 643, ../../scss/partials/atm_partials/_layout.scss */
+/* line 709, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .como section {
 	clear: both;
@@ -6843,7 +6946,15 @@ body { /* give this to all tags from html to .fullscreen */
 	letter-spacing: .2em;
 }
 
-/* line 656, ../../scss/partials/atm_partials/_layout.scss */
+/* line 720, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .como p {
+	display: block;
+	text-align: center;
+	text-indent: 0;
+}
+
+/* line 728, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros {
 	margin-right: 0;
@@ -6851,28 +6962,28 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: center;
 }
 
-/* line 661, ../../scss/partials/atm_partials/_layout.scss */
+/* line 733, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros img {
 	width: 113px;
 }
 
-/* line 666, ../../scss/partials/atm_partials/_layout.scss */
+/* line 738, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros h2 {
 	font-size: 2.1em;
-	color: white;
+	color: #ffffff;
 	line-height: 1.2em;
 	font-weight: bold;
 	text-align: center;
 }
 
-/* line 674, ../../scss/partials/atm_partials/_layout.scss */
+/* line 746, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros .restauracion {
 	clear: both;
 	width: 100%;
-	background: white;
+	background: #ffffff;
 	margin: 2% auto;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -6880,35 +6991,49 @@ body { /* give this to all tags from html to .fullscreen */
 	padding-right: 0;
 }
 
-/* line 684, ../../scss/partials/atm_partials/_layout.scss */
+/* line 756, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros .restauracion p {
 	color: #71b104;
 	text-align: justify;
 }
 
-/* line 690, ../../scss/partials/atm_partials/_layout.scss */
+/* line 762, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros .restauracion img {
 	width: 113px;
 }
 
-/* line 694, ../../scss/partials/atm_partials/_layout.scss */
+/* line 766, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros .restauracion section {
-	background: white;
+	background: #ffffff;
 }
 
-/* line 699, ../../scss/partials/atm_partials/_layout.scss */
+/* line 769, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .otros .restauracion section h3 {
+	color: #71b104;
+}
+
+/* line 775, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .otros section {
 	text-align: center;
 	color: white;
-	width: 50%;
+	width: 40%;
 	margin: 2% auto;
 }
 
-/* line 710, ../../scss/partials/atm_partials/_layout.scss */
+/* line 781, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .otros section h3 {
+	color: #ffffff;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+/* line 793, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper {
 	margin-right: 0;
@@ -6916,18 +7041,18 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: justify;
 }
 
-/* line 716, ../../scss/partials/atm_partials/_layout.scss */
+/* line 799, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper h2 {
 	font-size: 1.7em;
-	color: white;
+	color: #ffffff;
 	line-height: 1.2em;
 	font-weight: bold;
 	text-align: center;
 	display: block;
 }
 
-/* line 726, ../../scss/partials/atm_partials/_layout.scss */
+/* line 809, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper h3 {
 	font-size: 1.3em;
@@ -6937,27 +7062,31 @@ body { /* give this to all tags from html to .fullscreen */
 	font-weight: bold;
 	text-align: center;
 	float: right;
-	background-image: url('../../images/fondo_white_btn.png');
+	min-width: 353px;
+	padding: 5px 5px;
+	margin-bottom: 25px;
+	background-image: url('../../images/fondo_blanco_border.png');
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
 }
 
-/* line 743, ../../scss/partials/atm_partials/_layout.scss */
+/* line 829, ../../scss/partials/atm_partials/_layout.scss */
 
-.instalaciones .exper p {
+.instalaciones .exper p,
+.instalaciones .exper figure {
 	clear: both;
 }
 
-/* line 747, ../../scss/partials/atm_partials/_layout.scss */
+/* line 833, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .columnas {
-	-moz-columns: 10em 2;
-	-webkit-columns: 10em 2;
-	columns: 10em 2;
+	-moz-columns: 20em 2;
+	-webkit-columns: 20em 2;
+	columns: 20em 2;
 }
 
-/* line 752, ../../scss/partials/atm_partials/_layout.scss */
+/* line 838, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper section {
 	clear: both;
@@ -6969,28 +7098,28 @@ body { /* give this to all tags from html to .fullscreen */
 	margin: 5% 0;
 }
 
-/* line 761, ../../scss/partials/atm_partials/_layout.scss */
+/* line 847, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper section.sub {
-	padding-left: 35%;
-	padding-right: 35%;
-	height: 100%;
+	padding-left: 30%;
+	padding-right: 30%;
+	height: 420px;
+	padding-top: 10%;
 }
 
-/* line 768, ../../scss/partials/atm_partials/_layout.scss */
+/* line 854, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .tabla {
 	background: #71b104;
 }
 
-/* line 772, ../../scss/partials/atm_partials/_layout.scss */
+/* line 858, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .bxslider {
 	margin: 0;
-	padding: 10px;
 }
 
-/* line 780, ../../scss/partials/atm_partials/_layout.scss */
+/* line 866, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .bx-wrapper .bx-viewport {
 	box-shadow: none;
@@ -6999,14 +7128,258 @@ body { /* give this to all tags from html to .fullscreen */
 	background: #71b104;
 }
 
-/* line 790, ../../scss/partials/atm_partials/_layout.scss */
+/* line 876, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper li > span {
 	display: block;
-	margin: 0 20%;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1024px;
 }
 
-/* line 799, ../../scss/partials/atm_partials/_layout.scss */
+/* line 883, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .wrap {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+}
+
+/* line 12, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+
+.instalaciones .exper .wrap:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* line 887, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .wrap p {
+	color: #ffffff;
+}
+
+/* line 892, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .nombre {
+	width: 32.20339%;
+	float: left;
+	margin-right: 1.69492%;
+	position: relative;
+}
+
+/* line 895, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .nombre .vcentrar {
+	margin-top: 110px;
+}
+
+/* line 898, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .nombre h1 {
+	font-size: 2.1em;
+	background: none;
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-weight: thin;
+	display: block;
+}
+
+/* line 909, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .nombre h4 {
+	font-size: .6em;
+	text-transform: capitalize;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 919, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .historia {
+	width: 32.20339%;
+	float: left;
+	margin-right: 1.69492%;
+	font-size: .7em;
+	line-height: 1.5em;
+	padding-top: 10px;
+}
+
+/* line 926, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono {
+	color: #ffffff;
+	width: 32.20339%;
+	float: right;
+	margin-right: 0;
+	margin-top: 90px;
+	padding-left: 40px;
+}
+
+/* line 933, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* line 2, ../../scss/partials/atm_partials/_mixins.scss */
+
+.instalaciones .exper .telefono .nav:before,
+.instalaciones .exper .telefono .nav:after {
+	content: "";
+	display: table;
+}
+
+/* line 7, ../../scss/partials/atm_partials/_mixins.scss */
+
+.instalaciones .exper .telefono .nav:after {
+	clear: both;
+}
+
+/* line 62, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .nav li {
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0;
+	white-space: nowrap;
+	float: left;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* line 49, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .nav li:first-child {
+	padding-left: 0;
+}
+
+/* line 50, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .nav li:last-child {
+	padding-right: 0;
+}
+
+/* line 52, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .nav li.last {
+	padding-right: 0;
+}
+
+/* line 936, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .nav .fa {
+	color: #efeeee;
+	font-size: 1.8em;
+}
+
+/* line 942, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .email {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+/* line 948, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .email a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url('../../images/sobre_contacto_blanco.png');
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+/* line 960, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .num {
+	display: block;
+	height: 60px;
+	width: 200px;
+	background-image: url('../../images/phone_icon_white.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 25px;
+	font-size: 1.4em;
+}
+
+/* line 975, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .mas_info {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	margin-top: 10px;
+}
+
+/* line 2, ../../scss/partials/atm_partials/_mixins.scss */
+
+.instalaciones .exper .telefono .mas_info:before,
+.instalaciones .exper .telefono .mas_info:after {
+	content: "";
+	display: table;
+}
+
+/* line 7, ../../scss/partials/atm_partials/_mixins.scss */
+
+.instalaciones .exper .telefono .mas_info:after {
+	clear: both;
+}
+
+/* line 62, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .mas_info li {
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0;
+	white-space: nowrap;
+	float: left;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* line 49, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .mas_info li:first-child {
+	padding-left: 0;
+}
+
+/* line 50, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .mas_info li:last-child {
+	padding-right: 0;
+}
+
+/* line 52, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
+
+.instalaciones .exper .telefono .mas_info li.last {
+	padding-right: 0;
+}
+
+/* line 978, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones .exper .telefono .mas_info .num {
+	display: block;
+	height: 60px;
+	background-image: url('../../images/phone_icon_white.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 28px;
+	font-size: 1.4em;
+}
+
+/* line 995, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .bg {
 	background-image: url('../../images/metodo_paralax_3.jpg');
@@ -7015,64 +7388,52 @@ body { /* give this to all tags from html to .fullscreen */
 	background-size: cover;
 }
 
-/* line 809, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1005, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .border {
 	border-top: 5px solid #71b104;
 	border-bottom: 5px solid #71b104;
 }
 
-/* line 815, ../../scss/partials/atm_partials/_layout.scss */
-
-.instalaciones li:nth-of-type(1) h3 {
-	float: left;
-}
-
-/* line 820, ../../scss/partials/atm_partials/_layout.scss */
-
-.instalaciones li:nth-of-type(4) {
-	background: #000000;
-}
-
-/* line 824, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1020, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .blanco {
-	background: white;
+	background: #ffffff;
 }
 
-/* line 834, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1031, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo h2 {
 	font-size: 1.3em;
 	font-weight: bold;
 	text-align: center;
-	color: #9D231C;
+	color: #d80723;
 }
 
-/* line 841, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1038, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo p {
 	font-size: .9em;
-	color: #708284;
+	color: #475B62;
 }
 
-/* line 847, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1044, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo section {
-	background: white;
+	background: #ffffff;
 }
 
-/* line 850, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1047, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo section .layout {
 	height: 300px;
 	text-align: justify;
-	background: rgba(112, 130, 132, 0.1);
-	border-top: 1px solid #9D231C;
+	background: rgba(71, 91, 98, 0.1);
+	border-top: 1px solid #d80723;
 	padding: 5% 22%;
 }
 
-/* line 861, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1058, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado {
 	display: block;
@@ -7081,49 +7442,64 @@ body { /* give this to all tags from html to .fullscreen */
 	margin: 0 auto;
 }
 
-/* line 868, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1065, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li {
 	display: block;
 	width: 33%;
-	margin: 0;
+	margin: 0 0 40px 0;
 	padding: 0;
 	float: left;
 }
 
-/* line 878, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1075, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li:nth-of-type(4) {
-	background: white;
+	background: #ffffff;
 }
 
-/* line 882, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1079, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li a {
 	display: block;
-	width: 100%;
-	color: #708284;
+	width: 214px;
+	color: #475B62;
+	border-radius: 50%;
+	height: 214px;
+	background: #efeeee;
+	margin-top: 10px;
 }
 
-/* line 889, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1090, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .listado li a:hover {
+	background-image: url('../../images/equipo_info.png');
+	background-repeat: no-repeat;
+	background-color: #686868;
+	background-position: 50% 50%;
+}
+
+/* line 1101, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li span {
 	display: block;
+	color: #475B62;
+	text-transform: uppercase;
 }
 
-/* line 894, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1108, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li .nombre {
 	font-size: 1.2em;
 }
 
-/* line 898, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1112, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li .puesto {
 	font-size: .6em;
 }
 
-/* line 903, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1117, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li img {
 	width: 90%;
@@ -7132,98 +7508,284 @@ body { /* give this to all tags from html to .fullscreen */
 	margin-top: 14px;
 }
 
-/* line 916, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1130, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .izq {
-	width: 32.20339%;
+	width: 28.57143%;
 	float: left;
-	margin-right: 1.69492%;
+	margin-right: 2.04082%;
 	margin: auto;
 	height: 100%;
 }
 
-/* line 922, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1135, ../../scss/partials/atm_partials/_layout.scss */
 
-.equipo .der {
-	width: 49.15254%;
-	float: right;
-	margin-right: 0;
+.equipo .izq .info {
+	display: block;
+	text-align: center;
 }
 
-/* line 933, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1138, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .izq .info img {
+	width: 160px;
+}
+
+/* line 1144, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .der {
+	width: 69.38776%;
+	float: right;
+	margin-right: 0;
+	padding: 20px 50px;
+}
+
+/* line 1148, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .der h2 {
+	margin-bottom: 15px;
+}
+
+/* line 1153, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .nombres h2 {
+	margin: 24px auto;
+	background: black;
+	padding: 10px;
+	width: 250px;
+	background: #d80723;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+/* line 1163, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .info_equipo {
+	background: #efeeee;
+	border-top: 1px solid #d80723;
+	padding: 20px 0;
+	height: 440px;
+}
+
+/* line 1169, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .info_equipo p {
+	font-size: .7em;
+}
+
+/* line 1173, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo .info_equipo img {
+	width: 100%;
+	margin-top: 50px;
+}
+
+/* line 1184, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto {
+	width: 160px;
+	height: 68px;
+	margin: 0 auto;
+}
+
+/* line 1189, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* line 1197, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
+}
+
+/* line 1202, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
+}
+
+/* line 1206, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
+}
+
+/* line 1210, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 1214, ../../scss/partials/atm_partials/_layout.scss */
+
+.contacto span {
+	display: block;
+	text-align: center;
+	font-size: .7em;
+}
+
+/* line 1222, ../../scss/partials/atm_partials/_layout.scss */
+
+.informacion {
+	border: none;
+}
+
+/* line 1225, ../../scss/partials/atm_partials/_layout.scss */
+
+.informacion h2 {
+	border: none;
+	text-transform: none;
+	display: block;
+	text-align: center;
+}
+
+/* line 1233, ../../scss/partials/atm_partials/_layout.scss */
+
+.informacion .wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* line 1237, ../../scss/partials/atm_partials/_layout.scss */
+
+.informacion .wrap span {
+	display: block;
+	text-align: center;
+	font-size: .7em;
+}
+
+/* line 1248, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .cabecera {
 	background: #71b104;
 }
 
-/* line 939, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1252, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .info_box {
+	background: #71b104;
+}
+
+/* line 1258, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .informacion h2,
+.metodo-experiencial .informacion span {
+	color: #ffffff;
+}
+
+/* line 1264, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat 0 0;
+}
+
+/* line 1269, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat -59px 0;
+}
+
+/* line 1273, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat -113px 0;
+}
+
+/* line 1277, ../../scss/partials/atm_partials/_layout.scss */
+
+.metodo-experiencial .contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 1284, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .cabecera {
-	background: white;
+	background: #ffffff;
 }
 
-/* line 942, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1287, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .cabecera h1 {
-	color: #757676;
+	color: #475B62;
 }
 
-/* line 948, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1291, ../../scss/partials/atm_partials/_layout.scss */
 
-.equipo .nav_superior .nav li a {
-	color: #708284;
+.equipo .cabecera .fa {
+	color: #475B62;
 }
 
-/* line 953, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1300, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo h2.gracias_clientes {
+	display: block;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 2.7em;
+	margin-left: 55%;
+}
+
+/* line 1311, ../../scss/partials/atm_partials/_layout.scss */
+
+.equipo h3.confiaron {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 50px;
+}
+
+/* line 1322, ../../scss/partials/atm_partials/_layout.scss */
 
 .clientes {
-	color: white;
-	width: 100%;
+	color: #ffffff;
 	text-align: center;
 	font-size: .7em;
 	line-height: 1.4em;
 	margin-left: 55%;
-}
-
-/* line 962, ../../scss/partials/atm_partials/_layout.scss */
-
-.clientes ul {
-	height: 400px;
-	width: 28%;
-	overflow: hidden;
-	overflow-y: scroll;
+	height: 450px;
+	width: 305px;
 	background: rgba(0, 0, 0, 0.4);
 	border-radius: 5%;
 	padding: 15px;
 }
 
-/* line 974, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1338, ../../scss/partials/atm_partials/_layout.scss */
 
-section.tabla {
+.tabla {
+	clear: both;
 	display: table;
 	background: #71b104;
 }
 
-/* line 978, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1343, ../../scss/partials/atm_partials/_layout.scss */
 
-section.tabla p {
+.tabla p {
 	display: table-row;
 }
 
-/* line 984, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1349, ../../scss/partials/atm_partials/_layout.scss */
 
-section.tabla span {
-	display: table-cell;
+.tabla span,
+.tabla li {
 	border: 1px solid transparent;
 	margin: 0 5px;
 	-o-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	-webkit-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	padding: 5px;
-	font-size: .8em;
+	font-size: .7em;
+	color: #ffffff;
 }
 
-/* line 998, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1362, ../../scss/partials/atm_partials/_layout.scss */
 
 header {
 	position: absolute;
@@ -7231,19 +7793,26 @@ header {
 	z-index: 15;
 }
 
-/* line 1004, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1368, ../../scss/partials/atm_partials/_layout.scss */
 
 footer {
 	height: 30%;
 }
 
-/* line 1009, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1371, ../../scss/partials/atm_partials/_layout.scss */
+
+footer nav {
+	width: 200px;
+	margin: 0 auto;
+}
+
+/* line 1382, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina {
 	height: 100%; /* content centering styles */
 }
 
-/* line 1012, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1385, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .fullscreen,
 .pagina .content-a {
@@ -7251,7 +7820,7 @@ footer {
 	min-height: 100%;
 }
 
-/* line 1017, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1390, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .not-fullscreen,
 .pagina .not-fullscreen .content-a,
@@ -7261,13 +7830,13 @@ footer {
 	overflow: hidden;
 }
 
-/* line 1026, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1399, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .content-a {
 	display: table;
 }
 
-/* line 1030, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1403, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .content-b {
 	display: table-cell;
@@ -7277,26 +7846,26 @@ footer {
 	background: none;
 }
 
-/* line 1037, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1410, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .not-fullscreen {
 	height: 50%;
 }
 
-/* line 1044, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1417, ../../scss/partials/atm_partials/_layout.scss */
 
 .content-b header {
 	position: relative;
 	z-index: 5;
 }
 
-/* line 1055, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1428, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1060, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1433, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b h1 {
 	display: block;
@@ -7304,7 +7873,7 @@ footer {
 	position: relative;
 	left: 0;
 	text-align: left;
-	color: white;
+	color: #ffffff;
 	font-size: 1.6em;
 	font-weight: bold;
 	line-height: 1.7em;
@@ -7313,7 +7882,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 1077, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1450, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b h2 {
 	display: block;
@@ -7321,21 +7890,21 @@ footer {
 	background: rgba(253, 129, 23, 0.7);
 	text-align: center;
 	padding: 5px 0;
-	color: white;
+	color: #ffffff;
 	line-height: 1.6em;
 	font-size: 1em;
 	font-weight: bold;
 	margin: 0;
 }
 
-/* line 1090, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1463, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .first {
-	color: white;
+	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 1092, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1465, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -7344,22 +7913,22 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 1104, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1477, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b p {
-	color: white;
+	color: #ffffff;
 	text-align: justify;
 	font-size: .7em;
-	line-height: 1em;
+	line-height: 1.4em;
 }
 
-/* line 1112, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1485, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 1116, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1489, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .second h2 {
 	color: #d2c510;
@@ -7369,7 +7938,7 @@ footer {
 	background: none;
 }
 
-/* line 1124, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1497, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .shadow {
 	width: 45%;
@@ -7379,17 +7948,17 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1139, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1512, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off {
 	background-color: #fd8117;
 }
 
-/* line 1142, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1515, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .fourth {
 	background: #fd8117;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	border: none;
 	position: relative;
@@ -7397,21 +7966,21 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 1151, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1524, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .fourth h2 {
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 1161, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1534, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav {
 	height: 277px;
 }
 
-/* line 1164, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1537, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav ul {
 	width: 85%;
@@ -7420,19 +7989,19 @@ footer {
 	min-width: 778px;
 }
 
-/* line 1171, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1544, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 1175, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1548, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
-	color: white;
+	color: #ffffff;
 	background: url('../../images/kickoff-menu.png') no-repeat 0 0;
 	width: 204px;
 	height: 204px;
@@ -7441,7 +8010,7 @@ footer {
 	padding-top: 41px;
 }
 
-/* line 1188, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1561, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a:hover {
 	background: url('../../images/kickoff-menu.png') no-repeat 0 -263px;
@@ -7450,36 +8019,42 @@ footer {
 	color: #fd8117;
 }
 
-/* line 1196, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1567, ../../scss/partials/atm_partials/_layout.scss */
+
+.kick-off .eventos-nav a:hover span {
+	background: none;
+}
+
+/* line 1572, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a span {
 	background: none;
 }
 
-/* line 1203, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1579, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 1212, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1588, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 1220, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1596, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 1232, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1608, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end {
-	background: white;
+	background: #ffffff;
 	color: #fd8117;
 	text-align: center;
 	width: 100%;
@@ -7487,20 +8062,20 @@ footer {
 	padding: 4% 0;
 }
 
-/* line 1240, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1616, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end h2 {
 	font-weight: bold;
 	color: #fd8117;
 }
 
-/* line 1246, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1622, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end span {
 	font-size: .5em;
 }
 
-/* line 1251, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1627, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto {
 	width: 200px;
@@ -7508,7 +8083,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 1256, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1632, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a {
 	display: inline-block;
@@ -7516,31 +8091,31 @@ footer {
 	height: 60px;
 }
 
-/* line 1264, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1640, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_naranja.png') no-repeat 0 0;
 }
 
-/* line 1269, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1645, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_naranja.png') no-repeat -71px 0;
 }
 
-/* line 1273, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1649, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_naranja.png') no-repeat -142px 0;
 }
 
-/* line 1277, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1653, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1289, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1665, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_blanco {
 	font-size: 1.3em;
@@ -7554,7 +8129,7 @@ footer {
 	margin-bottom: 10px;
 }
 
-/* line 1308, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1684, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_team {
 	background-image: url('../../images/team_atm_titulo.png');
@@ -7563,66 +8138,65 @@ footer {
 	background-size: cover;
 }
 
-/* line 1318, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1694, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_full {
 	background-size: cover;
 }
 
-/* line 1323, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1699, ../../scss/partials/atm_partials/_layout.scss */
 
 .mejorate {
 	border-top: 2px solid #fd8117;
 }
 
-/* line 1330, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1706, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting {
 	width: 50%;
 	margin: 0 auto;
 }
 
-/* line 1333, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1709, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting section {
 	margin: 10% auto;
 }
 
-/* line 1337, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1713, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting h3 {
 	color: #fd8117;
 }
 
-/* line 1343, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1719, ../../scss/partials/atm_partials/_layout.scss */
 
 footer .social {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 33%;
-	min-width: 33px;
+	min-width: 200px;
 	font-size: 2rem;
 }
 
-/* line 1352, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1728, ../../scss/partials/atm_partials/_layout.scss */
 
 footer .logo img {
 	width: 210px;
 }
 
-/* line 1357, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1733, ../../scss/partials/atm_partials/_layout.scss */
 
 footer {
 	padding-top: 31px;
 }
 
-/* line 1367, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1743, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1372, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1748, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b h1 {
 	display: block;
@@ -7630,7 +8204,7 @@ footer {
 	position: relative;
 	left: 0;
 	text-align: left;
-	color: white;
+	color: #ffffff;
 	font-size: 1.6em;
 	font-weight: bold;
 	line-height: 1.7em;
@@ -7639,7 +8213,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 1389, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1765, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b h2 {
 	display: block;
@@ -7647,37 +8221,37 @@ footer {
 	background: rgba(57, 177, 220, 0.7);
 	text-align: center;
 	padding: 5px 0;
-	color: white;
+	color: #ffffff;
 	line-height: 1.6em;
 	font-size: 1em;
 	font-weight: bold;
 	margin: 0;
 }
 
-/* line 1402, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1778, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .first {
-	color: white;
+	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 1404, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1780, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
-	width: 55%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 2% 6% 4%;
 }
 
-/* line 1417, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1793, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 1424, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1800, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .third h1 {
 	color: #fd8117;
@@ -7687,32 +8261,32 @@ footer {
 	display: block;
 }
 
-/* line 1435, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1811, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b p {
-	color: white;
+	color: #ffffff;
 	text-align: justify;
-	font-size: .7em;
-	line-height: 1em;
+	font-size: .9em;
+	line-height: 1.4em;
 }
 
-/* line 1443, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1819, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 1447, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1823, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second h2 {
-	color: white;
+	color: #ffffff;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: right;
 	background: none;
 }
 
-/* line 1455, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1831, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second span {
 	text-align: right;
@@ -7721,7 +8295,7 @@ footer {
 	display: block;
 }
 
-/* line 1462, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1839, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .shadow {
 	width: 45%;
@@ -7731,44 +8305,44 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1477, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1854, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura {
 	background-color: #39b1dc;
 }
 
-/* line 1480, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1857, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela {
 	background: #39b1dc;
-	color: white;
+	color: #ffffff;
 	padding: 5% 0;
 	background: url('../../images/multiaventura_atm_blue.png') no-repeat 0 -1px;
 	background-size: cover;
 }
 
-/* line 1489, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1866, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela h3 {
 	color: #39b1dc;
 	text-align: center;
 }
 
-/* line 1493, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1870, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela h3.big {
 	font-size: 1.6em;
 }
 
-/* line 1498, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1875, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela p {
 	font-size: .7em;
-	line-height: 1.1em;
+	line-height: 1.4em;
 	margin: 2px 5px;
 }
 
-/* line 1504, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1881, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap {
 	text-align: justify;
@@ -7785,7 +8359,7 @@ footer {
 	clear: both;
 }
 
-/* line 1508, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1885, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap section {
 	width: 44.44444%;
@@ -7809,17 +8383,17 @@ footer {
 	clear: none;
 }
 
-/* line 1511, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1888, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap section:nth-of-type(1) {
-	border-right: 1 solid white;
+	border-right: 1 solid #ffffff;
 }
 
-/* line 1520, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1897, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .fourth {
 	background: #39b1dc;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	border: none;
 	position: relative;
@@ -7827,27 +8401,27 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 1529, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1906, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .fourth h2 {
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 1538, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1915, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .desafio {
-	border-top: 2px solid white;
+	border-top: 2px solid #ffffff;
 }
 
-/* line 1542, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1919, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav {
 	height: 277px;
 }
 
-/* line 1545, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1922, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav ul {
 	width: 85%;
@@ -7856,19 +8430,19 @@ footer {
 	min-width: 778px;
 }
 
-/* line 1552, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1929, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 1556, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1933, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
-	color: white;
+	color: #ffffff;
 	background: url('../../images/multiaventura-menu.png') no-repeat 0 0;
 	width: 204px;
 	height: 204px;
@@ -7877,7 +8451,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 1569, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1946, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a:hover {
 	background: url('../../images/multiaventura-menu.png') no-repeat 0 -263px;
@@ -7886,57 +8460,63 @@ footer {
 	color: #39b1dc;
 }
 
-/* line 1577, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1953, ../../scss/partials/atm_partials/_layout.scss */
+
+.multiaventura .eventos-nav a:hover span {
+	background: none;
+}
+
+/* line 1958, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a span {
 	background: none;
 }
 
-/* line 1584, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1965, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 1593, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1974, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 1601, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1982, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 1612, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1993, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end {
 	background: #39b1dc;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 	padding: 4% 0;
 }
 
-/* line 1620, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2001, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end h2 {
 	font-weight: bold;
 	color: #39b1dc;
 }
 
-/* line 1626, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2007, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end span {
 	font-size: .5em;
 }
 
-/* line 1631, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2012, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto {
 	width: 200px;
@@ -7944,7 +8524,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 1636, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2017, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a {
 	display: inline-block;
@@ -7952,31 +8532,31 @@ footer {
 	height: 60px;
 }
 
-/* line 1644, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2025, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 1649, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2030, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 1653, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2034, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 1657, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2038, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1667, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2048, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .columnas {
 	-moz-columns: 10em 2;
@@ -7984,13 +8564,13 @@ footer {
 	columns: 10em 2;
 }
 
-/* line 1678, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2059, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1683, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2064, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b h1 {
 	display: block;
@@ -7999,7 +8579,7 @@ footer {
 	left: 68%;
 	text-align: left;
 	background: rgba(0, 0, 0, 0.5);
-	color: white;
+	color: #ffffff;
 	font-size: 1.6em;
 	font-weight: bold;
 	line-height: 1.7em;
@@ -8009,7 +8589,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 1702, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2083, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b h2 {
 	display: block;
@@ -8024,14 +8604,14 @@ footer {
 	margin: 0;
 }
 
-/* line 1715, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2096, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .first {
-	color: white;
+	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 1717, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2098, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -8040,14 +8620,14 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 1730, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2111, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 1737, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2118, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .third h1 {
 	color: #fd8117;
@@ -8057,32 +8637,32 @@ footer {
 	display: block;
 }
 
-/* line 1748, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2129, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b p {
-	color: white;
+	color: #ffffff;
 	text-align: justify;
 	font-size: .7em;
 	line-height: 1em;
 }
 
-/* line 1756, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2137, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 1760, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2141, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second h2 {
-	color: white;
+	color: #ffffff;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: right;
 	background: none;
 }
 
-/* line 1768, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2149, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second span {
 	text-align: right;
@@ -8091,7 +8671,7 @@ footer {
 	display: block;
 }
 
-/* line 1775, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2156, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .shadow {
 	width: 45%;
@@ -8101,21 +8681,21 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1790, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2171, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent {
 	background-color: #a4e719;
 }
 
-/* line 1793, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2174, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre {
 	background: #000000;
-	color: white;
+	color: #ffffff;
 	padding: 5% 0;
 }
 
-/* line 1799, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2180, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre h3 {
 	color: #a4e719;
@@ -8125,22 +8705,22 @@ footer {
 	font-weight: bold;
 }
 
-/* line 1805, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2186, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre h3.big {
 	font-size: 1.9em;
 	color: #000000;
 }
 
-/* line 1811, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2192, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre p {
 	font-size: .7em;
-	line-height: 1.3em;
+	line-height: 1.4em;
 	margin: 2px 5px;
 }
 
-/* line 1817, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2198, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre .section-wrap {
 	text-align: justify;
@@ -8157,7 +8737,7 @@ footer {
 	clear: both;
 }
 
-/* line 1821, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2202, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre .section-wrap section {
 	width: 44.44444%;
@@ -8181,11 +8761,11 @@ footer {
 	clear: none;
 }
 
-/* line 1831, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2212, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .fourth {
 	background: #a4e719;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	border: none;
 	position: relative;
@@ -8193,7 +8773,7 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 1840, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2221, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .fourth h2 {
 	text-transform: uppercase;
@@ -8201,19 +8781,19 @@ footer {
 	color: #000000;
 }
 
-/* line 1849, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2230, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .desafio {
-	border-top: 2px solid white;
+	border-top: 2px solid #ffffff;
 }
 
-/* line 1853, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2234, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav {
 	height: 277px;
 }
 
-/* line 1856, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2237, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav ul {
 	width: 85%;
@@ -8222,13 +8802,13 @@ footer {
 	min-width: 778px;
 }
 
-/* line 1863, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2244, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 1867, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2248, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a {
 	display: inline-block;
@@ -8243,7 +8823,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 1880, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2261, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a:hover {
 	background: url('../../images/teamevent-menu.png') no-repeat 0 -263px;
@@ -8252,57 +8832,63 @@ footer {
 	color: #a4e719;
 }
 
-/* line 1888, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2268, ../../scss/partials/atm_partials/_layout.scss */
+
+.teamevent .eventos-nav a:hover span {
+	background: none;
+}
+
+/* line 2273, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a span {
 	background: none;
 }
 
-/* line 1895, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2280, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 1904, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2289, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -250px;
 }
 
-/* line 1912, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2297, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -495px;
 	margin-right: 0;
 }
 
-/* line 1923, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2308, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end {
 	background: #000000;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 	padding: 4% 0;
 }
 
-/* line 1931, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2316, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end h2 {
 	font-weight: bold;
 	color: #a4e719;
 }
 
-/* line 1937, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2322, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end span {
 	font-size: .5em;
 }
 
-/* line 1942, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2327, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto {
 	width: 200px;
@@ -8310,7 +8896,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 1947, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2332, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a {
 	display: inline-block;
@@ -8318,31 +8904,31 @@ footer {
 	height: 60px;
 }
 
-/* line 1955, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2340, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 1960, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2345, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 1964, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2349, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 1968, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2353, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1978, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2363, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .columnas {
 	-moz-columns: 10em 2;
@@ -8350,13 +8936,13 @@ footer {
 	columns: 10em 2;
 }
 
-/* line 1989, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2374, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1994, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2379, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b h1 {
 	display: block;
@@ -8365,7 +8951,7 @@ footer {
 	left: 38%;
 	text-align: left;
 	background: rgba(0, 0, 0, 0.5);
-	color: white;
+	color: #ffffff;
 	font-size: 2em;
 	font-weight: bold;
 	line-height: 1.7em;
@@ -8375,7 +8961,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 2013, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2398, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b h2 {
 	display: block;
@@ -8383,21 +8969,21 @@ footer {
 	background: rgba(252, 1, 73, 0.8);
 	text-align: center;
 	padding: 5px 0;
-	color: white;
+	color: #ffffff;
 	line-height: 1.7em;
 	font-size: 1em;
 	font-weight: bold;
 	margin: 0;
 }
 
-/* line 2026, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2411, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .first {
-	color: white;
+	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 2028, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2413, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -8406,14 +8992,14 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 2041, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2426, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 2048, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2433, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .third h1 {
 	color: #fd8117;
@@ -8423,16 +9009,16 @@ footer {
 	display: block;
 }
 
-/* line 2059, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2444, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b p {
-	color: white;
+	color: #ffffff;
 	text-align: justify;
 	font-size: .7em;
 	line-height: 1em;
 }
 
-/* line 2068, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2453, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .shadow {
 	width: 45%;
@@ -8442,30 +9028,31 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 2083, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2468, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana {
 	background-color: #fc0149;
 }
 
-/* line 2086, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2471, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana h3.fondo_blanco {
-	color: white;
+	color: #ffffff;
 }
 
-/* line 2090, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2475, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio {
 	background: #fc0149;
-	color: white;
+	color: #ffffff;
 	padding: 0;
 	display: table;
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+	width: 100%;
 }
 
-/* line 2098, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2484, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio h3 {
 	color: #fc0149;
@@ -8475,14 +9062,14 @@ footer {
 	font-weight: bold;
 }
 
-/* line 2104, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2490, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio h3.big {
 	font-size: 1.9em;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 2110, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2496, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio p {
 	font-size: 1em;
@@ -8490,50 +9077,82 @@ footer {
 	margin: 4px 5px;
 }
 
-/* line 2116, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2502, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: justify;
 	display: table-row;
 }
 
-/* line 2120, ../../scss/partials/atm_partials/_layout.scss */
+/* line 12, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+
+.gynkana .ingenio .section-wrap:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* line 2507, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap section {
 	display: table-cell;
 	vertical-align: top;
 }
 
-/* line 2125, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2512, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap article {
-	padding: 1% 5%;
+	padding: 1% 20% 1% 0;
 	min-width: 350px;
 }
 
-/* line 2133, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2517, ../../scss/partials/atm_partials/_layout.scss */
+
+.gynkana .ingenio .section-wrap section:nth-of-type(1) {
+	width: 58.33333%;
+	float: left;
+	margin-right: 4.16667%;
+	background-image: url('../../images/gyncana_atm_2.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	height: 420px;
+}
+
+/* line 2531, ../../scss/partials/atm_partials/_layout.scss */
+
+.gynkana .ingenio .section-wrap section:nth-of-type(2) {
+	width: 37.5%;
+	float: right;
+	margin-right: 0;
+}
+
+/* line 2540, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second {
 	padding: 10% 0;
 	background: #fc0149;
 	text-align: justify;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 2139, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2546, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second p {
 	font-size: .7em;
 	line-height: 1.2em;
 }
 
-/* line 2144, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2551, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second .section-wrap {
 	padding: 1% 15%;
 }
 
-/* line 2149, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2556, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second h3 {
 	color: #fc0149;
@@ -8543,7 +9162,7 @@ footer {
 	margin-bottom: 10px;
 }
 
-/* line 2157, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2564, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second span {
 	text-align: right;
@@ -8552,11 +9171,11 @@ footer {
 	display: center;
 }
 
-/* line 2166, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2573, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .fourth {
 	background: #fc0149;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	border: none;
 	position: relative;
@@ -8564,21 +9183,21 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 2175, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2582, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .fourth h2 {
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 2187, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2594, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav {
 	height: 277px;
 }
 
-/* line 2190, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2597, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav ul {
 	width: 85%;
@@ -8587,19 +9206,19 @@ footer {
 	min-width: 778px;
 }
 
-/* line 2197, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2604, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 2201, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2608, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
-	color: white;
+	color: #ffffff;
 	background: url('../../images/gynkana-menu.png') no-repeat 0 0;
 	width: 204px;
 	height: 204px;
@@ -8608,7 +9227,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 2214, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2621, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a:hover {
 	background: url('../../images/gynkana-menu.png') no-repeat 0 -263px;
@@ -8617,57 +9236,63 @@ footer {
 	color: #fc0149;
 }
 
-/* line 2222, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2627, ../../scss/partials/atm_partials/_layout.scss */
+
+.gynkana .eventos-nav a:hover span {
+	background: none;
+}
+
+/* line 2632, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a span {
 	background: none;
 }
 
-/* line 2229, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2639, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 2238, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2648, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 2246, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2656, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 2257, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2667, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end {
 	background: #fc0149;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 	padding: 4% 0;
 }
 
-/* line 2265, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2675, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end h2 {
 	font-weight: bold;
-	color: white;
+	color: #ffffff;
 }
 
-/* line 2271, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2681, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end span {
 	font-size: .5em;
 }
 
-/* line 2276, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2686, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto {
 	width: 200px;
@@ -8675,7 +9300,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 2281, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2691, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a {
 	display: inline-block;
@@ -8683,36 +9308,428 @@ footer {
 	height: 60px;
 }
 
-/* line 2289, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2699, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 2294, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2704, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 2298, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2708, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 2302, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2712, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 2312, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2722, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .columnas {
 	-moz-columns: 10em 2;
 	-webkit-columns: 10em 2;
 	columns: 10em 2;
+}
+
+/* line 2730, ../../scss/partials/atm_partials/_layout.scss */
+
+.collapse {
+	display: none;
+	visibility: hidden;
+}
+
+/* line 2734, ../../scss/partials/atm_partials/_layout.scss */
+
+.collapse.in {
+	display: block;
+	visibility: visible;
+}
+
+/* line 2738, ../../scss/partials/atm_partials/_layout.scss */
+
+tr.collapse.in {
+	display: table-row;
+}
+
+/* line 2741, ../../scss/partials/atm_partials/_layout.scss */
+
+tbody.collapse.in {
+	display: table-row-group;
+}
+
+/* line 2744, ../../scss/partials/atm_partials/_layout.scss */
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	-webkit-transition-duration: .35s;
+	transition-duration: .35s;
+	-webkit-transition-property: height;
+	transition-property: height;
+}
+
+/* line 2760, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .cabecera {
+	background: #ffffff;
+}
+
+/* line 2763, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .cabecera section {
+	background: #ffffff;
+}
+
+/* line 2766, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .cabecera section h1,
+.instalaciones.solo .cabecera section .fa {
+	color: #475B62;
+}
+
+/* line 2772, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .info_box {
+	background: #71b104;
+	border-top: 2px solid #ffffff;
+}
+
+/* line 2779, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .informacion h2,
+.instalaciones.solo .informacion span {
+	color: #ffffff;
+}
+
+/* line 2785, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat 0 0;
+}
+
+/* line 2790, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat -59px 0;
+}
+
+/* line 2794, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_blanco_160.png') no-repeat -113px 0;
+}
+
+/* line 2798, ../../scss/partials/atm_partials/_layout.scss */
+
+.instalaciones.solo .contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 2805, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .formulario {
+	width: 505px;
+	height: 640px;
+	color: #000000;
+	margin-left: 100px;
+	margin-top: 40px;
+	padding-top: 90px;
+	background-image: url('../../images/caja_contacto.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	float: left;
+}
+
+/* line 2823, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar label {
+	display: block;
+	text-align: left;
+	font-size: .7em;
+	font-weight: 700;
+}
+
+/* line 2830, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar p {
+	font-size: .7em;
+	text-indent: 0;
+}
+
+/* line 2835, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar option {
+	font-size: .7em;
+}
+
+/* line 2839, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .wpcf7 {
+	margin: 0 auto;
+	padding: 0;
+	width: 350px;
+}
+
+/* line 2846, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar input[type="text"],
+.contactar input[type="password"],
+.contactar input[type="datetime"],
+.contactar input[type="datetime-local"],
+.contactar input[type="date"],
+.contactar input[type="month"],
+.contactar input[type="time"],
+.contactar input[type="week"],
+.contactar input[type="number"],
+.contactar input[type="email"],
+.contactar input[type="url"],
+.contactar input[type="search"],
+.contactar input[type="tel"],
+.contactar input[type="color"],
+.contactar select,
+.contactar textarea,
+.contactar .field {
+	display: block;
+	height: 24px; /* line-height: 40px; */
+	padding: 0 12px;
+	margin-bottom: 6px;
+	font-size: .6em;
+	color: #5c6b80;
+	border-radius: 3px;
+	vertical-align: top;
+	box-shadow: none;
+	border: 0;
+	width: 100%;
+	max-width: 350px;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+	-webkit-transition: background-color 0.24s ease-in-out;
+	transition: background-color 0.24s ease-in-out;
+}
+
+/* line 2868, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar input.inline {
+	width: 172px;
+	display: inline-block;
+}
+
+/* line 2873, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar input.wpcf7-submit {
+	border-radius: 30px;
+	background: #ffffff;
+	font-size: .6em;
+}
+
+/* line 2879, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar span.blanco {
+	display: inline;
+	color: #ffffff;
+	text-shadow: 2px 2px #475B62;
+}
+
+/* line 2885, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar textarea {
+	height: 40px;
+}
+
+/* line 2889, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .datos_contacto {
+	width: 320px;
+	float: left;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* line 2894, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .datos_contacto img {
+	width: 100%;
+}
+
+/* line 2898, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .datos_contacto .wrapper-datos {
+	width: 80%;
+	padding: 160px 0 0 20px;
+	margin: 0 auto;
+}
+
+/* line 2903, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .datos_contacto .wrapper-datos p {
+	display: block;
+	text-align: center;
+}
+
+/* line 2909, ../../scss/partials/atm_partials/_layout.scss */
+
+.contactar .datos_contacto h3 {
+	font-size: 1.9em;
+	display: block;
+	width: 100%;
+	color: #ffffff;
+}
+
+/* line 2920, ../../scss/partials/atm_partials/_layout.scss */
+
+.avisos .panel {
+	width: 100%;
+	height: 480px;
+	padding-top: 60px;
+	overflow: hidden;
+}
+
+/* line 2926, ../../scss/partials/atm_partials/_layout.scss */
+
+.avisos .panel p {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: .6em;
+	line-height: 1.8em;
+}
+
+/* line 2936, ../../scss/partials/atm_partials/_layout.scss */
+
+.avisos .panel .legal {
+	width: 640px;
+	height: 304px;
+	margin: 0 auto;
+	padding-top: 43px;
+	background-image: url('../../images/marco_legal.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 2949, ../../scss/partials/atm_partials/_layout.scss */
+
+.avisos .panel .entry-content {
+	width: 640px;
+	height: 245px;
+	overflow-y: scroll;
+	padding-top: 20px;
+}
+
+/* line 2959, ../../scss/partials/atm_partials/_layout.scss */
+
+.avisos .panel .cerrar {
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-image: url('../../images/up_avisos.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	margin: 10px auto;
+}
+
+/* line 2980, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel {
+	width: 100%;
+	height: 300px;
+	padding-top: 10px;
+	border-top: 2px solid #d2c510;
+	background-image: url('../../images/fondo_avisos.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 2993, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel ul a {
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+	color: #d2c510;
+	font-size: .6em;
+	line-height: 1.8em;
+}
+
+/* line 3005, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel li ul {
+	margin: 0;
+}
+
+/* line 3007, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel li ul a {
+	color: #ffffff;
+	padding-left: 20px;
+}
+
+/* line 3016, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel .mapa {
+	margin: 0 auto;
+	width: 28.57143%;
+	float: left;
+}
+
+/* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+
+.mapaweb .panel .mapa:nth-child(3n + 1) {
+	margin-left: 0;
+	margin-right: -100%;
+	clear: both;
+	margin-left: 0;
+}
+
+/* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+
+.mapaweb .panel .mapa:nth-child(3n + 2) {
+	margin-left: 35.71429%;
+	margin-right: -100%;
+	clear: none;
+}
+
+/* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+
+.mapaweb .panel .mapa:nth-child(3n + 3) {
+	margin-left: 71.42857%;
+	margin-right: -100%;
+	clear: none;
+}
+
+/* line 3023, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel .cerrar {
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-image: url('../../images/up_avisos.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	margin: 10px auto;
+}
+
+/* line 3036, ../../scss/partials/atm_partials/_layout.scss */
+
+.mapaweb .panel .map_container {
+	padding: 10px 10x0px;
 }
 
 /* background setup */
@@ -8861,7 +9878,7 @@ body { /* give this to all tags from html to .fullscreen */
 	position: absolute;
 	text-align: center;
 	left: 0px;
-	top: 40%;
+	top: 50px;
 	bottom: 0px;
 	color: #fff;
 	width: 100%;
@@ -8878,20 +9895,20 @@ body { /* give this to all tags from html to .fullscreen */
 	transition: 200ms ease;
 }
 
-/* line 126, ../../scss/partials/atm_partials/_modules.scss */
+/* line 130, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-caption p {
 	padding: 5px;
 	margin: 0;
 }
 
-/* line 130, ../../scss/partials/atm_partials/_modules.scss */
+/* line 134, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-caption a {
 	display: inline-block !important;
 }
 
-/* line 133, ../../scss/partials/atm_partials/_modules.scss */
+/* line 137, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-html-caption {
 	display: none;
@@ -8899,7 +9916,7 @@ body { /* give this to all tags from html to .fullscreen */
 
 /* Direction nav styles (e.g. Next & Prev) */
 
-/* line 137, ../../scss/partials/atm_partials/_modules.scss */
+/* line 141, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-directionNav a {
 	position: absolute;
@@ -8908,13 +9925,13 @@ body { /* give this to all tags from html to .fullscreen */
 	cursor: pointer;
 }
 
-/* line 143, ../../scss/partials/atm_partials/_modules.scss */
+/* line 147, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-prevNav {
 	left: 20%;
 }
 
-/* line 146, ../../scss/partials/atm_partials/_modules.scss */
+/* line 150, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-nextNav {
 	right: 20%;
@@ -8922,7 +9939,7 @@ body { /* give this to all tags from html to .fullscreen */
 
 /* Control nav styles (e.g. 1,2,3...) */
 
-/* line 150, ../../scss/partials/atm_partials/_modules.scss */
+/* line 154, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-controlNav {
 	text-align: center;
@@ -8934,7 +9951,7 @@ body { /* give this to all tags from html to .fullscreen */
 	z-index: 10;
 }
 
-/* line 161, ../../scss/partials/atm_partials/_modules.scss */
+/* line 165, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-controlNav a {
 	display: inline-block;
@@ -8946,17 +9963,434 @@ body { /* give this to all tags from html to .fullscreen */
 	margin: 0 2px;
 }
 
-/* line 171, ../../scss/partials/atm_partials/_modules.scss */
+/* line 175, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-controlNav a {
 	cursor: pointer;
 }
 
-/* line 175, ../../scss/partials/atm_partials/_modules.scss */
+/* line 179, ../../scss/partials/atm_partials/_modules.scss */
 
 .nivo-controlNav a.active {
 	font-weight: bold;
-	background: white;
+	background: #ffffff;
+}
+
+/*
+ * simplyScroll 2 - a scroll-tastic jQuery plugin
+ *
+ * http://logicbox.net/jquery/simplyscroll
+ *
+ * Copyright (c) 2009-2012 Will Kelly - http://logicbox.net
+ *
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * Last revised: 31/01/2012
+ *
+ */
+
+/* Default/Master classes 
+
+Example markup format (for horizontal scroller)
+Note all DIVs are generated and should not be hard-coded
+
+<div class="your-custom-class simply-scroll-container">
+    <div class="simply-scroll-btn simply-scroll-btn-left"></div>
+    <div class="simply-scroll-btn simply-scroll-btn-right"></div>
+    <div class="simply-scroll-clip">
+        <ul class="simply-scroll-list">
+            <li>...</li>
+            ...
+        </ul>
+    </div>
+</div>
+
+
+*/
+
+/* line 216, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-container { /* Container DIV - automatically generated */
+	position: relative;
+}
+
+/* line 220, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-clip { /* Clip DIV - automatically generated */
+	position: relative;
+	overflow: hidden;
+}
+
+/* line 225, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* line 232, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* line 238, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* line 243, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn {
+	position: absolute;
+	background-image: url('../../images/buttons.png');
+	width: 42px;
+	height: 44px;
+	z-index: 3;
+	cursor: pointer;
+}
+
+/* line 254, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-left {
+	left: 6px;
+	bottom: 6px;
+	background-position: 0 -44px;
+}
+
+/* line 259, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-left.disabled {
+	background-position: 0 0 !important;
+}
+
+/* line 262, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-left:hover,
+.simply-scroll-btn-left:focus {
+	background-position: 0 -88px;
+}
+
+/* line 266, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-right {
+	right: 6px;
+	bottom: 6px;
+	background-position: -84px -44px;
+}
+
+/* line 271, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-right.disabled {
+	background-position: -84px 0 !important;
+}
+
+/* line 274, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-right:hover,
+.simply-scroll-btn-right:focus {
+	background-position: -84px -88px;
+}
+
+/* line 278, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-up {
+	right: 6px;
+	top: 6px;
+	background-position: -126px -44px;
+}
+
+/* line 283, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-up.disabled {
+	background-position: -126px 0 !important;
+}
+
+/* line 286, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-up:hover,
+.simply-scroll-btn-up:focus {
+	background-position: -126px -88px;
+}
+
+/* line 290, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-down {
+	right: 6px;
+	bottom: 6px;
+	background-position: -42px -44px;
+}
+
+/* line 295, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-down.disabled {
+	background-position: -42px 0 !important;
+}
+
+/* line 298, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-down:hover,
+.simply-scroll-btn-down:focus {
+	background-position: -42px -88px;
+}
+
+/* line 302, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-pause {
+	right: 6px;
+	bottom: 6px;
+	background-position: -168px -44px;
+}
+
+/* line 307, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-pause:hover,
+.simply-scroll-btn-pause:focus {
+	background-position: -168px -88px;
+}
+
+/* line 311, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-pause.active {
+	background-position: -84px -44px;
+}
+
+/* line 314, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll-btn-pause.active:hover,
+.simply-scroll-btn-pause.active:focus {
+	background-position: -84px -88px;
+}
+
+/* Custom class modifications - override classees
+
+.simply-scroll is default
+
+*/
+
+/* line 324, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll { /* Customisable base class for style override DIV */
+	width: 576px;
+	height: 200px;
+	margin-bottom: 1em;
+}
+
+/* line 330, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll .simply-scroll-clip {
+	width: 576px;
+	height: 200px;
+}
+
+/* line 337, ../../scss/partials/atm_partials/_modules.scss */
+
+.simply-scroll .simply-scroll-list li {
+	float: left;
+	width: 290px;
+	height: 200px;
+}
+
+/* Vertical scroller example */
+
+/* line 366, ../../scss/partials/atm_partials/_modules.scss */
+
+.vert { /* wider than clip to position buttons to side */
+	width: 340px;
+	height: 400px;
+	margin-bottom: 1.5em;
+}
+
+/* line 372, ../../scss/partials/atm_partials/_modules.scss */
+
+.vert .simply-scroll-clip {
+	width: 290px;
+	height: 400px;
+}
+
+/* line 379, ../../scss/partials/atm_partials/_modules.scss */
+
+.vert .simply-scroll-list li {
+	width: 290px;
+	height: 20px;
+}
+
+/* line 387, ../../scss/partials/atm_partials/_modules.scss */
+
+.vert .simply-scroll-btn-up { /* modified btn pos */
+	right: 0;
+	top: 150px;
+}
+
+/* line 394, ../../scss/partials/atm_partials/_modules.scss */
+
+.vert .simply-scroll-btn-down { /* modified btn pos */
+	right: 0;
+	top: 200px;
+}
+
+/* NOTE left-right classes wouldn't be needed on vertical scroller */
+
+/* line 406, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-open {
+	overflow: hidden;
+}
+
+/* line 409, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+/* line 421, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal.fade .modal-dialog {
+	-webkit-transition: -webkit-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	-webkit-transform: translate(0, -25%);
+	-ms-transform: translate(0, -25%);
+	transform: translate(0, -25%);
+}
+
+/* line 430, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+/* line 436, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* line 440, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 10px;
+}
+
+/* line 445, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #999;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	outline: 0;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* line 457, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-backdrop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+}
+
+/* line 464, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-backdrop.fade {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* line 468, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+/* line 472, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-header {
+	min-height: 16.42857143px;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 477, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-header .close {
+	margin-top: -2px;
+}
+
+/* line 480, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+
+/* line 484, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-body {
+	position: relative;
+	padding: 15px;
+}
+
+/* line 488, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-footer {
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+/* line 493, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-footer .btn + .btn {
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+/* line 497, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-footer .btn-group .btn + .btn {
+	margin-left: -1px;
+}
+
+/* line 500, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-footer .btn-block + .btn-block {
+	margin-left: 0;
+}
+
+/* line 503, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
 }
 
 /* line 7, ../../scss/partials/atm_partials/_responsivenav.scss */
@@ -9181,6 +10615,1488 @@ body { /* give this to all tags from html to .fullscreen */
 	display: block;
 }
 
+/******************************************************************/
+
+/* line 6, ../../scss/paginas/_eventos-de-empresa.scss */
+
+header {
+	position: relative;
+}
+
+/* line 18, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movil .imagenmovil {
+	position: relative;
+}
+
+/* line 20, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movil .imagenmovil img {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+/* line 26, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movil .imagenmovil h3 {
+	position: absolute;
+	top: 40%;
+	color: white;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 5;
+	text-transform: none;
+	border-bottom: none;
+	display: block;
+	width: 100%;
+	text-align: center !important;
+}
+
+/* line 46, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa h2,
+.eventos-de-empresa h3 {
+	color: #439be9;
+	background: #ffffff;
+}
+
+/* line 51, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content {
+	background: #439be9;
+	padding: 5px 0;
+}
+
+/* line 52, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content h2 {
+	color: #ffffff;
+	background: none;
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ffffff;
+}
+
+/* line 65, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content .linea {
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/* line 84, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .centro .nav li a {
+	display: inline-block;
+	float: left;
+	font-size: 2em;
+	color: #708284;
+	width: 45px;
+}
+
+/* line 93, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa hr {
+	margin-bottom: 15px;
+}
+
+/* line 97, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa img {
+	width: 100%;
+}
+
+/* line 101, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa h2 {
+	text-align: center;
+	margin: 1%;
+	text-transform: uppercase;
+}
+
+/* line 107, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa h3 {
+	font-weight: bold;
+}
+
+/* line 111, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .layout {
+	margin: 0 14%;
+}
+
+/* line 137, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second {
+	background: #439be9;
+	color: #ffffff;
+	padding-bottom: 20px;
+	font-size: .8em;
+	text-align: center;
+}
+
+/* line 153, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second h3 {
+	font-weight: bold;
+	padding: 5px;
+	text-align: justify;
+	margin-bottom: 7px;
+	margin-top: 0;
+}
+
+/* line 167, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second h2 {
+	margin: 0;
+	padding: 15px 0;
+	border-bottom: 1px solid;
+}
+
+/* line 174, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second p {
+	text-align: justify;
+	line-height: 1.5em;
+	padding-bottom: 10px;
+}
+
+/* line 180, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second span {
+	font-size: .5em;
+}
+
+/* line 185, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .section-wrap {
+	padding-top: 20px;
+}
+
+/* line 199, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second section.linea {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 1px;
+	background: #475B62;
+}
+
+/* line 208, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto {
+	width: 160px;
+	height: 68px;
+	margin: 0 auto;
+}
+
+/* line 213, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* line 221, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
+}
+
+/* line 226, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
+}
+
+/* line 230, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
+}
+
+/* line 234, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 243, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .informacion h2 {
+	border: none;
+}
+
+/* line 248, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .informacion .wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* line 256, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .teal {
+	background: #148fa8;
+}
+
+/* line 261, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third h2 {
+	padding: 2% 0;
+	margin: 0;
+	color: #ffffff;
+	text-transform: none;
+	text-shadow: 2px 2px 5px #000000;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+/* line 272, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third .impacto {
+	width: 60%;
+}
+
+/* line 278, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third figure {
+	text-align: left;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-left: 27%;
+	text-shadow: 2px 2px 5px #000000;
+}
+
+/* line 287, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third figcaption {
+	background: rgba(0, 0, 0, 0.6);
+	padding-right: 5%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/* line 293, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third figcaption p {
+	text-align: justify;
+	margin-left: 30%;
+	font-size: .7em;
+	line-height: 1.3em;
+	color: #ffffff;
+}
+
+/* line 303, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .third h1 {
+	color: #fd8117;
+	font-size: 2.1em;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+/* line 344, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .nivo-caption {
+	padding: 0;
+	top: 25%;
+}
+
+/* line 349, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .slider_container {
+	min-width: 1025px;
+}
+
+/* line 354, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .leermas {
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	padding-top: 150px;
+}
+
+/* line 360, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .leermas a {
+	color: #475B62;
+	font-size: .7em;
+}
+
+/* line 366, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .collapse,
+.eventos-de-empresa .collapsing {
+	background: #148fa8;
+	width: 100%;
+	padding: 20px 0;
+	background-image: url('../../images/fondo_leer.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 378, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .collapse p,
+.eventos-de-empresa .collapsing p {
+	color: #ffffff;
+	width: 60%;
+	margin: 0 auto;
+	font-size: .8em;
+	display: block;
+	padding: 5px 50px;
+	line-height: 1.5em;
+}
+
+/* line 395, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figure,
+.mientras figcaption,
+.mientras h1,
+.mientras h2,
+.mientras p,
+.deporte figure,
+.deporte figcaption,
+.deporte h1,
+.deporte h2,
+.deporte p,
+.cohesionar figure,
+.cohesionar figcaption,
+.cohesionar h1,
+.cohesionar h2,
+.cohesionar p,
+.querras figure,
+.querras figcaption,
+.querras h1,
+.querras h2,
+.querras p {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 404, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figure:nth-of-type(1) h1,
+.deporte figure:nth-of-type(1) h1,
+.cohesionar figure:nth-of-type(1) h1,
+.querras figure:nth-of-type(1) h1 {
+	font-size: 1.8em;
+	width: 40%;
+	min-width: 700px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: right;
+	padding-right: 20%;
+	margin-bottom: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	float: right;
+}
+
+/* line 419, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figure:nth-of-type(2),
+.deporte figure:nth-of-type(2),
+.cohesionar figure:nth-of-type(2),
+.querras figure:nth-of-type(2) {
+	clear: both;
+}
+
+/* line 422, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figure:nth-of-type(2) h2,
+.deporte figure:nth-of-type(2) h2,
+.cohesionar figure:nth-of-type(2) h2,
+.querras figure:nth-of-type(2) h2 {
+	font-size: 1.1em;
+	width: 70%;
+	left: 30%;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: left;
+	padding-right: 20%;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: right;
+	text-transform: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+/* line 440, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figcaption,
+.deporte figcaption,
+.cohesionar figcaption,
+.querras figcaption {
+	width: 60%;
+	left: 40%;
+	background: rgba(67, 155, 233, 0.6);
+	padding-right: 20%;
+	padding-bottom: 10px;
+}
+
+/* line 447, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.mientras figcaption p,
+.deporte figcaption p,
+.cohesionar figcaption p,
+.querras figcaption p {
+	text-align: justify;
+	margin-left: 10%;
+	font-size: .7em;
+	line-height: 1.3em;
+}
+
+/* line 462, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav .movil li {
+	display: inline-block;
+	width: 155px;
+	height: 155px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* line 544, ../../scss/paginas/_eventos-de-empresa.scss */
+
+ul.movil {
+	margin: 0 auto;
+	width: 320px;
+}
+
+/* line 549, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movilbox {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* line 554, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movilbox img {
+	width: 100;
+}
+
+/* line 559, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movilbox h3 {
+	display: block;
+	width: 100%;
+	padding: 2px 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	top: 30%;
+	z-index: 6;
+	text-align: center !important;
+}
+
+/* line 2, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor header {
+	position: absolute;
+	background: #d2c510;
+}
+
+/* line 7, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .cabecera {
+	position: relative;
+	background: #d2c510;
+}
+
+/* line 13, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .nav_superior h1 {
+	color: #475B62;
+}
+
+/* line 17, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .nav_superior .nav .fa {
+	color: #475B62;
+}
+
+/* line 24, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .first {
+	position: relative;
+}
+
+/* line 26, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .first h2 {
+	color: #000000;
+	display: block;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* line 36, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .first .wrap {
+	position: relative;
+	margin-top: 100px;
+	width: 50%;
+	min-width: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 0 10px 0;
+}
+
+/* line 44, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .first .wrap h3 {
+	background: none;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+	line-height: .1em;
+}
+
+/* line 55, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .first .wrap h2 {
+	background: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+}
+
+/* line 68, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .second {
+	background: #d2c510;
+	color: #475B62;
+	padding: 20px 0;
+}
+
+/* line 73, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .second .section-wrap {
+	padding: 0 20px;
+}
+
+/* line 77, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .second h2 {
+	display: block;
+	width: 100%;
+	padding: 0 0 15px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	border-bottom: 1px solid #475B62;
+	color: #475B62;
+}
+
+/* line 90, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .second .third {
+	-moz-columns: 15em 2;
+	-webkit-columns: 15em 2;
+	columns: 15em 2;
+	padding: 5px 0;
+}
+
+/* line 93, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .second .third p {
+	font-size: .7em;
+	line-height: 1.4em;
+	text-align: justify;
+	padding-bottom: 5px;
+}
+
+/* line 103, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .alternativo h2 {
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 8px 0;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* line 114, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor section.linea {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #475B62;
+	margin: 0 0 10px 0;
+}
+
+/* line 122, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto {
+	width: 160px;
+	height: 68px;
+	margin: 0 auto;
+}
+
+/* line 127, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* line 135, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
+}
+
+/* line 140, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
+}
+
+/* line 144, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
+}
+
+/* line 148, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 152, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .contacto span {
+	display: block;
+	text-align: center;
+	font-size: .7em;
+}
+
+/* line 160, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .informacion {
+	border: none;
+}
+
+/* line 163, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .informacion h2 {
+	border: none;
+	text-transform: none;
+}
+
+/* line 169, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .informacion .wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* line 173, ../../scss/paginas/_outdoor-training.scss */
+
+.outdoor .informacion .wrap span {
+	display: block;
+	text-align: center;
+	font-size: .7em;
+}
+
+/* line 184, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding header {
+	position: absolute;
+	background: #d2c510;
+}
+
+/* line 189, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .cabecera {
+	position: relative;
+	background: #d2c510;
+}
+
+/* line 195, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .nav_superior h1 {
+	color: #475B62;
+}
+
+/* line 199, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .nav_superior .fa {
+	color: #475B62;
+}
+
+/* line 205, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .first {
+	position: relative;
+}
+
+/* line 207, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .first h2 {
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	background: none;
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* line 217, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .first .wrap {
+	position: relative;
+	margin-top: 30px;
+	width: 50%;
+	float: right;
+	min-width: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 0 10px 0;
+}
+
+/* line 226, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .first .wrap h3 {
+	background: none;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: left;
+	display: block;
+	padding-left: 10px;
+	line-height: .1em;
+}
+
+/* line 237, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .first .wrap h2 {
+	background: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	text-align: left;
+	display: block;
+	padding-left: 10px;
+}
+
+/* line 250, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .second {
+	background: #d2c510;
+	color: #475B62;
+	padding: 20px 0;
+}
+
+/* line 255, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .second .section-wrap {
+	padding: 0 20px;
+}
+
+/* line 259, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .second h2 {
+	display: block;
+	width: 100%;
+	padding: 0 0 15px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	border-bottom: 1px solid #475B62;
+	color: #475B62;
+}
+
+/* line 272, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .second .third {
+	-moz-columns: 15em 2;
+	-webkit-columns: 15em 2;
+	columns: 15em 2;
+	padding: 5px 0;
+}
+
+/* line 275, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .second .third p {
+	font-size: .7em;
+	line-height: 1em;
+	text-align: justify;
+	padding-bottom: 5px;
+}
+
+/* line 285, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .alternativo h2 {
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 8px 0;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* line 296, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding section.linea {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #475B62;
+	margin: 0 0 10px 0;
+}
+
+/* line 304, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto {
+	width: 160px;
+	height: 68px;
+	margin: 0 auto;
+}
+
+/* line 309, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* line 317, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto a:nth-of-type(1) {
+	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
+}
+
+/* line 322, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto a:nth-of-type(2) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
+}
+
+/* line 326, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto a:nth-of-type(3) {
+	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
+}
+
+/* line 330, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .contacto a:hover {
+	background-position-y: -1px;
+}
+
+/* line 337, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .informacion {
+	border: none;
+}
+
+/* line 340, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .informacion h2 {
+	border: none;
+	text-transform: none;
+}
+
+/* line 346, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .informacion .wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* line 350, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .informacion .wrap span {
+	display: block;
+	text-align: center;
+	font-size: .7em;
+}
+
+/* line 358, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth {
+	background: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 50px;
+}
+
+/* line 363, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth h2,
+.teambuilding .fourth h3 {
+	width: 100%;
+	display: block;
+	text-transform: uppercase;
+	color: #475B62;
+	text-align: center;
+}
+
+/* line 371, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth > h3 {
+	font-size: 1em;
+}
+
+/* line 375, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth > h2 {
+	font-size: 1.3em;
+	padding-bottom: 25px;
+}
+
+/* line 380, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 386, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building img {
+	width: 100%;
+}
+
+/* line 390, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 33.33%;
+	float: left;
+}
+
+/* line 397, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* line 404, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 33%;
+}
+
+/* line 410, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span.high {
+	background: rgba(67, 155, 233, 0.6);
+}
+
+/* line 414, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span.low {
+	background: rgba(113, 177, 4, 0.6);
+}
+
+/* line 418, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span.din {
+	background: rgba(189, 54, 19, 0.6);
+}
+
+/* line 423, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span h2 {
+	color: #ffffff;
+	padding: 0 0 5px 0;
+}
+
+/* line 429, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fourth .menu-building li span h3 {
+	color: #ffffff;
+	padding: 5px 0 0 0;
+	margin: 0;
+	font-size: .7em;
+}
+
+/* line 441, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .superior {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 446, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .section-wrap {
+	width: 50%;
+	min-width: 320px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+/* line 452, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .section-wrap p {
+	color: #ffffff;
+	padding: 3px 10px;
+	width: 100%;
+	font-size: .7em;
+	line-height: 1.4em;
+	text-align: justify;
+}
+
+/* line 462, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .fourth {
+	padding: 0;
+}
+
+/* line 465, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .fourth .section-wrap {
+	width: 100%;
+}
+
+/* line 469, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .fourth .menu-building {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+/* line 472, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .fourth .menu-building li {
+	width: 50%;
+	float: left;
+}
+
+/* line 480, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .modal-header {
+	background: #ffffff;
+	min-height: 16.43px;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 1.9em;
+	color: #686868;
+}
+
+/* line 488, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .modal-header .close {
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=20);
+	opacity: .2;
+}
+
+/* line 497, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .modal-header .close span {
+	color: #686868;
+}
+
+/* line 503, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .leer_mas {
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	padding: 20px 40px 20px 40px;
+	line-height: 1.8em;
+	position: absolute;
+	top: 50%;
+}
+
+/* line 513, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding.dinamicas .mas {
+	display: block;
+	text-align: right;
+	padding-top: 10px;
+}
+
+/* line 521, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high-ropes {
+	position: relative;
+}
+
+/* line 523, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high-ropes > h2 {
+	color: #ffffff;
+	display: block;
+	width: 50%;
+	background: rgba(67, 155, 233, 0.5);
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/* line 535, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high-ropes .wrap {
+	position: relative;
+	margin-top: 100px;
+	width: 50%;
+	min-width: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 0 10px 0;
+}
+
+/* line 543, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high-ropes .wrap h3 {
+	background: none;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+	line-height: .1em;
+}
+
+/* line 554, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high-ropes .wrap h2 {
+	background: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+}
+
+/* line 567, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .linea_amarilla {
+	width: 100%;
+	display: block;
+	background: #d2c510;
+	height: 10px;
+}
+
+/* line 574, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .linea_azul {
+	width: 100%;
+	display: block;
+	background: #439be9;
+	height: 20px;
+}
+
+/* line 581, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .linea_green {
+	width: 100%;
+	display: block;
+	background: #71b104;
+	height: 20px;
+}
+
+/* line 588, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .linea_orange {
+	width: 100%;
+	display: block;
+	background: rgba(189, 54, 19, 0.8);
+	height: 20px;
+}
+
+/* line 595, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high_table {
+	background-image: url('../../images/high_atm_2.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 604, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .high_table h2,
+.teambuilding .high_table h3 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* line 612, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .tabla {
+	width: 80%;
+	text-align: center;
+	display: table;
+	font-size: .7em;
+	color: #ffffff;
+	margin: 0 auto;
+	background: none;
+	padding: 30px 5px;
+}
+
+/* line 620, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .tabla img {
+	width: 100%;
+}
+
+/* line 625, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .tabla p {
+	line-height: 1.6em;
+}
+
+/* line 633, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .fila {
+	display: table-row;
+}
+
+/* line 637, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .celda {
+	display: table-cell;
+	border: 1px solid #ffffff;
+	vertical-align: middle;
+}
+
+/* line 643, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .pri {
+	width: 20%;
+	text-transform: uppercase;
+	background: rgba(67, 155, 233, 0.4);
+}
+
+/* line 649, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .seg {
+	width: 25%;
+}
+
+/* line 653, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .ter {
+	width: 55%;
+	text-align: justify;
+	padding: 5px;
+}
+
+/* line 661, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low_table {
+	background-image: url('../../images/low_atm_2.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 670, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low_table h2,
+.teambuilding .low_table h3 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* line 677, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low_table .pri {
+	background: #71b104;
+}
+
+/* line 683, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low-ropes {
+	position: relative;
+}
+
+/* line 685, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low-ropes > h2 {
+	color: #ffffff;
+	display: block;
+	width: 50%;
+	background: rgba(113, 177, 4, 0.6);
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/* line 697, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low-ropes .wrap {
+	position: relative;
+	margin-top: 100px;
+	width: 50%;
+	min-width: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 0 10px 0;
+}
+
+/* line 705, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low-ropes .wrap h3 {
+	background: none;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+	line-height: .1em;
+}
+
+/* line 716, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .low-ropes .wrap h2 {
+	background: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+}
+
+/* line 731, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina_table {
+	background-image: url('../../images/dina_atm_2.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+/* line 740, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina_table h2,
+.teambuilding .dina_table h3 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* line 747, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina_table .pri {
+	background: rgba(189, 54, 19, 0.4);
+	height: 120px;
+}
+
+/* line 754, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina-ropes {
+	position: relative;
+}
+
+/* line 756, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina-ropes > h2 {
+	color: #ffffff;
+	display: block;
+	width: 50%;
+	background: rgba(189, 54, 19, 0.6);
+	padding: 5px 0;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/* line 768, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina-ropes .wrap {
+	position: relative;
+	margin-top: 100px;
+	width: 50%;
+	min-width: 320px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5px 0 10px 0;
+}
+
+/* line 776, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina-ropes .wrap h3 {
+	background: none;
+	color: #d2c510;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+	line-height: .1em;
+}
+
+/* line 787, ../../scss/paginas/_outdoor-training.scss */
+
+.teambuilding .dina-ropes .wrap h2 {
+	background: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	text-align: right;
+	display: block;
+	padding-right: 10px;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -9352,7 +12268,87 @@ be set to display none.
 
 }
 
+@media (min-width: 768px) {
+
+/* line 511, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-dialog {
+	width: 600px;
+	margin: 30px auto;
+}
+
+/* line 515, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-content {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* line 519, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-sm {
+	width: 300px;
+}
+
+}
+
 @media (min-width: 795px) {
+
+/* line 135, ../../scss/partials/atm_partials/_base.scss */
+
+.head_layout {
+	padding: 0 2%;
+}
+
+/* line 392, ../../scss/partials/atm_partials/_base.scss */
+
+footer nav span.copyright::after {
+	content: " | ";
+}
+
+/* line 404, ../../scss/partials/atm_partials/_base.scss */
+
+footer .footer-nav li::after {
+	content: " - ";
+}
+
+/* line 408, ../../scss/partials/atm_partials/_base.scss */
+
+footer .footer-nav li:last-child::after {
+	content: " ";
+}
+
+/* line 15, ../../scss/partials/atm_partials/_layout.scss */
+
+.movil {
+	display: none;
+}
+
+/* line 19, ../../scss/partials/atm_partials/_layout.scss */
+
+.nomovil {
+	display: block;
+}
+
+/* line 171, ../../scss/partials/atm_partials/_layout.scss */
+
+.quienes-somos .der {
+	width: 64.28571%;
+	float: right;
+	margin-right: 0;
+	padding-top: 3%;
+}
+
+/* line 1371, ../../scss/partials/atm_partials/_layout.scss */
+
+footer nav {
+	width: 100%;
+}
+
+/* line 102, ../../scss/partials/atm_partials/_modules.scss */
+
+.nivo-caption {
+	top: 190px;
+}
 
 /* line 1, ../../scss/partials/atm_partials/_smallscreen.scss */
 
@@ -9407,7 +12403,7 @@ body .cabecera.home img {
 
 body .main .principal {
 	margin-top: 0px;
-	color: white;
+	color: #ffffff;
 	font-weight: bold;
 }
 
@@ -9522,7 +12518,7 @@ body .main section ul.portada > li .titular {
 	bottom: 5%;
 	padding: 2% 0;
 	z-index: 10;
-	border: 1px solid white;
+	border: 1px solid #ffffff;
 	-o-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	-webkit-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	border-image: url('../../images/borde.png') 2 13 3 9 repeat;
@@ -9595,6 +12591,193 @@ body .main section .subnav a {
 
 body footer li {
 	display: inline-block;
+}
+
+/* line 6, ../../scss/paginas/_eventos-de-empresa.scss */
+
+header {
+	position: absolute;
+}
+
+/* line 52, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content h2 {
+	border-bottom: 1px solid #475B62;
+}
+
+/* line 65, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content .linea {
+	background: #475B62;
+}
+
+/* line 117, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa h2,
+.eventos-de-empresa h3 {
+	color: #475B62;
+	background: none;
+}
+
+/* line 121, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content {
+	color: #000000;
+	background: #ffffff;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: .8em;
+	line-height: normal;
+	text-align: justify;
+}
+
+/* line 122, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .entry-content h2 {
+	color: #475B62;
+}
+
+/* line 137, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second {
+	background: #ffffff;
+	color: #475B62;
+}
+
+/* line 153, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second h3 {
+	padding: 0 0 5px 0;
+	margin-bottom: 0;
+}
+
+/* line 185, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .section-wrap {
+	width: 820px;
+	margin: 0 auto;
+}
+
+/* line 190, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .second .section-wrap div {
+	float: left;
+}
+
+/* line 314, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .izq {
+	padding-top: 0;
+	width: 310px;
+	margin-right: 20px;
+}
+
+/* line 321, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .centro {
+	width: 160px;
+	padding-top: 100px;
+	margin-right: 20px;
+}
+
+/* line 327, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .der {
+	padding-top: 0;
+	width: 310px;
+	margin-right: 0;
+}
+
+/* line 333, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-de-empresa .footer {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/* line 458, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav {
+	height: 177px;
+}
+
+/* line 475, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav ul {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 778px;
+}
+
+/* line 482, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav a {
+	display: inline-block;
+	height: 140px;
+	width: 184px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #475B62;
+	background-image: url('../../images/eventos_nav.jpg');
+	background-repeat: no-repeat;
+	background-position-y: 26px;
+}
+
+/* line 497, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav a:hover {
+	background-position-y: -118px;
+	color: #ffffff;
+}
+
+/* line 501, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav a:hover span {
+	display: block;
+	background: #439be9;
+}
+
+/* line 510, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav li:nth-of-type(1) a {
+	width: 226px;
+}
+
+/* line 518, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav li:nth-of-type(2) a {
+	background-position-x: -255px;
+}
+
+/* line 526, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav li:nth-of-type(3) a {
+	background-position-x: -460px;
+}
+
+/* line 534, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.eventos-nav li:nth-of-type(4) a {
+	background-position-x: -673px;
+}
+
+/* line 549, ../../scss/paginas/_eventos-de-empresa.scss */
+
+.movilbox {
+	display: none;
+}
+
+}
+
+@media (min-width: 992px) {
+
+/* line 524, ../../scss/partials/atm_partials/_modules.scss */
+
+.modal-lg {
+	width: 900px;
 }
 
 }

@@ -1,0 +1,800 @@
+.outdoor {
+	header {
+		position: absolute;
+		background: $paleryellow;
+	} // header
+
+	.cabecera {
+		position: relative;
+		background: $paleryellow;
+	} // .cabecera
+
+	.nav_superior {
+		h1 {
+			color: $grey;
+		}
+		.nav {
+			.fa {
+				color: $grey;
+			}
+		} // nav
+
+	}// nav-superior
+
+	.first {
+		position: relative;
+		h2 {
+			color: $black;
+			display: block;
+			width: 100%;
+			@include background(rgba($white, .6));
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+
+		.wrap {
+			position: relative;
+			margin-top: 100px;
+			width: 50%;
+			min-width: 320px;
+			@include background(rgba($black, .6));
+			padding: 5px 0 10px 0;
+
+			h3 {
+				background: none;
+				color: $paleryellow;
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+				line-height: .1em;
+			}
+
+			h2 {
+				background: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.9em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+
+			} //h2
+		} //wrap
+	} // first
+
+	.second {
+		background: $paleryellow;
+		color: $grey;
+		padding: 20px 0;
+
+		.section-wrap {
+			padding: 0 20px;
+		}
+
+		h2 {
+			display: block;
+			width: 100%;
+			padding: 0 0 15px 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-align: center;
+			border-bottom: 1px solid $grey;
+			color: $grey;
+
+		}
+
+		.third {
+			@include columns(15em 2);
+			padding: 5px 0;
+			p {
+				font-size: .7em;
+				line-height: 1.4em;
+				text-align: justify;
+				padding-bottom: 5px;
+			}
+		} // third
+	} //second
+
+	.alternativo {
+		h2 {
+			color: $white;
+			display: block;
+			width: 100%;
+			@include background(rgba($black, .6));
+			padding: 8px 0;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+	} //alternativo
+
+	section.linea {
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: $grey;
+		margin: 0 0 10px 0;
+	}
+
+	.contacto {
+		width: 160px;
+		height: 68px;
+		margin: 0 auto;
+		
+		a {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+
+
+		}
+
+		a:nth-of-type(1) {
+			background: image-url('contacto_gris_160.png') no-repeat 0 0;
+			
+		}
+
+		a:nth-of-type(2) {
+			background: image-url('contacto_gris_160.png')  no-repeat -59px 0;
+		}
+
+		a:nth-of-type(3) {
+			background: image-url('contacto_gris_160.png') no-repeat -113px 0;
+		}
+
+		a:hover {
+			background-position-y: -1px; 
+		}
+		
+		span {
+			display: block;
+			text-align: center;
+			font-size: .7em;
+		}
+
+	} // contacto
+
+	.informacion {
+		border: none;
+
+		h2 {
+			// color: $blue;
+			border:  none;
+			text-transform: none;
+		}
+
+		.wrap {
+			width: 100%;
+			margin: 0 auto;
+
+			span {
+				display: block;
+				text-align: center;
+				font-size: .7em;
+			}
+		}
+	} // informacion
+} // .outdoor
+
+// *********** TEAMBUILDING 
+.teambuilding {
+	header {
+		position: absolute;
+		background: $paleryellow;
+	} // header
+
+	.cabecera {
+		position: relative;
+		background: $paleryellow;
+	} // .cabecera
+
+	.nav_superior {
+		h1 {
+			color: $grey;
+		}
+
+		.fa {
+			color: $grey;
+		}
+
+	}// nav-superior
+
+	.first {
+		position: relative;
+		h2 {
+			color: $white;
+			display: block;
+			width: 100%;
+			background: none;
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+
+		.wrap {
+			position: relative;
+			margin-top: 30px;
+			width: 50%;
+			float: right;
+			min-width: 320px;
+			@include background(rgba($black, .6));
+			padding: 5px 0 10px 0;
+
+			h3 {
+				background: none;
+				color: $paleryellow;
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: left;
+				display: block;
+				padding-left: 10px;
+				line-height: .1em;
+			}
+
+			h2 {
+				background: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.9em;
+				text-align: left;
+				display: block;
+				padding-left: 10px;
+
+			} //h2
+		} //wrap
+	} // first
+
+	.second {
+		background: $paleryellow;
+		color: $grey;
+		padding: 20px 0;
+
+		.section-wrap {
+			padding: 0 20px;
+		}
+
+		h2 {
+			display: block;
+			width: 100%;
+			padding: 0 0 15px 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1.2em;
+			text-align: center;
+			border-bottom: 1px solid $grey;
+			color: $grey;
+
+		}
+
+		.third {
+			@include columns(15em 2);
+			padding: 5px 0;
+			p {
+				font-size: .7em;
+				line-height: 1em;
+				text-align: justify;
+				padding-bottom: 5px;
+			}
+		} // third
+	} //second
+
+	.alternativo {
+		h2 {
+			color: $white;
+			display: block;
+			width: 100%;
+			@include background(rgba($black, .6));
+			padding: 8px 0;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+	} //alternativo
+
+	section.linea {
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: $grey;
+		margin: 0 0 10px 0;
+	}
+
+	.contacto {
+		width: 160px;
+		height: 68px;
+		margin: 0 auto;
+		
+		a {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+
+
+		}
+
+		a:nth-of-type(1) {
+			background: image-url('contacto_gris_160.png') no-repeat 0 0;
+			
+		}
+
+		a:nth-of-type(2) {
+			background: image-url('contacto_gris_160.png')  no-repeat -59px 0;
+		}
+
+		a:nth-of-type(3) {
+			background: image-url('contacto_gris_160.png') no-repeat -113px 0;
+		}
+
+		a:hover {
+			background-position-y: -1px; 
+		}
+		
+
+	} // contacto
+
+	.informacion {
+		border: none;
+
+		h2 {
+			// color: $blue;
+			border:  none;
+			text-transform: none;
+		}
+
+		.wrap {
+			width: 100%;
+			margin: 0 auto;
+
+			span {
+				display: block;
+				text-align: center;
+				font-size: .7em;
+			}
+		}
+	} // informacion
+
+	.fourth {
+		background: $white;
+		padding-top: 5px;
+		padding-bottom: 50px;
+
+		h2, h3 {
+			width: 100%;
+			display: block;
+			text-transform: uppercase;
+			color: $grey;
+			text-align: center;
+		}
+
+		>h3 {
+			font-size: 1em;
+		}
+
+		>h2 {
+			font-size: 1.3em;
+			padding-bottom: 25px;
+		}
+
+		.menu-building {
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+
+			img {
+				width: 100%;
+			}
+
+			li {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				width: 33.33%;
+				float: left;
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: relative;
+				}
+
+				span {
+					display: block;
+					position: absolute;
+					width: 100%;
+					top: 33%;
+					
+					&.high {
+						@include background(rgba($blue,.6));
+					}
+
+					&.low {
+						@include background(rgba($green,.6));
+					}
+
+					&.din {
+						@include background(rgba($orange,.6));
+					}
+
+
+					h2 {
+						color: $white;
+						padding: 0 0 5px 0;
+
+					}
+
+					h3 {
+						color: $white;
+						padding: 5px 0 0 0;
+						margin: 0;
+						font-size: .7em;
+					}
+				}
+			}
+		}
+	} // fourth
+
+	&.dinamicas {
+		.superior {
+			width: 100%;
+			@include background(rgba($black,.6));
+		} // superior
+
+		.section-wrap {
+			width: 50%;
+			min-width: 320px;
+			padding: 20px 0;
+			margin: 0 auto;
+
+			p {
+				color: $white;
+				padding: 3px 10px;
+				width: 100%;
+				font-size: .7em;
+				line-height: 1.4em;
+				text-align: justify;
+			}
+		} // section-wrap
+
+		.fourth {
+			//background: $paleryellow;
+			padding: 0;
+			.section-wrap {
+				width: 100%;
+			}
+
+			.menu-building {
+				max-width: 1024px;
+				margin: 0 auto;
+				li {
+					width: 50%;
+					float: left;
+				}
+			}
+
+		} //fourth 
+
+		.modal-header {
+			background: $white;
+			min-height: 16.43px;
+			padding: 15px;
+			border-bottom: 1px solid #e5e5e5;
+			font-size: 1.9em;
+			color: $equipo_grey2;
+
+			.close {
+				float: right;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 1;			
+				text-shadow: 0 1px 0 #fff;
+				filter: alpha(opacity=20);
+				opacity: .2;
+
+				span {
+					color: $equipo_grey2;
+				}
+			}
+		} //modal-header
+
+		.leer_mas {
+			@include background(rgba($black,.6));
+			width: 100%; 
+			padding: 20px 40px 20px 40px;
+			line-height: 1.8em;
+			position: absolute;
+			top: 50%;
+
+		}
+
+		.mas {
+			display: block;
+			text-align: right;
+			padding-top: 10px;
+		}
+ 
+	} // dinamicas
+
+	.high-ropes {
+		position: relative;
+		>h2 {
+			color: $white;
+			display: block;
+			width: 50%;
+			@include background(rgba($blue, .5));
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 2.5em;
+			text-transform: uppercase;
+			text-align: right;
+		}
+
+		.wrap {
+			position: relative;
+			margin-top: 100px;
+			width: 50%;
+			min-width: 320px;
+			@include background(rgba($black, .6));
+			padding: 5px 0 10px 0;
+
+			h3 {
+				background: none;
+				color: $paleryellow;
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+				line-height: .1em;
+			}
+
+			h2 {
+				background: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.9em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+
+			} //h2
+		} //wrap
+	}  // high-ropes
+
+	.linea_amarilla {
+		width: 100%;
+		display: block;
+		background: $paleryellow;
+		height: 10px;
+	}
+
+	.linea_azul {
+		width: 100%;
+		display: block;
+		background: $blue;
+		height: 20px;
+	}
+
+	.linea_green {
+		width: 100%;
+		display: block;
+		background: $green;
+		height: 20px;
+	}
+
+	.linea_orange {
+		width: 100%;
+		display: block;
+		@include background(rgba($orange, .8));
+		height: 20px;
+	}
+
+	.high_table {
+		background: {
+	      image: image-url('high_atm_2.jpg');
+	      repeat: no-repeat;
+	      position: top left;
+	    };
+
+	     @include background-size(cover);
+
+	     h2, h3 {
+	     	display: block;
+	     	width: 100%;
+	     	text-align: center;
+	     	text-transform: uppercase;
+	     }
+	} // high table
+
+	.tabla {
+		width: 80%;
+		text-align: center;
+		display: table;
+		font-size: .7em;
+		color: $white;
+		margin: 0 auto;
+		background: none;
+		img {
+			width: 100%;
+			//height: 100%;
+		}
+
+		p {
+			line-height: 1.6em;
+		}
+
+		padding: 30px 5px;
+
+	}
+
+	.fila {
+		display: table-row;
+	}
+
+	.celda {
+		display:  table-cell;
+		border: 1px solid $white;
+		vertical-align: middle;
+	}
+
+	.pri {
+		width: 20%;
+		text-transform: uppercase;
+		@include background(rgba($blue, .4));
+	}
+
+	.seg {
+		width: 25%;
+	}
+
+	.ter {
+		width: 55%;
+		text-align: justify;
+		padding: 5px;
+	}
+
+	//***** LOW ROPES
+
+	.low_table {
+		background: {
+	      image: image-url('low_atm_2.jpg');
+	      repeat: no-repeat;
+	      position: top left;
+	    };
+
+	     @include background-size(cover);
+
+	     h2, h3 {
+	     	display: block;
+	     	width: 100%;
+	     	text-align: center;
+	     	text-transform: uppercase;
+	     }
+
+	     .pri {
+	     	background: $green;
+	     }
+
+	} // low table
+
+	.low-ropes {
+		position: relative;
+		>h2 {
+			color: $white;
+			display: block;
+			width: 50%;
+			@include background(rgba($green, .6));
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 2.5em;
+			text-transform: uppercase;
+			text-align: right;
+		}
+
+		.wrap {
+			position: relative;
+			margin-top: 100px;
+			width: 50%;
+			min-width: 320px;
+			@include background(rgba($black, .6));
+			padding: 5px 0 10px 0;
+
+			h3 {
+				background: none;
+				color: $paleryellow;
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+				line-height: .1em;
+			}
+
+			h2 {
+				background: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.9em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+
+			} //h2
+		} //wrap
+	}  // low-ropes
+
+	//***** OTRAS DINAMICAS
+
+	.dina_table {
+		background: {
+	      image: image-url('dina_atm_2.jpg');
+	      repeat: no-repeat;
+	      position: top left;
+	    };
+
+	     @include background-size(cover);
+
+	     h2, h3 {
+	     	display: block;
+	     	width: 100%;
+	     	text-align: center;
+	     	text-transform: uppercase;
+	     }
+
+	     .pri {
+	     	@include background(rgba($orange, .4));
+	     	height: 120px;
+	     }
+	     
+	} // dina table
+
+	.dina-ropes {
+		position: relative;
+		>h2 {
+			color: $white;
+			display: block;
+			width: 50%;
+			@include background(rgba($orange, .6));
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 2.5em;
+			text-transform: uppercase;
+			text-align: right;
+		}
+
+		.wrap {
+			position: relative;
+			margin-top: 100px;
+			width: 50%;
+			min-width: 320px;
+			@include background(rgba($black, .6));
+			padding: 5px 0 10px 0;
+
+			h3 {
+				background: none;
+				color: $paleryellow;
+				text-transform: uppercase;
+				font-size: 1em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+				line-height: .1em;
+			}
+
+			h2 {
+				background: none;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.9em;
+				text-align: right;
+				display: block;
+				padding-right: 10px;
+
+			} //h2
+		} //wrap
+	}  // dina-ropes
+
+} // teambuilding

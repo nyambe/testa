@@ -1,50 +1,8 @@
-<!doctype html>
-
-<!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-
-    <head>
-        <meta charset="utf-8">
-
-        <?php // force Internet Explorer to use the latest rendering engine available ?>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title><?php wp_title(''); ?></title>
-
-        <?php // mobile meta (hooray!) ?>
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-        <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-        <!--[if IE]>
-            <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-        <![endif]-->
-        <?php // or, set /favicon.ico for IE10 win ?>
-        <meta name="msapplication-TileColor" content="#f01d4f">
-        <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css">
-        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-        <?php // wordpress head functions ?>
-        <?php wp_head(); ?>
-        <?php // end of wordpress head ?>
-
-        <?php // drop Google Analytics Here ?>
-        <?php // end analytics ?>
-
-    </head>
-
-<body class="instalaciones metodo-experiencial background" itemscope itemtype="http://schema.org/WebPage">
-
+<?php get_header(); ?>
+<div id="container" class="pagina instalaciones metodo-experiencial">   
 <?php //<div id="container" class="fondo_verde metodo-experiencial ">   ?>
 <?php  get_template_part( 'include/cabecera', 'paginas' ); ?> 
-
+    <?php // Cuerpo . Content - Páginas ?>
 
 <div class="not-fullscreen background parallax" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/metodo_paralax_1.jpg');" data-img-width="1600" data-img-height="897" data-diff="100">
     <div class="content-a">
@@ -64,33 +22,42 @@
         <li>
             <span class="marco">
                 <h3>Método Experiencial</h3>
-                <p class="columnas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum e. </p>
+                <figure class="columnas">
+                    <p class="p1"><b>Team Building</b> engloba métodos y técnicas orientadas a desarrollar a los equipos de trabajo. En nuestro caso, desarrollamos programas de Team Building en un entorno vivencial, en plena naturaleza, y sobre una infraestructura de dinámicas que permiten <b>impactar directamente sobre las actitudes y los comportamientos de los participantes.</b></p>
+                    <p class="p1">La base metodológica es la <b>Formación Experiencial</b>, un método de trabajo para el entrenamiento de habilidades profesionales, que se desarrolla al aire libre y está basado en el aprendizaje a través de la experiencia directa, de la cual extraer conclusiones relevantes para nuestro día a día laboral. Nuestros programas están diseñados con el objetivo de movilizar distintos niveles de conciencia <b>(ser, pensar, sentir, hacer), </b>y fomentan el aprendizaje basado en vivencias antes que la transmisión cognitiva de conceptos.</p>
+                    <p class="p1">El objetivo que perseguimos con nuestro método es convertir a los equipos en <b>«equipos de alto rendimiento»</b>, trabajando desde una perspectiva única y eficiente, además de los aspectos comunes que trabajaría cualquier programa de entrenamiento de habilidades (liderazgo, solución de conflictos, toma de decisiones, planificación, gestión del tiempo, etc), aspectos relevantes como son <b>la cohesión, la confianza, la colaboración, la comunicación, el liderazgo, y la motivación individual y grupal, características propias de los equipos de alto rendimiento</b>. Este refuerzo sólo se consigue a través de la experiencia directa, haciendo que el equipo salga de su «zona de confort» y se enfrente a los retos que les proponemos.</p>
+                </figure>
 
             </span>
         </li>
         <li>
             <span class="marco">
                 <h3>Método Experiencial</h3>
-                <p class="columnas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam reprehenderit voluptatem accusantium porro hic sunt explicabo pariatur est. Corporis explicabo ut officiis, officia dicta.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque illo nostrum exercitationem, distinctio eveniet veniam </p>
+                <figure class="columnas">
+                    <p class="p1">Para ello, generamos escenarios que son aprovechados por los consultores para producir mejoras a nivel organizativo, individual y de equipo. Este método de trabajo proporciona un entorno vivencial de entrenamiento de habilidades profesionales idóneo, y sobre todo, resulta muy eficaz para el tratamiento de actitudes personales y grupales.</p>
+                    <p class="p1">Desafiamos a los participantes, facilitando que exploren y descubran por sí mismos sus propias actitudes, habilidades y comportamientos. A través de este descubrimiento,<span class="Apple-converted-space">  </span><b>impulsamos el cambio y la acción.</b></p>
+                    <p class="p2"><i>Esta metodología es tan poderosa, que destruye para siempre las barreras que impiden incorporar nuevos repertorios de conducta positiva. En este sentido, los consultores o facilitadores juegan un papel crucial creando el marco y guiando la experiencia a través de preguntas y feed-back. Su labor, a diferencia de otros métodos de Formación, no es dirigir lo que sucede, simplemente, dejan que las cosas pasen. Inducen un aprendizaje basado en el descubrimiento, la reflexión y el compromiso de cambio.</i></p>
+                </figure>
 
             </span>
         </li>
         <li>
             <span class="marco">
                 <h3>¿Sabías que através de nuestro método?</h3>
-
-                <section class="tabla">
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deserunt, rerum! Fugiat debitis voluptatem quasi, non dolore. Tempora, rem sapiente quibusdam hic nulla sed obcaecati omnis iure similique quo. Numquam.</span></p>
-                    <p><span>Delectus distinctio repellat voluptas et, aperiam dignissimos deserunt quasi ratione quaerat ea veritatis, facere saepe non nemo nostrum ipsam maxime, nisi voluptate. Animi cumque, eum? Officiis, accusamus facilis nobis quidem.</span></p>
-                    <p><span>Possimus saepe adipisci atque, modi expedita iste voluptas alias nihil non fuga, perspiciatis nemo nobis libero tempore asperiores nesciunt porro rerum laboriosam cum enim officiis tempora officia explicabo? Modi, iste.</span></p>
-                    <p><span>Ullam dolorum eum voluptas, ipsum laboriosam, odio esse, reiciendis aspernatur assumenda quas hic. Provident ullam voluptate, exercitationem incidunt nemo magni assumenda repellat laboriosam rem aperiam sequi sed obcaecati harum officiis!</span></p>
-                </section>
+                <ul class="tabla">
+                    <li class="li1">Los participantes viven en primera persona las dificultades para resolver problemas. Es decir, experimentan en su propia piel lo que, de otro modo, tendría que transmitirse de forma teórica. Así el impacto es mayor y se interioriza con mayor facilidad.</li>
+                    <li class="li1">La vivencia genera una oportunidad única para que afloren los conflictos y las corrientes emocionales internas al grupo. La propia actividad y la orientación de los consultores hace que estas disputas se resuelvan de forma positiva y constructiva.</li>
+                    <li class="li1">Los participantes asumen sus fortalezas y debilidades. Aprenden sobre ellos mismos y su equipo. Descubren que tienen un potencial mayor para superar los obstáculos y ganan mayor confianza, tanto individual como colectivamente. Identifican sus resistencias y el esfuerzo que realizan para neutralizarlas.</li>
+                    <li class="li1">Los resultados son inmediatos. A lo largo del día cambia la percepción personal y la del equipo. El entusiasmo va creciendo y, al final de la jornada, las relaciones dentro del equipo han evolucionado positivamente hacia una mayor cohesión.</li>
+                    <li class="li1">Los participantes experimentan emociones reales, no pudiendo esconderlas ni enmascararlas. El grado de sinceridad resultante potencia un análisis objetivo y sin disfraces.</li>
+                    <li class="li1">Al ser una actividad física y lúdica, cada participante debe comprometerse activamente con su aprendizaje.</li>
+                    <li class="li1">Por ser actividades diferentes a las habituales del entorno de trabajo, es más fácil romper con patrones antiguos o modelos de pensamiento obsoletos. De este modo el participante se prepara mejor para contextos cambiantes.</li>
+                </ul>
             </span>
         </li>
         <li class="not-fullscreen background" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/metodo_paralax_3.jpg');" data-img-width="1600" data-img-height="674" data-diff="20">
         <section class="sub">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem obcaecati sapiente. Eligendi molestiae magni tempora officia rerum officiis aspernatur minima accusantium, reiciendis, ipsum magnam voluptates ea expedita odio sint.</p>
-                <p>Facilis molestias ab eius placeat cum esse officiis soluta, quasi optio recusandae repellendus explicabo sequi voluptate odit numquam quibusdam corporis non nihil architecto aspernatur iste, quod eos. Sapiente, numquam, neque.</p>                 
+               <p class="p1">AMAZONIA TEAM FACTORY ha creado un espacio inmejorable para el desarrollo humano. Nuestro valor reside, por un lado, en la amplia experiencia desarrollando y explotando programas de Formación Vivencial al aire libre, y de otro, disponemos de unas instalaciones de dinámicas únicas en España, concebidas desde su construcción, para desarrollar las competencias profesionales de los equipos de trabajo. El secreto de nuestro éxito es no tomar al individuo como algo aislado de su profesión: el objetivo no es tanto formar a los profesionales que ya poseen conocimientos con bases sólidas, sino «re-formar» los hábitos emocionales para hacer frente a la espiral de cambio en las empresas.</p>                
         </section>
   
         </li>
@@ -110,25 +77,21 @@
     </div>
 </div>
   
-<section class="not-fullscreen">
-    <div class="content-a">
-        <div class="content-b">
-           <div class="otros">
-                <h2>OTROS SERVICIOS</h2>              
-               <section>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ducimus repudiandae culpa ipsa, praesentium cupiditate ipsam amet voluptatum rerum? Tempora, delectus amet nam, dignissimos totam temporibus nisi vel. Perferendis, harum.</p>
-               </section>
-           </div>
-        </div>
-    </div>
-</section>
-<section>
-    final
-</section>
-
-
-<h1>hola que tal</h1>
-
+<div class="info_box">
+    <div class="head_layout">
+        <div class="section-wrap informacion">
+            <h2>¿Necesitas más información sobre nuestros métodos?</h2>
+            <div class="wrap">
+                <ul class="contacto">
+                    <a href="<?php echo site_url(); ?>/contactar"></a>
+                    <a href="<?php echo site_url(); ?>/contactar"></a>
+                    <a href="<?php echo site_url(); ?>/contactar"></a>
+                </ul>
+                <span>Contacta con nosotros</span>
+            </div> <?php //wrap ?>
+        </div> <?php //section wrap ?>
+    </div>  <?php // head layout ?> 
+</div> <?php //info box ?>
   
 <?php get_footer(); ?>
 

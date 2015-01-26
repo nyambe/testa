@@ -921,6 +921,15 @@ jQuery(document).ready(function($) {
    $(".nivo-caption a").fitText();
    $(".exper h2").fitText(1.9, { minFontSize: '12px', maxFontSize: '40px' });
 
+    $("#scroller").simplyScroll({
+        customClass:'vert',
+        orientation:'vertical',
+        auto: false,
+        manualMode: 'loop',
+        speed: 2           
+    });
+
+
    $('.bxslider').bxSlider({
       infiniteLoop: false,
       hideControlOnEnd: true,

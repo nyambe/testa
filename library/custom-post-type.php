@@ -126,4 +126,92 @@ function custom_post_example() {
 	*/
 	
 
+// let's create the function for the custom type
+function dinamicas_custom_post() { 
+	// creating (registering) the custom type 
+	register_post_type( 'dinamicas', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+		// let's now add all the options for this post type
+		array( 'labels' => array(
+			'name' => __( 'Dinámicas', 'bonestheme' ), /* This is the Title of the Group */
+			'singular_name' => __( 'Dinámica', 'bonestheme' ), /* This is the individual type */
+			'all_items' => __( 'Todas las dinámicas', 'bonestheme' ), /* the all items menu item */
+			'add_new' => __( 'Nueva', 'bonestheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Nueva Dinámica', 'bonestheme' ), /* Add New Display Title */
+			'edit' => __( 'Editar', 'bonestheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Editar Dinámica', 'bonestheme' ), /* Edit Display Title */
+			'new_item' => __( 'Nueva Dinámica', 'bonestheme' ), /* New Display Title */
+			'view_item' => __( 'Ver Dinámica', 'bonestheme' ), /* View Display Title */
+			'search_items' => __( 'Buscar Dinámicas', 'bonestheme' ), /* Search Custom Type Title */ 
+			'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */
+			'parent_item_colon' => ''
+			), /* end of arrays */
+			'description' => __( 'Listado de Dinámicas', 'bonestheme' ), /* Custom Type Description */
+			'public' => true,
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'show_ui' => true,
+			'query_var' => true,
+			'menu_position' => 4, /* this is what order you want it to appear in on the left hand side menu */ 
+			'menu_icon' => 'dashicons-smiley', /* the icon for the custom post type menu */
+			'rewrite'	=> array( 'slug' => 'dinamicas', 'with_front' => false ), /* you can specify its url slug */
+			'has_archive' => 'dinamicas', /* you can rename the slug here */
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			/* the next one is important, it tells what's enabled in the post editor */
+			'supports' => array( 'title')
+		) /* end of options */
+	); /* end of register post type */
+	
+	/* this adds your post categories to your custom post type */
+	register_taxonomy_for_object_type( 'category', 'dinamicas' );
+	/* this adds your post tags to your custom post type */
+	register_taxonomy_for_object_type( 'post_tag', 'dinamicas' );
+	
+}
+
+	// adding the function to the Wordpress init
+	add_action( 'init', 'dinamicas_custom_post');
+
+// Custom post type Equipo Humano
+function equipohumano_custom_post() { 
+	// creating (registering) the custom type 
+	register_post_type( 'equipohumano', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+		// let's now add all the options for this post type
+		array( 'labels' => array(
+			'name' => __( 'Equipo Humano', 'bonestheme' ), /* This is the Title of the Group */
+			'singular_name' => __( 'Equipo Humano', 'bonestheme' ), /* This is the individual type */
+			'all_items' => __( 'Miembros del equipo', 'bonestheme' ), /* the all items menu item */
+			'add_new' => __( 'Nuevo', 'bonestheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Nuevo Miembro del Equipo Humano', 'bonestheme' ), /* Add New Display Title */
+			'edit' => __( 'Editar', 'bonestheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Editar Equipo Humano', 'bonestheme' ), /* Edit Display Title */
+			'new_item' => __( 'Nuevo Equipo Humano', 'bonestheme' ), /* New Display Title */
+			'view_item' => __( 'Ver Equipo Humano', 'bonestheme' ), /* View Display Title */
+			'search_items' => __( 'Buscar Equipo Humano', 'bonestheme' ), /* Search Custom Type Title */ 
+			'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */
+			'parent_item_colon' => ''
+			), /* end of arrays */
+			'description' => __( 'Listado de Equipo Humano', 'bonestheme' ), /* Custom Type Description */
+			'public' => true,
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'show_ui' => true,
+			'query_var' => true,
+			'menu_position' => 5, /* this is what order you want it to appear in on the left hand side menu */ 
+			'menu_icon' => 'dashicons-universal-access-alt', /* the icon for the custom post type menu */
+			'rewrite'	=> array( 'slug' => 'equipo'), /* you can specify its url slug */
+			'has_archive' => 'false', /* para convertirlo en página */
+			'capability_type' => 'page',
+			'hierarchical' => true,
+			/* the next one is important, it tells what's enabled in the post editor */
+			'supports' => array( 'title','page-attributes')
+		) /* end of options */
+	); /* end of register post type */
+	
+}
+
+	// adding the function to the Wordpress init
+	add_action( 'init', 'equipohumano_custom_post');
 ?>

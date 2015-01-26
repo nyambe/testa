@@ -3,8 +3,27 @@
 			<section class="head_layout">
 				<div class="nav_superior">
 					<div class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?> <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo320.png" alt="Logotipo"></a></div>
+					<div class="title_box">
+						<h1 id="fittext" class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+						<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+
+						    <?php 
+	 						global $post;     // if outside the loop
+
+								if ( is_page() && $post->post_parent ) {
+								    // This is a subpage
+								     if(function_exists('bcn_display'))
+									    {
+									        bcn_display();
+									    };
+
+								}
+						   ?>
+						</div>
+						
+					</div>
 					
-					<h1 id="fittext" class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+
 					<div class="nav">
 						<ul>
 							<li><a href="#"><i id="menu" class="fa fa-bars animenu__toggle"></i></a>

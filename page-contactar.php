@@ -1,34 +1,31 @@
 <?php get_header(); ?>
-<div id="container" class="paginas">	
-	<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
-		<div class="cabecera <?php if (is_home()) echo 'home'; ?>">
-			<section class="layout">
-				<div class="nav_superior">
-					<div class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?> <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo320.png" alt="Logotipo"></a></div>
+<div id="container" class="pagina contactar">	
+<?php get_template_part( 'include/cabecera', 'paginas' ); ?>
+	<?php // Cuerpo . Content - Páginas ?>
+
+<div class="fullscreen background parallax" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/fondo_contacta.jpg');" data-img-width="1600" data-img-height="897" data-diff="100">
+    <div class="content-a">
+        <div class="content-b">
+	        <div class="head_layout">
+	        	<div class="formulario">
+					<?php echo do_shortcode( '[contact-form-7 id="85" title="Formulario de contacto 1"]' ); ?>
 					
-					<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-					<div class="nav">
-						<ul>
-							<li><a href="#"><i id="menu" class="fa fa-bars animenu__toggle"></i></a>
-							
-							<?php wp_nav_menu(array(
-							'container' => false,                           // remove nav container
-							'container_class' => '',                 // class of container (should you choose to use it)
-							'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-							'menu_class' => 'animenu2',               // adding custom nav class
-							'theme_location' => 'main-nav',                 // where it's located in the theme
-							'before' => '',                                 // before the menu
-							'after' => '',                                  // after the menu
-							'link_before' => '',                            // before each link
-							'link_after' => '',                             // after each link
-							'depth' => 0,                                   // limit the depth of the nav
-							'fallback_cb' => ''                             // fallback function (if there is one)
-							)); ?>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</div>
-		<!-- cabecera -->
-	</header> <?php //header ?>
+				</div> <?php //formulario ?>
+
+		        <div class="datos_contacto">
+		        	<div class="wrapper-datos">
+		        	<img src="<?php echo get_template_directory_uri(); ?>/images/logo_contacto.png" alt="contacto">
+		        		<h3>918 523 808</h3>
+		        		<p>Carretera de Fuenfría Km 3.9</p>
+		        		<p>28470 Cercedilla</p>
+		        	</div>
+		        	
+		        </div> <?php // datos contacto ?>
+		        <div class="cl"></div>
+	        </div> <?php // head klayout ?>
+
+        </div>
+    </div>
+</div>
+
+<?php get_footer(); ?>

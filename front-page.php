@@ -78,12 +78,12 @@
 					</section>
 					<div class="redes">
 						<ul class="nav">
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-rss-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+							<li><a href="http://www.facebook.com/AmazoniaTeamF/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+	                        <li><a href="https://twitter.com/amazoniateamf/" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+	                        <li><a href="http://feeds.feedburner.com/AmazoniaTeamFactory/" target="_blank"><i class="fa fa-rss-square"></i></a></li>
+	                        <li><a href="http://www.youtube.com/user/AmazoniaTeamFactory/" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
+	                        <li><a href="https://plus.google.com/118215013063900031459/" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+	                        <li><a href="http://www.linkedin.com/company/amazonia-team-factory/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
 						</ul>
 					</div>
 					<!--redes-->
@@ -94,18 +94,20 @@
 			<footer>
 				<div class="layout">
 					<ul>
-						<li><a href="#">Aviso Legal</a></li>
-						<li><a href="#">Política de Privacidad</a></li>
-						<li><a href="#">Uso de Cookies</a></li>
-						<li><a href="#">Mapa Web</a></li>
+						<li><a class="panel" href="<?php echo site_url(); ?>/aviso-legal">Aviso Legal</a></li>
+						<li><a class="panel" href="<?php echo site_url(); ?>/politica-de-privacidad" >Política de Privacidad</a></li>
+						<li><a class="panel" href="<?php echo site_url(); ?>/uso-de-cookies">Uso de Cookies</a></li>
+						<li><a class="panel" data-toggle="collapse" href="#mapaweb" aria-expanded="false" aria-controls="mapaweb">Mapa Web</a></li>
 					</ul>
 				</div>
 			</footer>
+
 			<!--footer end-->
 		</div>
 		<!--content b end -->
 	</div>
 	<!--content a end -->
+	<?php  get_template_part( 'include/avisos', 'paginas' ); ?>
 </div>
 <!--content background -->
 <script src="_/js/jquery.js"></script>

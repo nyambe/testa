@@ -18,9 +18,8 @@
 		        <h2>"Pasión por competir ... con uno mismo"</h2>
 		          <div class="head_layout">
 			          <section>
-			           		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam hic, ratione labore adipisci nam ab dolore laudantium explicabo magni eos. Voluptates odit labore illum illo optio, quas explicabo aspernatur neque.</p>
-			           		<p>Cum iure, omnis dicta itaque consequatur qui unde, voluptas aspernatur explicabo incidunt cumque repudiandae ea, quae iusto nisi aliquid quasi! Porro officiis ratione alias repellat deserunt, enim sint atque incidunt!</p>
-			           		<p>Fugiat voluptatem inventore, temporibus ducimus a illum. A soluta modi, illo perspiciatis cupiditate deleniti possimus obcaecati expedita voluptatem distinctio fugit sapiente laboriosam rerum libero, error molestias maxime autem animi adipisci?</p>
+			           		<p class="p1">Para organizar un encuentro con clientes, empleados o proveedores; una reunión para planificar, reestructurar o alinear objetivos o ideas; un inicio o fin de proyecto, etapa o período… resulta muy interesante hacer <i>un kick-off</i>.</p>
+							<p class="p1">Un buen <b>plan de incentivos</b> o de motivación es un modo eficaz de reconocer y valorar el trabajo y los logros de un equipo. Los kick-off resultan ocasiones idóneas para acercar posturas y posicionamientos, recabar información y que la motivación se fortalezca. En Amazonia Team Factory te brindamos la oportunidad de que puedan desarrollar una reunión o meeting y clausurarla con un evento deportivo.</p>
 			           </section>
 		          </div>
             </div>
@@ -39,9 +38,8 @@
          		<div class="meeting">
          			<section>
 		          		<h3 class="fondo_blanco">kick-off meeting</h3>
-		           		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam hic, ratione labore adipisci nam ab dolore laudantium explicabo magni eos. Voluptates odit labore illum illo optio, quas explicabo aspernatur neque.</p>
-		           		<p>Cum iure, omnis dicta itaque consequatur qui unde, voluptas aspernatur explicabo incidunt cumque repudiandae ea, quae iusto nisi aliquid quasi! Porro officiis ratione alias repellat deserunt, enim sint atque incidunt!</p>
-		           		<p>Fugiat voluptatem inventore, temporibus ducimus a illum. A soluta modi, illo perspiciatis cupiditate deleniti possimus obcaecati expedita voluptatem distinctio fugit sapiente laboriosam rerum libero, error molestias maxime autem animi adipisci?</p>
+						<p class="p1">En estos eventos se estimula la sana competición o fair-play a lo largo de los periplos de pruebas que les proponemos. Este estímulo, impulsa la motivación por el logro, el espíritu de superación y la conciencia de ventaja competitiva.</p>
+						<p class="p1">Los juegos son variados, contamos con toda nuestra infraestructura de aventura en los árboles, juegos de ingenio, de orientación, y supervivencia, hasta modalidades de juegos de <i>Challenge</i> (retos), Construcción, <i>Team Games</i> y<i> Problem Solving</i>.</p>
 		           </section>
          			
          		</div>
@@ -67,9 +65,9 @@
 
 		<div class="eventos-nav">
 			<ul>
-				<li class="page_item page-item-26"><a href="http://localhost/eventos-de-empresa/jornada-multiaventura/"><span>Jornada Multiaventura</span></a></li>
-				<li class="page_item page-item-30"><a href="http://localhost/eventos-de-empresa/team-event/"><span>Team Event</span></a></li>
-				<li class="page_item page-item-32"><a href="http://localhost/eventos-de-empresa/gymkana-tematica/"><span>Gymkana Temática</span></a></li>
+				<li class="page_item page-item-26"><a href="<?php echo site_url(); ?>/eventos-de-empresa/jornada-multiaventura/"><span>Jornada Multiaventura</span></a></li>
+				<li class="page_item page-item-30"><a href="<?php echo site_url(); ?>/eventos-de-empresa/team-event/"><span>Team Event</span></a></li>
+				<li class="page_item page-item-32"><a href="<?php echo site_url(); ?>/eventos-de-empresa/gymkana-tematica/"><span>Gymkana Temática</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -79,9 +77,9 @@
 	<div class="head_layout">
 		<h2>¿necesitas más información?</h2>
 		<ul class="contacto">
-			<a href="#"></a>
-			<a href="#"></a>
-			<a href="#"></a>
+			<a href="<?php echo site_url(); ?>/contactar"></a>
+			<a href="<?php echo site_url(); ?>/contactar"></a>
+			<a href="<?php echo site_url(); ?>/contactar"></a>
 		</ul>
 		<span>Contacta con nosotros</span>
 	</div>

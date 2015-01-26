@@ -1,49 +1,7 @@
-<!doctype html>
-
-<!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-
-    <head>
-        <meta charset="utf-8">
-
-        <?php // force Internet Explorer to use the latest rendering engine available ?>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title><?php wp_title(''); ?></title>
-
-        <?php // mobile meta (hooray!) ?>
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-        <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-        <!--[if IE]>
-            <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-        <![endif]-->
-        <?php // or, set /favicon.ico for IE10 win ?>
-        <meta name="msapplication-TileColor" content="#f01d4f">
-        <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-
-        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-        <?php // wordpress head functions ?>
-        <?php wp_head(); ?>
-        <?php // end of wordpress head ?>
-
-        <?php // drop Google Analytics Here ?>
-        <?php // end analytics ?>
-
-    </head>
-
-<body class="instalaciones equipo" itemscope itemtype="http://schema.org/WebPage">
-
-<div id="container" class="fondo_verde">  
-<?php get_template_part( 'include/cabecera', 'paginas' ); ?> 
-
+<?php get_header(); ?>
+<div id="container" class="pagina instalaciones equipo">
+    <?php get_template_part( 'include/cabecera', 'paginas' ); ?>
+    <?php // Cuerpo . Content - Páginas ?>
  
 <div class="fullscreen background parallax" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/fondo_equipo_1.jpg');" data-img-width="1600" data-img-height="897" data-diff="100">
     <div class="content-a">
@@ -56,73 +14,66 @@
         </div>
     </div>
 </div>
-  
-<section class="parallax">
+<?php 
+
+/* 
+
+Obtener el resto de los miembros del equipo humano
+
+*/
+    $args = array(
+    'post_type' => 'equipohumano',
+    'order' => 'ASC',  // cambiar el orden
+    'posts_per_page' => 6 /* limitar a 6, cambiar para ampliar */
+    ); 
+
+    $posts = get_posts($args);
+
+ ?> 
+<section class="nombres">
     <div class="content-a">
         <div class="content-b">
-        <h2>Equipo Humana</h2>  
+        <div class="head_layout">
+        <h2>Equipo Humano</h2>  
             <ul class="listado" >
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="nombre">MI Nombre</span>
-                        <span class="puesto">mi puesto es este</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/formacion_left.jpg" alt="imagen">
-                    </a>
-                </li>
-            </ul>
+                 <?php 
+                 // Query 
+                    if($posts) {
+                        foreach ($posts as $key => $post) { ?>
+            
+                    <li>
+                        <span class="nombre"><?php echo $post->post_title ?></span>
+                        <span class="puesto"><?php the_field('titulo'); ?></span>
+                        <a href="<?php echo site_url(); ?>/equipo/<?php echo $post->post_name ?>"></a>
+                    </li>
+
+                     <?php } // foreach
+                    } // if posts
+
+                  ?> 
+            </ul>            
+        </div> <?php //head layout ?>
+        
         </div>
-    </div>
+    </div> <?php // content-a ?>
     
-</section>
+</section> <?php // nombres ?>
   
-  
-<section class="parallax">
-    <div class="content-a">
-        <div class="content-b">
-           <div class="layout">
-                <div class="izq">
-                    <img src="http://lorempixel.com/220/100" alt="titulo">
-                </div>
-                <div class="der">
-                    <h2>lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae officiis rem hic voluptatum incidunt excepturi natus perferendis illum, nisi debitis rerum, aspernatur iure ullam quidem eligendi maiores officia sequi provident.</p>
-               </div>
-           </div>
+<div class="info_equipo">
+    <div class="head_layout">
+        <div class="izq nomovil">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo_gris.png" alt="white logo">
+            <a class="info" href="<?php echo site_url(); ?>/contactar"><img src="<?php echo get_template_directory_uri(); ?>/images/contacto_equipo.png" alt="contacto"> </a>
+        </div>
+        <div class="der">
+            <h2>Equipo Humano</h2>
+            <p class="p1">AMAZONIA TEAM FACTORY ha creado un espacio inmejorable para el desarrollo humano. Nuestro valor reside, por un lado, en la amplia experiencia desarrollando y explotando programas de Formación Vivencial al aire libre, y de otro, disponemos de unas instalaciones de dinámicas únicas en España, concebidas desde su construcción, para desarrollar las competencias profesionales de los equipos de trabajo. </p> 
+            <p>El secreto de nuestro éxito es no tomar al individuo como algo aislado de su profesión: el objetivo no es tanto formar a los profesionales que ya poseen conocimientos con bases sólidas, sino «re-formar» los hábitos emocionales para hacer frente a la espiral de cambio en las empresas.</p>
         </div>
     </div>
-</section>
-<section>
-    final
-</section>
+</div>
+<div style="clear:both"></div>
+
   
 <?php get_footer(); ?>
 
