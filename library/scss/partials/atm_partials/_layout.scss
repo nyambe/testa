@@ -1093,8 +1093,22 @@
 				  image: image-url("equipo_info.png");
 				  repeat: no-repeat;
 				  color: $equipo_grey2;
-				  position: 50% 50%;
+				  // position: 50% 50%;
 				};
+
+				.mosca {
+					background: {
+					  image: image-url("equipo_info.png");
+					  repeat: no-repeat;
+					  color: rgba($equipo_grey2, .4);
+					  position: 50% 50%;
+					};
+					@include border-radius(50%);
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+
 
 			}
 
@@ -1477,7 +1491,7 @@ footer {
 	p {
 		color: $white;
 		text-align: justify;
-		font-size: .7em;
+		font-size: .8em;
 		line-height: 1.4em;
 
 	}
@@ -1488,10 +1502,11 @@ footer {
 
 		h2 {
 			color: $paleryellow;
-			font-size: 1.2em;
+			font-size: 42px;
 			font-weight: bold;
 			text-align: center;
 			background: none;
+			text-shadow: 2px 2px $grey;
 		}
 	}
 	.shadow {
@@ -3040,4 +3055,8 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 
 
 } // mapaweb
+
+.pagina .head_layout .contacto span {
+	font-size: 14px;
+}
 

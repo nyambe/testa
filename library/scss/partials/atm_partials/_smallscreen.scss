@@ -123,11 +123,11 @@ background: {
 
 				.titular {
 
-					bottom: 5%;
-					padding: 2% 0;
+					bottom: 2%;
+					padding: 1px 0;
 					z-index: 10;
-					border: 1px solid $white;
-					@include border-image( image-url("borde.png") 2 13 3 9 repeat );
+					border: 8px solid transparent;
+					@include border-image( image-url("borde.png") 27 repeat );
 					visibility: hidden;
 
 				}

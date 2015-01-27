@@ -43,6 +43,12 @@ $gutter-width	: 0;
 $container-style: fluid;
 $grid-padding	: $gutter-width;
 
+$susy: (
+
+  gutters: 0
+
+);
+
 
 $small 			: 30em;
 $medium			: 47em;
@@ -51,6 +57,7 @@ $large			: 75em;
 //Susy layout
 
 $smallscreen	: 795px;
+
 
 // Paginas
 

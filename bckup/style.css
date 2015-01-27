@@ -5089,13 +5089,6 @@ p {
 	padding-right: 0;
 }
 
-/* line 270, ../../scss/partials/atm_partials/_base.scss */
-
-.portada {
-	position: relative;
-	z-index: 0;
-}
-
 /* line 40, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 
 .portada div,
@@ -5225,7 +5218,7 @@ p {
 	border: none;
 }
 
-/* line 276, ../../scss/partials/atm_partials/_base.scss */
+/* line 274, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu {
 	position: absolute;
@@ -5238,7 +5231,7 @@ p {
 	background-size: cover;
 }
 
-/* line 292, ../../scss/partials/atm_partials/_base.scss */
+/* line 290, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu li,
 .portada ul.sub-menu a,
@@ -5654,50 +5647,50 @@ p {
 	border: none;
 }
 
-/* line 307, ../../scss/partials/atm_partials/_base.scss */
+/* line 305, ../../scss/partials/atm_partials/_base.scss */
 
 .portada ul.sub-menu li {
 	margin-left: 40%;
 	margin-right: 10%;
 }
 
-/* line 317, ../../scss/partials/atm_partials/_base.scss */
+/* line 315, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(2) ul {
 	background-image: url('../../images/background_eventos_empresa.jpg?1417029781');
 }
 
-/* line 324, ../../scss/partials/atm_partials/_base.scss */
+/* line 322, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(3) ul {
 	background-image: url('../../images/background_actividades.jpg?1417029925');
 }
 
-/* line 331, ../../scss/partials/atm_partials/_base.scss */
+/* line 329, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(4) ul {
 	background-image: url('../../images/portada_contacto.jpg?1417030118');
 }
 
-/* line 338, ../../scss/partials/atm_partials/_base.scss */
+/* line 336, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(5) ul {
 	background-image: url('../../images/portada_instalaciones.jpg?1417030088');
 }
 
-/* line 345, ../../scss/partials/atm_partials/_base.scss */
+/* line 343, ../../scss/partials/atm_partials/_base.scss */
 
 .portada li:nth-of-type(6) ul {
 	background-image: url('../../images/portada_blog.jpg?1417030220');
 }
 
-/* line 354, ../../scss/partials/atm_partials/_base.scss */
+/* line 352, ../../scss/partials/atm_partials/_base.scss */
 
 .portada > li > a {
 	z-index: 10;
 }
 
-/* line 365, ../../scss/partials/atm_partials/_base.scss */
+/* line 363, ../../scss/partials/atm_partials/_base.scss */
 
 footer {
 	text-align: center;
@@ -5705,7 +5698,7 @@ footer {
 	color: white;
 }
 
-/* line 366, ../../scss/partials/atm_partials/_base.scss */
+/* line 364, ../../scss/partials/atm_partials/_base.scss */
 
 footer .layout {
 	background: rgba(0, 0, 0, 0.7);
@@ -5716,7 +5709,7 @@ footer .layout {
 	margin-bottom: 5px;
 }
 
-/* line 381, ../../scss/partials/atm_partials/_base.scss */
+/* line 379, ../../scss/partials/atm_partials/_base.scss */
 
 footer .social {
 	max-width: 100%;
@@ -5734,10 +5727,10 @@ footer .social:after {
 	clear: both;
 }
 
-/* line 386, ../../scss/partials/atm_partials/_base.scss */
+/* line 384, ../../scss/partials/atm_partials/_base.scss */
 
 footer .social li {
-	width: 16.66667%;
+	width: 13.7931%;
 	float: left;
 }
 
@@ -5753,7 +5746,7 @@ footer .social li:nth-child(6n + 1) {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 footer .social li:nth-child(6n + 2) {
-	margin-left: 16.66667%;
+	margin-left: 17.24138%;
 	margin-right: -100%;
 	clear: none;
 }
@@ -5761,7 +5754,7 @@ footer .social li:nth-child(6n + 2) {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 footer .social li:nth-child(6n + 3) {
-	margin-left: 33.33333%;
+	margin-left: 34.48276%;
 	margin-right: -100%;
 	clear: none;
 }
@@ -5769,7 +5762,7 @@ footer .social li:nth-child(6n + 3) {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 footer .social li:nth-child(6n + 4) {
-	margin-left: 50%;
+	margin-left: 51.72414%;
 	margin-right: -100%;
 	clear: none;
 }
@@ -5777,7 +5770,7 @@ footer .social li:nth-child(6n + 4) {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 footer .social li:nth-child(6n + 5) {
-	margin-left: 66.66667%;
+	margin-left: 68.96552%;
 	margin-right: -100%;
 	clear: none;
 }
@@ -5785,37 +5778,37 @@ footer .social li:nth-child(6n + 5) {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 footer .social li:nth-child(6n + 6) {
-	margin-left: 83.33333%;
+	margin-left: 86.2069%;
 	margin-right: -100%;
 	clear: none;
 }
 
-/* line 403, ../../scss/partials/atm_partials/_base.scss */
+/* line 401, ../../scss/partials/atm_partials/_base.scss */
 
 footer .footer-nav {
 	display: inline-block;
 }
 
-/* line 425, ../../scss/partials/atm_partials/_base.scss */
+/* line 423, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos {
 	background: #71b104;
 }
 
-/* line 429, ../../scss/partials/atm_partials/_base.scss */
+/* line 427, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos ul li {
 	width: 100%;
 	border: none;
 }
 
-/* line 433, ../../scss/partials/atm_partials/_base.scss */
+/* line 431, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos ul li img {
 	height: 100px;
 }
 
-/* line 439, ../../scss/partials/atm_partials/_base.scss */
+/* line 437, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos a {
 	color: #ffffff;
@@ -5826,7 +5819,7 @@ footer .footer-nav {
 	text-transform: uppercase;
 }
 
-/* line 449, ../../scss/partials/atm_partials/_base.scss */
+/* line 447, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos a .titular {
 	background: rgba(0, 0, 0, 0.7);
@@ -5838,7 +5831,7 @@ footer .footer-nav {
 	bottom: 5px;
 }
 
-/* line 462, ../../scss/partials/atm_partials/_base.scss */
+/* line 460, ../../scss/partials/atm_partials/_base.scss */
 
 .main section.quienes_somos .titulo {
 	text-transform: uppercase;
@@ -5846,7 +5839,7 @@ footer .footer-nav {
 	font-size: 1rem;
 }
 
-/* line 471, ../../scss/partials/atm_partials/_base.scss */
+/* line 469, ../../scss/partials/atm_partials/_base.scss */
 
 article {
 	font-size: .9rem;
@@ -5869,7 +5862,7 @@ article:after {
 	clear: both;
 }
 
-/* line 479, ../../scss/partials/atm_partials/_base.scss */
+/* line 477, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion {
 	width: 100%;
@@ -5880,7 +5873,7 @@ article:after {
 	border-bottom: 2px solid #ffffff;
 }
 
-/* line 487, ../../scss/partials/atm_partials/_base.scss */
+/* line 485, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion h3 {
 	font-size: 1.5rem;
@@ -5889,7 +5882,7 @@ article:after {
 	margin: 0 auto;
 }
 
-/* line 494, ../../scss/partials/atm_partials/_base.scss */
+/* line 492, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion h5 a {
 	text-transform: none;
@@ -5898,7 +5891,7 @@ article:after {
 	border: none;
 }
 
-/* line 501, ../../scss/partials/atm_partials/_base.scss */
+/* line 499, ../../scss/partials/atm_partials/_base.scss */
 
 .informacion button {
 	border: none;
@@ -5907,7 +5900,7 @@ article:after {
 	font-size: 2.5rem;
 }
 
-/* line 511, ../../scss/partials/atm_partials/_base.scss */
+/* line 509, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior {
 	max-width: 100%;
@@ -5931,28 +5924,24 @@ article:after {
 	clear: both;
 }
 
-/* line 517, ../../scss/partials/atm_partials/_base.scss */
+/* line 515, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .logo {
-	width: 25%;
+	width: 28.57143%;
 	float: left;
+	margin-right: 7.14286%;
 }
 
-/* line 522, ../../scss/partials/atm_partials/_base.scss */
+/* line 520, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .title_box {
-	width: 50%;
+	width: 28.57143%;
 	float: left;
-	padding-top: 0;
+	margin-right: 7.14286%;
+	padding-top: 10px;
 }
 
-/* line 526, ../../scss/partials/atm_partials/_base.scss */
-
-.nav_superior .title_box h1 {
-	font-size: 14px;
-}
-
-/* line 535, ../../scss/partials/atm_partials/_base.scss */
+/* line 525, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .page-title {
 	text-align: center;
@@ -5960,28 +5949,28 @@ article:after {
 	margin-bottom: 0;
 }
 
-/* line 542, ../../scss/partials/atm_partials/_base.scss */
+/* line 532, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav {
-	width: 25%;
+	width: 28.57143%;
 	float: right;
 	margin-right: 0;
 }
 
-/* line 544, ../../scss/partials/atm_partials/_base.scss */
+/* line 534, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav > ul {
 	margin-top: 0;
 }
 
-/* line 549, ../../scss/partials/atm_partials/_base.scss */
+/* line 539, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .fa {
 	font-size: 2em;
 	float: right;
 }
 
-/* line 554, ../../scss/partials/atm_partials/_base.scss */
+/* line 544, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .fa-bars {
 	width: 100%;
@@ -5989,14 +5978,14 @@ article:after {
 	padding-top: 10px;
 }
 
-/* line 573, ../../scss/partials/atm_partials/_base.scss */
+/* line 563, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav {
 	border-bottom: 0;
 	margin: 0; /* end .menu li */ /* highlight current page */ /* end current highlighters */ /* Reveal CSS Nav*/
 }
 
-/* line 577, ../../scss/partials/atm_partials/_base.scss */
+/* line 567, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li { /*
   so you really have to rethink your dropdowns for mobile.
@@ -6007,7 +5996,7 @@ article:after {
   */
 }
 
-/* line 579, ../../scss/partials/atm_partials/_base.scss */
+/* line 569, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li a {
 	display: block;
@@ -6020,14 +6009,14 @@ article:after {
   */
 }
 
-/* line 613, ../../scss/partials/atm_partials/_base.scss */
+/* line 603, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li ul.sub-menu li a,
 .nav_superior .nav li ul.children li a {
 	padding-left: 30px;
 }
 
-/* line 646, ../../scss/partials/atm_partials/_base.scss */
+/* line 636, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul ul,
 .nav_superior .nav ul li,
@@ -6045,13 +6034,13 @@ article:after {
 	text-align: left;
 }
 
-/* line 661, ../../scss/partials/atm_partials/_base.scss */
+/* line 651, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul > li {
 	position: relative;
 }
 
-/* line 665, ../../scss/partials/atm_partials/_base.scss */
+/* line 655, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav li ul {
 	position: absolute;
@@ -6063,7 +6052,7 @@ article:after {
 	transition: 200ms ease;
 }
 
-/* line 677, ../../scss/partials/atm_partials/_base.scss */
+/* line 667, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav ul > li:hover ul {
 	visibility: visible;
@@ -6071,7 +6060,7 @@ article:after {
 	filter: alpha(opacity=100);
 }
 
-/* line 683, ../../scss/partials/atm_partials/_base.scss */
+/* line 673, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 {
 	background-color: #000000;
@@ -6082,22 +6071,22 @@ article:after {
 	padding-bottom: 10px;
 }
 
-/* line 698, ../../scss/partials/atm_partials/_base.scss */
+/* line 687, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li {
 	position: relative;
 	border-right: 1px solid #333333;
 }
 
-/* line 702, ../../scss/partials/atm_partials/_base.scss */
+/* line 691, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li > a {
 	padding: 7px 21px;
 	text-transform: uppercase;
-	color: #ea7041;
+	color: #d2c510;
 }
 
-/* line 708, ../../scss/partials/atm_partials/_base.scss */
+/* line 697, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li > a:first-child:nth-last-child(2):before {
 	content: "";
@@ -6108,7 +6097,7 @@ article:after {
 	right: 10px;
 }
 
-/* line 721, ../../scss/partials/atm_partials/_base.scss */
+/* line 710, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li:hover > ul {
 	opacity: 1;
@@ -6116,32 +6105,32 @@ article:after {
 	margin: 0;
 }
 
-/* line 728, ../../scss/partials/atm_partials/_base.scss */
+/* line 717, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li:hover > a {
 	color: #d2c510;
 }
 
-/* line 735, ../../scss/partials/atm_partials/_base.scss */
+/* line 724, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li ul .current-menu-item a {
 	color: #d2c510;
 }
 
-/* line 740, ../../scss/partials/atm_partials/_base.scss */
+/* line 729, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li ul a:hover {
 	color: #d2c510;
 }
 
-/* line 748, ../../scss/partials/atm_partials/_base.scss */
+/* line 737, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 li.current-menu-parent > a {
 	font-weight: bold;
 	background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 754, ../../scss/partials/atm_partials/_base.scss */
+/* line 743, ../../scss/partials/atm_partials/_base.scss */
 
 .nav_superior .nav .animenu2 > li.current_page_item > a {
 	background: rgba(255, 255, 255, 0.2);
@@ -6314,8 +6303,9 @@ article:after {
 /* line 162, ../../scss/partials/atm_partials/_layout.scss */
 
 .quienes-somos .izq {
-	width: 33.33333%;
+	width: 28.57143%;
 	float: left;
+	margin-right: 7.14286%;
 }
 
 /* line 164, ../../scss/partials/atm_partials/_layout.scss */
@@ -7173,8 +7163,9 @@ body { /* give this to all tags from html to .fullscreen */
 /* line 892, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .nombre {
-	width: 33.33333%;
+	width: 32.20339%;
 	float: left;
+	margin-right: 1.69492%;
 	position: relative;
 }
 
@@ -7212,8 +7203,9 @@ body { /* give this to all tags from html to .fullscreen */
 /* line 919, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones .exper .historia {
-	width: 33.33333%;
+	width: 32.20339%;
 	float: left;
+	margin-right: 1.69492%;
 	font-size: .7em;
 	line-height: 1.5em;
 	padding-top: 10px;
@@ -7223,7 +7215,7 @@ body { /* give this to all tags from html to .fullscreen */
 
 .instalaciones .exper .telefono {
 	color: #ffffff;
-	width: 33.33333%;
+	width: 32.20339%;
 	float: right;
 	margin-right: 0;
 	margin-top: 90px;
@@ -7484,22 +7476,10 @@ body { /* give this to all tags from html to .fullscreen */
 	background-image: url('../../images/equipo_info.png');
 	background-repeat: no-repeat;
 	background-color: #686868;
-}
-
-/* line 1099, ../../scss/partials/atm_partials/_layout.scss */
-
-.equipo .listado li a:hover .mosca {
-	background-image: url('../../images/equipo_info.png');
-	background-repeat: no-repeat;
-	background-color: rgba(104, 104, 104, 0.4);
 	background-position: 50% 50%;
-	border-radius: 50%;
-	display: block;
-	width: 100%;
-	height: 100%;
 }
 
-/* line 1115, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1101, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li span {
 	display: block;
@@ -7507,19 +7487,19 @@ body { /* give this to all tags from html to .fullscreen */
 	text-transform: uppercase;
 }
 
-/* line 1122, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1108, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li .nombre {
 	font-size: 1.2em;
 }
 
-/* line 1126, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1112, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li .puesto {
 	font-size: .6em;
 }
 
-/* line 1131, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1117, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .listado li img {
 	width: 90%;
@@ -7528,44 +7508,45 @@ body { /* give this to all tags from html to .fullscreen */
 	margin-top: 14px;
 }
 
-/* line 1144, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1130, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .izq {
-	width: 30%;
+	width: 28.57143%;
 	float: left;
+	margin-right: 2.04082%;
 	margin: auto;
 	height: 100%;
 }
 
-/* line 1149, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1135, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .izq .info {
 	display: block;
 	text-align: center;
 }
 
-/* line 1152, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1138, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .izq .info img {
 	width: 160px;
 }
 
-/* line 1158, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1144, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .der {
-	width: 70%;
+	width: 69.38776%;
 	float: right;
 	margin-right: 0;
 	padding: 20px 50px;
 }
 
-/* line 1162, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1148, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .der h2 {
 	margin-bottom: 15px;
 }
 
-/* line 1167, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1153, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .nombres h2 {
 	margin: 24px auto;
@@ -7577,7 +7558,7 @@ body { /* give this to all tags from html to .fullscreen */
 	font-weight: normal;
 }
 
-/* line 1177, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1163, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .info_equipo {
 	background: #efeeee;
@@ -7586,20 +7567,20 @@ body { /* give this to all tags from html to .fullscreen */
 	height: 440px;
 }
 
-/* line 1183, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1169, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .info_equipo p {
 	font-size: .7em;
 }
 
-/* line 1187, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1173, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .info_equipo img {
 	width: 100%;
 	margin-top: 50px;
 }
 
-/* line 1198, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1184, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto {
 	width: 160px;
@@ -7607,7 +7588,7 @@ body { /* give this to all tags from html to .fullscreen */
 	margin: 0 auto;
 }
 
-/* line 1203, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1189, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto a {
 	display: inline-block;
@@ -7615,31 +7596,31 @@ body { /* give this to all tags from html to .fullscreen */
 	height: 50px;
 }
 
-/* line 1211, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1197, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_gris_160.png') no-repeat 0 0;
 }
 
-/* line 1216, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1202, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_gris_160.png') no-repeat -59px 0;
 }
 
-/* line 1220, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1206, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_gris_160.png') no-repeat -113px 0;
 }
 
-/* line 1224, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1210, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1228, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1214, ../../scss/partials/atm_partials/_layout.scss */
 
 .contacto span {
 	display: block;
@@ -7647,13 +7628,13 @@ body { /* give this to all tags from html to .fullscreen */
 	font-size: .7em;
 }
 
-/* line 1236, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1222, ../../scss/partials/atm_partials/_layout.scss */
 
 .informacion {
 	border: none;
 }
 
-/* line 1239, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1225, ../../scss/partials/atm_partials/_layout.scss */
 
 .informacion h2 {
 	border: none;
@@ -7662,14 +7643,14 @@ body { /* give this to all tags from html to .fullscreen */
 	text-align: center;
 }
 
-/* line 1247, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1233, ../../scss/partials/atm_partials/_layout.scss */
 
 .informacion .wrap {
 	width: 100%;
 	margin: 0 auto;
 }
 
-/* line 1251, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1237, ../../scss/partials/atm_partials/_layout.scss */
 
 .informacion .wrap span {
 	display: block;
@@ -7677,68 +7658,68 @@ body { /* give this to all tags from html to .fullscreen */
 	font-size: .7em;
 }
 
-/* line 1262, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1248, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .cabecera {
 	background: #71b104;
 }
 
-/* line 1266, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1252, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .info_box {
 	background: #71b104;
 }
 
-/* line 1272, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1258, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .informacion h2,
 .metodo-experiencial .informacion span {
 	color: #ffffff;
 }
 
-/* line 1278, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1264, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat 0 0;
 }
 
-/* line 1283, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1269, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat -59px 0;
 }
 
-/* line 1287, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1273, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat -113px 0;
 }
 
-/* line 1291, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1277, ../../scss/partials/atm_partials/_layout.scss */
 
 .metodo-experiencial .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1298, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1284, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .cabecera {
 	background: #ffffff;
 }
 
-/* line 1301, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1287, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .cabecera h1 {
 	color: #475B62;
 }
 
-/* line 1305, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1291, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo .cabecera .fa {
 	color: #475B62;
 }
 
-/* line 1314, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1300, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo h2.gracias_clientes {
 	display: block;
@@ -7751,7 +7732,7 @@ body { /* give this to all tags from html to .fullscreen */
 	margin-left: 55%;
 }
 
-/* line 1325, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1311, ../../scss/partials/atm_partials/_layout.scss */
 
 .equipo h3.confiaron {
 	font-size: 1.8em;
@@ -7761,7 +7742,7 @@ body { /* give this to all tags from html to .fullscreen */
 	padding-left: 50px;
 }
 
-/* line 1336, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1322, ../../scss/partials/atm_partials/_layout.scss */
 
 .clientes {
 	color: #ffffff;
@@ -7776,7 +7757,7 @@ body { /* give this to all tags from html to .fullscreen */
 	padding: 15px;
 }
 
-/* line 1352, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1338, ../../scss/partials/atm_partials/_layout.scss */
 
 .tabla {
 	clear: both;
@@ -7784,13 +7765,13 @@ body { /* give this to all tags from html to .fullscreen */
 	background: #71b104;
 }
 
-/* line 1357, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1343, ../../scss/partials/atm_partials/_layout.scss */
 
 .tabla p {
 	display: table-row;
 }
 
-/* line 1363, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1349, ../../scss/partials/atm_partials/_layout.scss */
 
 .tabla span,
 .tabla li {
@@ -7804,7 +7785,7 @@ body { /* give this to all tags from html to .fullscreen */
 	color: #ffffff;
 }
 
-/* line 1376, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1362, ../../scss/partials/atm_partials/_layout.scss */
 
 header {
 	position: absolute;
@@ -7812,26 +7793,26 @@ header {
 	z-index: 15;
 }
 
-/* line 1382, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1368, ../../scss/partials/atm_partials/_layout.scss */
 
 footer {
 	height: 30%;
 }
 
-/* line 1385, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1371, ../../scss/partials/atm_partials/_layout.scss */
 
 footer nav {
 	width: 200px;
 	margin: 0 auto;
 }
 
-/* line 1396, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1382, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina {
 	height: 100%; /* content centering styles */
 }
 
-/* line 1399, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1385, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .fullscreen,
 .pagina .content-a {
@@ -7839,7 +7820,7 @@ footer nav {
 	min-height: 100%;
 }
 
-/* line 1404, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1390, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .not-fullscreen,
 .pagina .not-fullscreen .content-a,
@@ -7849,13 +7830,13 @@ footer nav {
 	overflow: hidden;
 }
 
-/* line 1413, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1399, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .content-a {
 	display: table;
 }
 
-/* line 1417, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1403, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .content-b {
 	display: table-cell;
@@ -7865,26 +7846,26 @@ footer nav {
 	background: none;
 }
 
-/* line 1424, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1410, ../../scss/partials/atm_partials/_layout.scss */
 
 .pagina .not-fullscreen {
 	height: 50%;
 }
 
-/* line 1431, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1417, ../../scss/partials/atm_partials/_layout.scss */
 
 .content-b header {
 	position: relative;
 	z-index: 5;
 }
 
-/* line 1442, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1428, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1447, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1433, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b h1 {
 	display: block;
@@ -7901,7 +7882,7 @@ footer nav {
 	text-transform: none;
 }
 
-/* line 1464, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1450, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b h2 {
 	display: block;
@@ -7916,14 +7897,14 @@ footer nav {
 	margin: 0;
 }
 
-/* line 1477, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1463, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .first {
 	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 1479, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1465, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -7932,33 +7913,32 @@ footer nav {
 	padding: 2% 6% 4%;
 }
 
-/* line 1491, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1477, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b p {
 	color: #ffffff;
 	text-align: justify;
-	font-size: .8em;
+	font-size: .7em;
 	line-height: 1.4em;
 }
 
-/* line 1499, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1485, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 1503, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1489, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .second h2 {
 	color: #d2c510;
-	font-size: 42px;
+	font-size: 1.2em;
 	font-weight: bold;
 	text-align: center;
 	background: none;
-	text-shadow: 2px 2px #475B62;
 }
 
-/* line 1512, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1497, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .content-b .shadow {
 	width: 45%;
@@ -7968,13 +7948,13 @@ footer nav {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1527, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1512, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off {
 	background-color: #fd8117;
 }
 
-/* line 1530, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1515, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .fourth {
 	background: #fd8117;
@@ -7986,7 +7966,7 @@ footer nav {
 	padding: 3% 0 1%;
 }
 
-/* line 1539, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1524, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .fourth h2 {
 	text-transform: uppercase;
@@ -7994,13 +7974,13 @@ footer nav {
 	color: #ffffff;
 }
 
-/* line 1549, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1534, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav {
 	height: 277px;
 }
 
-/* line 1552, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1537, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav ul {
 	width: 85%;
@@ -8009,13 +7989,13 @@ footer nav {
 	min-width: 778px;
 }
 
-/* line 1559, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1544, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 1563, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1548, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a {
 	display: inline-block;
@@ -8030,7 +8010,7 @@ footer nav {
 	padding-top: 41px;
 }
 
-/* line 1576, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1561, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a:hover {
 	background: url('../../images/kickoff-menu.png') no-repeat 0 -263px;
@@ -8039,39 +8019,39 @@ footer nav {
 	color: #fd8117;
 }
 
-/* line 1582, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1567, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a:hover span {
 	background: none;
 }
 
-/* line 1587, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1572, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav a span {
 	background: none;
 }
 
-/* line 1594, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1579, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 1603, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1588, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 1611, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1596, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 1623, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1608, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end {
 	background: #ffffff;
@@ -8082,20 +8062,20 @@ footer nav {
 	padding: 4% 0;
 }
 
-/* line 1631, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1616, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end h2 {
 	font-weight: bold;
 	color: #fd8117;
 }
 
-/* line 1637, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1622, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end span {
 	font-size: .5em;
 }
 
-/* line 1642, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1627, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto {
 	width: 200px;
@@ -8103,7 +8083,7 @@ footer nav {
 	margin: 0 auto;
 }
 
-/* line 1647, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1632, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a {
 	display: inline-block;
@@ -8111,31 +8091,31 @@ footer nav {
 	height: 60px;
 }
 
-/* line 1655, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1640, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_naranja.png') no-repeat 0 0;
 }
 
-/* line 1660, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1645, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_naranja.png') no-repeat -71px 0;
 }
 
-/* line 1664, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1649, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_naranja.png') no-repeat -142px 0;
 }
 
-/* line 1668, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1653, ../../scss/partials/atm_partials/_layout.scss */
 
 .kick-off .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 1680, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1665, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_blanco {
 	font-size: 1.3em;
@@ -8149,7 +8129,7 @@ footer nav {
 	margin-bottom: 10px;
 }
 
-/* line 1699, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1684, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_team {
 	background-image: url('../../images/team_atm_titulo.png');
@@ -8158,38 +8138,38 @@ footer nav {
 	background-size: cover;
 }
 
-/* line 1709, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1694, ../../scss/partials/atm_partials/_layout.scss */
 
 .fondo_full {
 	background-size: cover;
 }
 
-/* line 1714, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1699, ../../scss/partials/atm_partials/_layout.scss */
 
 .mejorate {
 	border-top: 2px solid #fd8117;
 }
 
-/* line 1721, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1706, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting {
 	width: 50%;
 	margin: 0 auto;
 }
 
-/* line 1724, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1709, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting section {
 	margin: 10% auto;
 }
 
-/* line 1728, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1713, ../../scss/partials/atm_partials/_layout.scss */
 
 .meeting h3 {
 	color: #fd8117;
 }
 
-/* line 1734, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1719, ../../scss/partials/atm_partials/_layout.scss */
 
 footer .social {
 	margin-left: auto;
@@ -8198,25 +8178,25 @@ footer .social {
 	font-size: 2rem;
 }
 
-/* line 1743, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1728, ../../scss/partials/atm_partials/_layout.scss */
 
 footer .logo img {
 	width: 210px;
 }
 
-/* line 1748, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1733, ../../scss/partials/atm_partials/_layout.scss */
 
 footer {
 	padding-top: 31px;
 }
 
-/* line 1758, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1743, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 1763, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1748, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b h1 {
 	display: block;
@@ -8233,7 +8213,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 1780, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1765, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b h2 {
 	display: block;
@@ -8248,14 +8228,14 @@ footer {
 	margin: 0;
 }
 
-/* line 1793, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1778, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .first {
 	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 1795, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1780, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -8264,14 +8244,14 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 1808, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1793, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 1815, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1800, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .third h1 {
 	color: #fd8117;
@@ -8281,7 +8261,7 @@ footer {
 	display: block;
 }
 
-/* line 1826, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1811, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b p {
 	color: #ffffff;
@@ -8290,13 +8270,13 @@ footer {
 	line-height: 1.4em;
 }
 
-/* line 1834, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1819, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 1838, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1823, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second h2 {
 	color: #ffffff;
@@ -8306,7 +8286,7 @@ footer {
 	background: none;
 }
 
-/* line 1846, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1831, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .second span {
 	text-align: right;
@@ -8315,7 +8295,7 @@ footer {
 	display: block;
 }
 
-/* line 1854, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1839, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .content-b .shadow {
 	width: 45%;
@@ -8325,13 +8305,13 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 1869, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1854, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura {
 	background-color: #39b1dc;
 }
 
-/* line 1872, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1857, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela {
 	background: #39b1dc;
@@ -8341,20 +8321,20 @@ footer {
 	background-size: cover;
 }
 
-/* line 1881, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1866, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela h3 {
 	color: #39b1dc;
 	text-align: center;
 }
 
-/* line 1885, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1870, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela h3.big {
 	font-size: 1.6em;
 }
 
-/* line 1890, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1875, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela p {
 	font-size: .7em;
@@ -8362,7 +8342,7 @@ footer {
 	margin: 2px 5px;
 }
 
-/* line 1896, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1881, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap {
 	text-align: justify;
@@ -8379,10 +8359,10 @@ footer {
 	clear: both;
 }
 
-/* line 1900, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1885, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap section {
-	width: 50%;
+	width: 44.44444%;
 	float: left;
 }
 
@@ -8398,18 +8378,18 @@ footer {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 .multiaventura .vuela .section-wrap section:nth-child(2n + 2) {
-	margin-left: 50%;
+	margin-left: 55.55556%;
 	margin-right: -100%;
 	clear: none;
 }
 
-/* line 1903, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1888, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .vuela .section-wrap section:nth-of-type(1) {
 	border-right: 1 solid #ffffff;
 }
 
-/* line 1912, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1897, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .fourth {
 	background: #39b1dc;
@@ -8421,7 +8401,7 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 1921, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1906, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .fourth h2 {
 	text-transform: uppercase;
@@ -8429,19 +8409,19 @@ footer {
 	color: #ffffff;
 }
 
-/* line 1930, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1915, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .desafio {
 	border-top: 2px solid #ffffff;
 }
 
-/* line 1934, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1919, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav {
 	height: 277px;
 }
 
-/* line 1937, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1922, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav ul {
 	width: 85%;
@@ -8450,13 +8430,13 @@ footer {
 	min-width: 778px;
 }
 
-/* line 1944, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1929, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 1948, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1933, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a {
 	display: inline-block;
@@ -8471,7 +8451,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 1961, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1946, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a:hover {
 	background: url('../../images/multiaventura-menu.png') no-repeat 0 -263px;
@@ -8480,39 +8460,39 @@ footer {
 	color: #39b1dc;
 }
 
-/* line 1968, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1953, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a:hover span {
 	background: none;
 }
 
-/* line 1973, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1958, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav a span {
 	background: none;
 }
 
-/* line 1980, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1965, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 1989, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1974, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 1997, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1982, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 2008, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1993, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end {
 	background: #39b1dc;
@@ -8523,20 +8503,20 @@ footer {
 	padding: 4% 0;
 }
 
-/* line 2016, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2001, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end h2 {
 	font-weight: bold;
 	color: #39b1dc;
 }
 
-/* line 2022, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2007, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end span {
 	font-size: .5em;
 }
 
-/* line 2027, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2012, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto {
 	width: 200px;
@@ -8544,7 +8524,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 2032, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2017, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a {
 	display: inline-block;
@@ -8552,31 +8532,31 @@ footer {
 	height: 60px;
 }
 
-/* line 2040, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2025, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 2045, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2030, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 2049, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2034, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 2053, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2038, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 2063, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2048, ../../scss/partials/atm_partials/_layout.scss */
 
 .multiaventura .columnas {
 	-moz-columns: 10em 2;
@@ -8584,13 +8564,13 @@ footer {
 	columns: 10em 2;
 }
 
-/* line 2074, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2059, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 2079, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2064, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b h1 {
 	display: block;
@@ -8609,7 +8589,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 2098, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2083, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b h2 {
 	display: block;
@@ -8624,14 +8604,14 @@ footer {
 	margin: 0;
 }
 
-/* line 2111, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2096, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .first {
 	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 2113, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2098, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -8640,14 +8620,14 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 2126, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2111, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 2133, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2118, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .third h1 {
 	color: #fd8117;
@@ -8657,7 +8637,7 @@ footer {
 	display: block;
 }
 
-/* line 2144, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2129, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b p {
 	color: #ffffff;
@@ -8666,13 +8646,13 @@ footer {
 	line-height: 1em;
 }
 
-/* line 2152, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2137, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second {
 	padding: 10% 0;
 }
 
-/* line 2156, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2141, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second h2 {
 	color: #ffffff;
@@ -8682,7 +8662,7 @@ footer {
 	background: none;
 }
 
-/* line 2164, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2149, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .second span {
 	text-align: right;
@@ -8691,7 +8671,7 @@ footer {
 	display: block;
 }
 
-/* line 2171, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2156, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .content-b .shadow {
 	width: 45%;
@@ -8701,13 +8681,13 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 2186, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2171, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent {
 	background-color: #a4e719;
 }
 
-/* line 2189, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2174, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre {
 	background: #000000;
@@ -8715,7 +8695,7 @@ footer {
 	padding: 5% 0;
 }
 
-/* line 2195, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2180, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre h3 {
 	color: #a4e719;
@@ -8725,14 +8705,14 @@ footer {
 	font-weight: bold;
 }
 
-/* line 2201, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2186, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre h3.big {
 	font-size: 1.9em;
 	color: #000000;
 }
 
-/* line 2207, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2192, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre p {
 	font-size: .7em;
@@ -8740,7 +8720,7 @@ footer {
 	margin: 2px 5px;
 }
 
-/* line 2213, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2198, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre .section-wrap {
 	text-align: justify;
@@ -8757,10 +8737,10 @@ footer {
 	clear: both;
 }
 
-/* line 2217, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2202, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .descubre .section-wrap section {
-	width: 50%;
+	width: 44.44444%;
 	float: left;
 }
 
@@ -8776,12 +8756,12 @@ footer {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 .teamevent .descubre .section-wrap section:nth-child(2n + 2) {
-	margin-left: 50%;
+	margin-left: 55.55556%;
 	margin-right: -100%;
 	clear: none;
 }
 
-/* line 2227, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2212, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .fourth {
 	background: #a4e719;
@@ -8793,7 +8773,7 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 2236, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2221, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .fourth h2 {
 	text-transform: uppercase;
@@ -8801,19 +8781,19 @@ footer {
 	color: #000000;
 }
 
-/* line 2245, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2230, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .desafio {
 	border-top: 2px solid #ffffff;
 }
 
-/* line 2249, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2234, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav {
 	height: 277px;
 }
 
-/* line 2252, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2237, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav ul {
 	width: 85%;
@@ -8822,13 +8802,13 @@ footer {
 	min-width: 778px;
 }
 
-/* line 2259, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2244, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 2263, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2248, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a {
 	display: inline-block;
@@ -8843,7 +8823,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 2276, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2261, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a:hover {
 	background: url('../../images/teamevent-menu.png') no-repeat 0 -263px;
@@ -8852,39 +8832,39 @@ footer {
 	color: #a4e719;
 }
 
-/* line 2283, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2268, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a:hover span {
 	background: none;
 }
 
-/* line 2288, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2273, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav a span {
 	background: none;
 }
 
-/* line 2295, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2280, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 2304, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2289, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -250px;
 }
 
-/* line 2312, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2297, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -495px;
 	margin-right: 0;
 }
 
-/* line 2323, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2308, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end {
 	background: #000000;
@@ -8895,20 +8875,20 @@ footer {
 	padding: 4% 0;
 }
 
-/* line 2331, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2316, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end h2 {
 	font-weight: bold;
 	color: #a4e719;
 }
 
-/* line 2337, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2322, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end span {
 	font-size: .5em;
 }
 
-/* line 2342, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2327, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto {
 	width: 200px;
@@ -8916,7 +8896,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 2347, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2332, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a {
 	display: inline-block;
@@ -8924,31 +8904,31 @@ footer {
 	height: 60px;
 }
 
-/* line 2355, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2340, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 2360, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2345, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 2364, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2349, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 2368, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2353, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 2378, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2363, ../../scss/partials/atm_partials/_layout.scss */
 
 .teamevent .columnas {
 	-moz-columns: 10em 2;
@@ -8956,13 +8936,13 @@ footer {
 	columns: 10em 2;
 }
 
-/* line 2389, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2374, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .section-wrap {
 	position: relative;
 }
 
-/* line 2394, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2379, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b h1 {
 	display: block;
@@ -8981,7 +8961,7 @@ footer {
 	text-transform: none;
 }
 
-/* line 2413, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2398, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b h2 {
 	display: block;
@@ -8996,14 +8976,14 @@ footer {
 	margin: 0;
 }
 
-/* line 2426, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2411, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .first {
 	color: #ffffff;
 	padding-bottom: 5%;
 }
 
-/* line 2428, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2413, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .first section {
 	background: rgba(0, 0, 0, 0.7);
@@ -9012,14 +8992,14 @@ footer {
 	padding: 2% 6% 4%;
 }
 
-/* line 2441, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2426, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .third h2 {
 	background: rgba(0, 0, 0, 0.4);
 	padding: 2% 0;
 }
 
-/* line 2448, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2433, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .third h1 {
 	color: #fd8117;
@@ -9029,7 +9009,7 @@ footer {
 	display: block;
 }
 
-/* line 2459, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2444, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b p {
 	color: #ffffff;
@@ -9038,7 +9018,7 @@ footer {
 	line-height: 1em;
 }
 
-/* line 2468, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2453, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .content-b .shadow {
 	width: 45%;
@@ -9048,19 +9028,19 @@ footer {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 2483, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2468, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana {
 	background-color: #fc0149;
 }
 
-/* line 2486, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2471, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana h3.fondo_blanco {
 	color: #ffffff;
 }
 
-/* line 2490, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2475, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio {
 	background: #fc0149;
@@ -9072,7 +9052,7 @@ footer {
 	width: 100%;
 }
 
-/* line 2499, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2484, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio h3 {
 	color: #fc0149;
@@ -9082,14 +9062,14 @@ footer {
 	font-weight: bold;
 }
 
-/* line 2505, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2490, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio h3.big {
 	font-size: 1.9em;
 	color: #ffffff;
 }
 
-/* line 2511, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2496, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio p {
 	font-size: 1em;
@@ -9097,7 +9077,7 @@ footer {
 	margin: 4px 5px;
 }
 
-/* line 2517, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2502, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap {
 	max-width: 100%;
@@ -9115,25 +9095,26 @@ footer {
 	clear: both;
 }
 
-/* line 2522, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2507, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap section {
 	display: table-cell;
 	vertical-align: top;
 }
 
-/* line 2527, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2512, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap article {
 	padding: 1% 20% 1% 0;
 	min-width: 350px;
 }
 
-/* line 2532, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2517, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap section:nth-of-type(1) {
-	width: 60%;
+	width: 58.33333%;
 	float: left;
+	margin-right: 4.16667%;
 	background-image: url('../../images/gyncana_atm_2.jpg');
 	background-repeat: no-repeat;
 	background-position: top left;
@@ -9141,15 +9122,15 @@ footer {
 	height: 420px;
 }
 
-/* line 2546, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2531, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .ingenio .section-wrap section:nth-of-type(2) {
-	width: 40%;
+	width: 37.5%;
 	float: right;
 	margin-right: 0;
 }
 
-/* line 2555, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2540, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second {
 	padding: 10% 0;
@@ -9158,20 +9139,20 @@ footer {
 	color: #ffffff;
 }
 
-/* line 2561, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2546, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second p {
 	font-size: .7em;
 	line-height: 1.2em;
 }
 
-/* line 2566, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2551, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second .section-wrap {
 	padding: 1% 15%;
 }
 
-/* line 2571, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2556, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second h3 {
 	color: #fc0149;
@@ -9181,7 +9162,7 @@ footer {
 	margin-bottom: 10px;
 }
 
-/* line 2579, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2564, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .second span {
 	text-align: right;
@@ -9190,7 +9171,7 @@ footer {
 	display: center;
 }
 
-/* line 2588, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2573, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .fourth {
 	background: #fc0149;
@@ -9202,7 +9183,7 @@ footer {
 	padding: 3% 0 1%;
 }
 
-/* line 2597, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2582, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .fourth h2 {
 	text-transform: uppercase;
@@ -9210,13 +9191,13 @@ footer {
 	color: #ffffff;
 }
 
-/* line 2609, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2594, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav {
 	height: 277px;
 }
 
-/* line 2612, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2597, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav ul {
 	width: 85%;
@@ -9225,13 +9206,13 @@ footer {
 	min-width: 778px;
 }
 
-/* line 2619, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2604, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li {
 	display: inline-block;
 }
 
-/* line 2623, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2608, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a {
 	display: inline-block;
@@ -9246,7 +9227,7 @@ footer {
 	padding-top: 29px;
 }
 
-/* line 2636, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2621, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a:hover {
 	background: url('../../images/gynkana-menu.png') no-repeat 0 -263px;
@@ -9255,39 +9236,39 @@ footer {
 	color: #fc0149;
 }
 
-/* line 2642, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2627, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a:hover span {
 	background: none;
 }
 
-/* line 2647, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2632, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav a span {
 	background: none;
 }
 
-/* line 2654, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2639, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(1) a {
 	width: 204px;
 	height: 204px;
 }
 
-/* line 2663, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2648, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(2) a {
 	background-position-x: -248px;
 }
 
-/* line 2671, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2656, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .eventos-nav li:nth-of-type(3) a {
 	background-position-x: -497px;
 	margin-right: 0;
 }
 
-/* line 2682, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2667, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end {
 	background: #fc0149;
@@ -9298,20 +9279,20 @@ footer {
 	padding: 4% 0;
 }
 
-/* line 2690, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2675, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end h2 {
 	font-weight: bold;
 	color: #ffffff;
 }
 
-/* line 2696, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2681, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end span {
 	font-size: .5em;
 }
 
-/* line 2701, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2686, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto {
 	width: 200px;
@@ -9319,7 +9300,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* line 2706, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2691, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a {
 	display: inline-block;
@@ -9327,31 +9308,31 @@ footer {
 	height: 60px;
 }
 
-/* line 2714, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2699, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco.png') no-repeat 0 0;
 }
 
-/* line 2719, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2704, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco.png') no-repeat -71px 0;
 }
 
-/* line 2723, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2708, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco.png') no-repeat -142px 0;
 }
 
-/* line 2727, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2712, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .end .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 2737, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2722, ../../scss/partials/atm_partials/_layout.scss */
 
 .gynkana .columnas {
 	-moz-columns: 10em 2;
@@ -9359,33 +9340,33 @@ footer {
 	columns: 10em 2;
 }
 
-/* line 2745, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2730, ../../scss/partials/atm_partials/_layout.scss */
 
 .collapse {
 	display: none;
 	visibility: hidden;
 }
 
-/* line 2749, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2734, ../../scss/partials/atm_partials/_layout.scss */
 
 .collapse.in {
 	display: block;
 	visibility: visible;
 }
 
-/* line 2753, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2738, ../../scss/partials/atm_partials/_layout.scss */
 
 tr.collapse.in {
 	display: table-row;
 }
 
-/* line 2756, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2741, ../../scss/partials/atm_partials/_layout.scss */
 
 tbody.collapse.in {
 	display: table-row-group;
 }
 
-/* line 2759, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2744, ../../scss/partials/atm_partials/_layout.scss */
 
 .collapsing {
 	position: relative;
@@ -9399,64 +9380,64 @@ tbody.collapse.in {
 	transition-property: height;
 }
 
-/* line 2775, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2760, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .cabecera {
 	background: #ffffff;
 }
 
-/* line 2778, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2763, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .cabecera section {
 	background: #ffffff;
 }
 
-/* line 2781, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2766, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .cabecera section h1,
 .instalaciones.solo .cabecera section .fa {
 	color: #475B62;
 }
 
-/* line 2787, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2772, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .info_box {
 	background: #71b104;
 	border-top: 2px solid #ffffff;
 }
 
-/* line 2794, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2779, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .informacion h2,
 .instalaciones.solo .informacion span {
 	color: #ffffff;
 }
 
-/* line 2800, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2785, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .contacto a:nth-of-type(1) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat 0 0;
 }
 
-/* line 2805, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2790, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .contacto a:nth-of-type(2) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat -59px 0;
 }
 
-/* line 2809, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2794, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .contacto a:nth-of-type(3) {
 	background: url('../../images/contacto_blanco_160.png') no-repeat -113px 0;
 }
 
-/* line 2813, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2798, ../../scss/partials/atm_partials/_layout.scss */
 
 .instalaciones.solo .contacto a:hover {
 	background-position-y: -1px;
 }
 
-/* line 2820, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2805, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .formulario {
 	width: 505px;
@@ -9472,7 +9453,7 @@ tbody.collapse.in {
 	float: left;
 }
 
-/* line 2838, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2823, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar label {
 	display: block;
@@ -9481,20 +9462,20 @@ tbody.collapse.in {
 	font-weight: 700;
 }
 
-/* line 2845, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2830, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar p {
 	font-size: .7em;
 	text-indent: 0;
 }
 
-/* line 2850, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2835, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar option {
 	font-size: .7em;
 }
 
-/* line 2854, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2839, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .wpcf7 {
 	margin: 0 auto;
@@ -9502,7 +9483,7 @@ tbody.collapse.in {
 	width: 350px;
 }
 
-/* line 2861, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2846, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar input[type="text"],
 .contactar input[type="password"],
@@ -9539,14 +9520,14 @@ tbody.collapse.in {
 	transition: background-color 0.24s ease-in-out;
 }
 
-/* line 2883, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2868, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar input.inline {
 	width: 172px;
 	display: inline-block;
 }
 
-/* line 2888, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2873, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar input.wpcf7-submit {
 	border-radius: 30px;
@@ -9554,7 +9535,7 @@ tbody.collapse.in {
 	font-size: .6em;
 }
 
-/* line 2894, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2879, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar span.blanco {
 	display: inline;
@@ -9562,13 +9543,13 @@ tbody.collapse.in {
 	text-shadow: 2px 2px #475B62;
 }
 
-/* line 2900, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2885, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar textarea {
 	height: 40px;
 }
 
-/* line 2904, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2889, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .datos_contacto {
 	width: 320px;
@@ -9577,13 +9558,13 @@ tbody.collapse.in {
 	text-align: center;
 }
 
-/* line 2909, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2894, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .datos_contacto img {
 	width: 100%;
 }
 
-/* line 2913, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2898, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .datos_contacto .wrapper-datos {
 	width: 80%;
@@ -9591,14 +9572,14 @@ tbody.collapse.in {
 	margin: 0 auto;
 }
 
-/* line 2918, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2903, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .datos_contacto .wrapper-datos p {
 	display: block;
 	text-align: center;
 }
 
-/* line 2924, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2909, ../../scss/partials/atm_partials/_layout.scss */
 
 .contactar .datos_contacto h3 {
 	font-size: 1.9em;
@@ -9607,7 +9588,7 @@ tbody.collapse.in {
 	color: #ffffff;
 }
 
-/* line 2935, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2920, ../../scss/partials/atm_partials/_layout.scss */
 
 .avisos .panel {
 	width: 100%;
@@ -9616,7 +9597,7 @@ tbody.collapse.in {
 	overflow: hidden;
 }
 
-/* line 2941, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2926, ../../scss/partials/atm_partials/_layout.scss */
 
 .avisos .panel p {
 	display: block;
@@ -9627,7 +9608,7 @@ tbody.collapse.in {
 	line-height: 1.8em;
 }
 
-/* line 2951, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2936, ../../scss/partials/atm_partials/_layout.scss */
 
 .avisos .panel .legal {
 	width: 640px;
@@ -9640,7 +9621,7 @@ tbody.collapse.in {
 	background-size: cover;
 }
 
-/* line 2964, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2949, ../../scss/partials/atm_partials/_layout.scss */
 
 .avisos .panel .entry-content {
 	width: 640px;
@@ -9649,7 +9630,7 @@ tbody.collapse.in {
 	padding-top: 20px;
 }
 
-/* line 2974, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2959, ../../scss/partials/atm_partials/_layout.scss */
 
 .avisos .panel .cerrar {
 	display: block;
@@ -9662,7 +9643,7 @@ tbody.collapse.in {
 	margin: 10px auto;
 }
 
-/* line 2995, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2980, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel {
 	width: 100%;
@@ -9675,7 +9656,7 @@ tbody.collapse.in {
 	background-size: cover;
 }
 
-/* line 3008, ../../scss/partials/atm_partials/_layout.scss */
+/* line 2993, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel ul a {
 	display: block;
@@ -9686,24 +9667,24 @@ tbody.collapse.in {
 	line-height: 1.8em;
 }
 
-/* line 3020, ../../scss/partials/atm_partials/_layout.scss */
+/* line 3005, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel li ul {
 	margin: 0;
 }
 
-/* line 3022, ../../scss/partials/atm_partials/_layout.scss */
+/* line 3007, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel li ul a {
 	color: #ffffff;
 	padding-left: 20px;
 }
 
-/* line 3031, ../../scss/partials/atm_partials/_layout.scss */
+/* line 3016, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel .mapa {
 	margin: 0 auto;
-	width: 33.33333%;
+	width: 28.57143%;
 	float: left;
 }
 
@@ -9719,7 +9700,7 @@ tbody.collapse.in {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 .mapaweb .panel .mapa:nth-child(3n + 2) {
-	margin-left: 33.33333%;
+	margin-left: 35.71429%;
 	margin-right: -100%;
 	clear: none;
 }
@@ -9727,12 +9708,12 @@ tbody.collapse.in {
 /* line 66, ../../../../../../../../../.rvm/gems/ruby-1.9.3-p448/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 
 .mapaweb .panel .mapa:nth-child(3n + 3) {
-	margin-left: 66.66667%;
+	margin-left: 71.42857%;
 	margin-right: -100%;
 	clear: none;
 }
 
-/* line 3038, ../../scss/partials/atm_partials/_layout.scss */
+/* line 3023, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel .cerrar {
 	display: block;
@@ -9745,16 +9726,10 @@ tbody.collapse.in {
 	margin: 10px auto;
 }
 
-/* line 3051, ../../scss/partials/atm_partials/_layout.scss */
+/* line 3036, ../../scss/partials/atm_partials/_layout.scss */
 
 .mapaweb .panel .map_container {
 	padding: 10px 10x0px;
-}
-
-/* line 3059, ../../scss/partials/atm_partials/_layout.scss */
-
-.pagina .head_layout .contacto span {
-	font-size: 14px;
 }
 
 /* background setup */
@@ -12324,28 +12299,22 @@ be set to display none.
 	padding: 0 2%;
 }
 
-/* line 394, ../../scss/partials/atm_partials/_base.scss */
+/* line 392, ../../scss/partials/atm_partials/_base.scss */
 
 footer nav span.copyright::after {
 	content: " | ";
 }
 
-/* line 406, ../../scss/partials/atm_partials/_base.scss */
+/* line 404, ../../scss/partials/atm_partials/_base.scss */
 
 footer .footer-nav li::after {
 	content: " - ";
 }
 
-/* line 410, ../../scss/partials/atm_partials/_base.scss */
+/* line 408, ../../scss/partials/atm_partials/_base.scss */
 
 footer .footer-nav li:last-child::after {
 	content: " ";
-}
-
-/* line 526, ../../scss/partials/atm_partials/_base.scss */
-
-.nav_superior .title_box h1 {
-	font-size: 24px;
 }
 
 /* line 15, ../../scss/partials/atm_partials/_layout.scss */
@@ -12363,13 +12332,13 @@ footer .footer-nav li:last-child::after {
 /* line 171, ../../scss/partials/atm_partials/_layout.scss */
 
 .quienes-somos .der {
-	width: 66.66667%;
+	width: 64.28571%;
 	float: right;
 	margin-right: 0;
 	padding-top: 3%;
 }
 
-/* line 1385, ../../scss/partials/atm_partials/_layout.scss */
+/* line 1371, ../../scss/partials/atm_partials/_layout.scss */
 
 footer nav {
 	width: 100%;
@@ -12546,13 +12515,13 @@ body .main section ul.portada > li > a:hover img {
 /* line 124, ../../scss/partials/atm_partials/_smallscreen.scss */
 
 body .main section ul.portada > li .titular {
-	bottom: 2%;
-	padding: 1px 0;
+	bottom: 5%;
+	padding: 2% 0;
 	z-index: 10;
-	border: 8px solid transparent;
-	-o-border-image: url('../../images/borde.png') 27 repeat;
-	-webkit-border-image: url('../../images/borde.png') 27 repeat;
-	border-image: url('../../images/borde.png') 27 repeat;
+	border: 1px solid #ffffff;
+	-o-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
+	-webkit-border-image: url('../../images/borde.png') 2 13 3 9 repeat;
+	border-image: url('../../images/borde.png') 2 13 3 9 repeat;
 	visibility: hidden;
 }
 

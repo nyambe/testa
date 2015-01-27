@@ -2,7 +2,8 @@
 <div id="container" class="pagina quienes-somos">	
 	 <?php get_template_part( 'include/cabecera', 'paginas' ); ?> 
 	<?php // Cuerpo . Content - Páginas ?>
-		<section class="slider_container">
+		<section class="slider_container" style="min-height: 250px; background-image:url('<?php echo get_template_directory_uri(); ?>/images/preloader.png');">
+		<img style="width:100%; position:absolute; top: 0" src="<?php echo get_template_directory_uri(); ?>/images/fondo_metodologia.jpg" alt="preloader">
 			<div id="slider" class="nivoSlider">
 				<?php 
 					/*
@@ -26,6 +27,8 @@
 				</ul>
 			</div>
 		</section>
+
+
 		<section class="entry-content cf" itemprop="articleBody">
 
 			<div class="head_layout">

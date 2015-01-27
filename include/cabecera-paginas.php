@@ -4,7 +4,7 @@
 				<div class="nav_superior">
 					<div class="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?> <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo320.png" alt="Logotipo"></a></div>
 					<div class="title_box">
-						<h1 id="fittext" class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+						<h1  class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 						<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
 
 						    <?php 

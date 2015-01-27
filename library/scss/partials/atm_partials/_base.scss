@@ -268,6 +268,8 @@ padding: 0 5px;
 
 
 .portada {
+position: relative;
+z-index: 0;
 
 @include nested-reset;
 
@@ -513,13 +515,21 @@ article {
 
 
 	.logo {
-		@include span(1 of 3);
+		@include span(1 of 4);
 
 	}
 
 	.title_box {
-		@include span(1 of 3 at 2);
-		padding-top: 10px;
+		@include span(2 of 4 at 2);
+		padding-top: 0;
+
+		h1 {
+			font-size: 14px; 
+
+			@include breakpoint($smallscreen) {
+				font-size: 24px;
+			}
+		}
 	}
 
 	.page-title {
@@ -530,7 +540,7 @@ article {
 	}
 
 	.nav {
-		@include span( 1 of 3 at 3);
+		@include span( 1 of 4 last);
 		>ul {
 			margin-top: 0;
 		}
@@ -676,6 +686,7 @@ article {
 			$baseMenuBackground: #000000;          // Base color theme
 			$secondaryMenuBackground: $red;  // Secondary color (highlights, triangles...)
 			$gutter: 7px;   
+			$menu_orange: #ea7041;
 
 		  background-color: $baseMenuBackground;
 		  position: absolute;
@@ -691,7 +702,7 @@ article {
 		    > a {
 		      padding: $gutter 3 * $gutter;
 		      text-transform: uppercase;
-		      color: $paleryellow;
+		      color: $menu_orange;
 
 		      // http://bit.ly/SkmL1T & currentColor keyword
 		      &:first-child:nth-last-child(2):before { 
